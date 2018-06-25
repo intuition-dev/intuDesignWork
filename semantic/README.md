@@ -1,9 +1,9 @@
 # semi
-smaller semantic 
+smaller semantic
 
 http://github.com/doabit/semantic-ui-sass
 
-you need only 
+you need only
 http://github.com/doabit/semantic-ui-sass/tree/master/app/assets/stylesheets
 
 and work with prepros.io as normal.
@@ -14,7 +14,7 @@ On page where you need:
 http://jsdelivr.com/package/npm/semantic-ui?path=dist%2Fcomponents
 
 
-load smalles css semnatic 1
+load smallest css semnatic 1
 and then after load semantic 2
 
 ex:
