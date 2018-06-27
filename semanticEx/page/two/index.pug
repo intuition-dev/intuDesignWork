@@ -1,0 +1,26 @@
+extends /layout/_layout
+//- App Shell
+
+block head
+	title #{title}
+
+block main
+	p
+	br
+	p
+	#here
+	// aloc check out the sticky Plugin!
+	include part2
+
+	script.
+		loadjs('pinc_d.js', 'binding')
+
+		loadjs.ready(['site','binding'], function () {
+			console.log('page 2')
+			var data = {
+				'myNum': Math.floor(Math.random() * 20)
+			}
+
+			// this is pug client side/dynamic binding. check RIOTjs example as well
+			$('#here').html(pincDBind(data))
+		})
