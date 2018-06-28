@@ -17,7 +17,7 @@ $(document).ready(function () {
 
 loadjs([
    'https://cdn.jsdelivr.net/npm/signals@1.0.0/dist/signals.min.js'
-   //,'//cdn.jsdelivr.net/npm/intersection-observer@0.5.0/intersection-observer.js'
+   ,'//cdn.jsdelivr.net/npm/intersection-observer@0.5.0/intersection-observer.js'
    , 'https://unpkg.com/vivid-icons@1.0.3/dist/vivid-icons.min.js'
    , 'https://unpkg.com/js-offcanvas/dist/_js/js-offcanvas.pkgd.min.js'
    , 'https://unpkg.com/js-offcanvas/dist/_css/prefixed/js-offcanvas.css'
@@ -66,6 +66,22 @@ function getUrlVars() {
       vars[hash[0]] = hash[1]
    }
    return vars
+}
+
+function inView(el) { // is element in viewport
+	//special bonus for jQuery
+	if (typeof jQuery === "function" && el instanceof jQuery) {
+		el = el[0];
+	}
+
+	var rect = el.getBoundingClientRect()
+
+	return (
+		rect.top >= 0 &&
+		rect.left >= 0 &&
+		rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /*or $(window).height() */
+		rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
+	)
 }
 
 // polyfills
