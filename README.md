@@ -1,7 +1,9 @@
 
-[Chat: MetaBake ](http://chat.MetaBake.org)
 
+Likely you want to go here first http://doc.metabake.org/nbake
 
 # FE FWs
 
-Some FE fws you can use.
+Some FE frameworks with Sass/LESS you can make, ex: w/ Prepros.io
+
+
