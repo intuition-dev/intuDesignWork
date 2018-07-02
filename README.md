@@ -1,5 +1,5 @@
 
-[Chat: MetaBake ](http://chat.metabake.org)
+[Chat: MetaBake ](http://chat.MetaBake.org)
 
 
 # FE FWs
