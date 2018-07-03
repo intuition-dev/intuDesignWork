@@ -1,0 +1,23 @@
+doctype html
+html
+   head
+      include /layout/head
+   body
+      include /layout/top
+      // https://tinyurl.com/y7x6cblq
+
+      .pad
+
+         form.grid-form
+            fieldset
+               legend Form Section
+               div(data-row-span="2")
+                  .field(data-field-span="1")
+                     label Field 1
+                     input(type="text")
+                  .field(data-field-span="1")
+                     label Field 2
+                     input(type="text")
+         br
+         .buts
+            button.button SignUp
