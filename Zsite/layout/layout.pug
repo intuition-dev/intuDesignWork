@@ -19,12 +19,10 @@ html
       script(src='https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js')
       script(src= ROOT + '/assets/js/setup.js')
 
-      <script src="/reload/reload.js"></script>
-
       .c-offcanvas-content-wrap
-         nav.columns.has-background-black.has-text-white.is-mobile.is-gapless
+         nav.columns.is-mobile.is-gapless
                .column.left
-                  .pad My Blog
+                  .pad.has-text-weight-bold My Crop
 
                .column.right
                   a.is-hidden-mobile.navbar-item(href= ROOT + '/home') Blog
@@ -37,7 +35,7 @@ html
 
       #off-canvas.delayShowing
          nav.has-background-black.has-text-white
-           .pad My Blog
+           .pad My Crop
          ul.menu-list#offItems
             li
                a(href=ROOT ) Home2

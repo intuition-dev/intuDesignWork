@@ -15,7 +15,7 @@ nav a {
    color: hsl(0, 0%, 86%) !important;
 }
 nav a:hover {
-   background-color: black !important;
+   background-color: transparent !important;
    color: white !important;
    text-shadow: 0 0 .5px white;
 }
