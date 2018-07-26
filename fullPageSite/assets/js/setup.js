@@ -66,7 +66,7 @@ loadjs.ready('fullPage', function () {
 	$('#fullPage').fullpage({
 		scrollOverflow: true,
 		bigSectionsDestination: top,
-		paddingTop: '1.25em',
+		pxaddingTop: '1.25em',
 		verticalCentered: false,
 
 		css3: false,
