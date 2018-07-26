@@ -20,7 +20,7 @@ loadjs([
 	//'//cdn.jsdelivr.net/npm/intersection-observer@0.5.0/intersection-observer.js'
 	  'https://unpkg.com/vivid-icons@1.0.3/dist/vivid-icons.min.js'
 	, 'https://unpkg.com/js-offcanvas/dist/_js/js-offcanvas.pkgd.min.js'
-	, 'https://unpkg.com/js-offcanvas/dist/_css/prefixed/js-offcanvas.css'
+   , 'https://unpkg.com/js-offcanvas/dist/_css/prefixed/js-offcanvas.css'
 	, ROOT + '/assets/css/gridforms/gridforms.css'
 	, ROOT + '/assets/js/lorem.js'
 ], 'cssJs')
@@ -34,7 +34,7 @@ function cssLoaded() {// called by the style sheet in layout
 	loadjs.done('css')
 }
 
-loadjs.ready(['css', 'device', 'cssJs'], function () {
+loadjs.ready(['css', 'device', 'cssJs', 'fullPage'], function () {
 	loadjs.done('style')
 })
 
@@ -54,3 +54,22 @@ loadjs.ready(['style'], function () {// 'show' page, ex: unhide
 	console.log('style done', Date.now() - _start)
 })//ready
 
+//load full page:
+loadjs([
+   '//cdn.jsdelivr.net/npm/fullpage.js@2.9.7/dist/jquery.fullpage.css',
+   '//cdn.jsdelivr.net/npm/fullpage.js@2.9.7/vendors/scrolloverflow.min.js',
+   '//cdn.jsdelivr.net/npm/fullpage.js@2.9.7/dist/jquery.fullpage.js'
+], 'fullPage')
+
+loadjs.ready('fullPage', function () {
+	console.log('onFullPage')
+	$('#fullPage').fullpage({
+		scrollOverflow: true,
+		bigSectionsDestination: top,
+		paddingTop: '1.25em',
+		verticalCentered: false,
+
+		css3: false,
+		lazyLoading: true
+	 })
+})//()
