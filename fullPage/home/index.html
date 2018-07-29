@@ -18,18 +18,26 @@
   <body>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
     <script src="/assets/js/setup.js"></script>
+    <nav class="columns is-mobile is-gapless" id="topMenu">
+      <div class="column left">
+        <div class="pad has-text-weight-bold">My Crop</div>
+      </div>
+      <div class="column right"><a class="is-hidden-mobile navbar-item" href="/home">Home</a><a class="is-hidden-mobile navbar-item" href="/blog">Blog</a><a class="js-offcanvas-trigger" id="off-cbut" href="#off-canvas"><i class="icon" data-vi="menu" data-vi-size="28" data-vi-primary="#FFF" data-vi-accent="#FFF" data-vi-prop="#FFF"></i></a></div>
+    </nav>
     <div class="c-offcanvas-content-wrap">
-      <nav class="columns is-mobile is-gapless">
-        <div class="column left">
-          <div class="pad has-text-weight-bold">My Crop</div>
-        </div>
-        <div class="column right"><a class="is-hidden-mobile navbar-item" href="/home">Blog</a><a class="is-hidden-mobile navbar-item" href="/forum">Forum</a><a class="js-offcanvas-trigger" id="off-cbut" href="#off-canvas"><i class="icon" data-vi="menu" data-vi-size="28" data-vi-primary="#FFF" data-vi-accent="#FFF" data-vi-prop="#FFF"></i></a></div>
-      </nav>
       <div id="router">
         <style>
-          #f1ullPage {
-             margin-top: -3rem;
-             z-index: -1;
+          #topMenu {
+             position: fixed;
+             top: 0;
+             right: 0;
+             overflow: hidden;
+             width: 100%;
+             z-index: 20;
+          }
+          #fullPage {
+             maargin-top: -3rem;
+             zz-index: -1;
           }
           .section {
              background-size: cover;
@@ -100,13 +108,13 @@
           SECobserver = new IntersectionObserver(function(entries ){
              entries.forEach(function(e) {
                 if (e.intersectionRatio > 0.5) {
-                   console.log('IN', e.target, e.intersectionRatio)
                    if(lastEl == e.target) return
+                   console.log('IN', e.target, e.intersectionRatio)
                    lastEl = e.target
                    zenscroll.to(e.target, 900)
                 } //else console.log(e.target, 'OUT of the view')
              })//for each
-          }, {  threshold: [0.31, 0.41, 0.51, 0.61 ] })//*() observer event
+          }, {  threshold: [0.51, 0.61 ] })//*() observer event
           const secs = document.querySelectorAll('.section')
           
           loadjs.ready('style', function(){//start
@@ -122,12 +130,11 @@
     </div>
     <div class="delayShowing" id="off-canvas">
       <nav class="has-background-black has-text-white">
-        <div class="pad">My Crop</div>
+        <div class="pad"> </div>
       </nav>
       <ul class="menu-list" id="offItems">
-        <li><a href="">Home2</a></li>
-        <li><a href="/home">Blog</a></li>
-        <li><a href="/forum">Forum</a></li>
+        <li><a href="/home">Home</a></li>
+        <li><a href="/blog">Blog</a></li>
       </ul>
     </div>
     <link href="/assets/css/bulma.css" onload="cssLoaded()" rel="stylesheet">

@@ -3,10 +3,17 @@ extends /layout/layout
 
 block main
    style.
-
-      #f1ullPage {
-         margin-top: -3rem;
-         z-index: -1;
+      #topMenu {
+         position: fixed;
+         top: 0;
+         right: 0;
+         overflow: hidden;
+         width: 100%;
+         z-index: 20;
+      }
+      #fullPage {
+         maargin-top: -3rem;
+         zz-index: -1;
       }
       .section {
          background-size: cover;
@@ -27,13 +34,13 @@ block main
       SECobserver = new IntersectionObserver(function(entries ){
          entries.forEach(function(e) {
             if (e.intersectionRatio > 0.5) {
-               console.log('IN', e.target, e.intersectionRatio)
                if(lastEl == e.target) return
+               console.log('IN', e.target, e.intersectionRatio)
                lastEl = e.target
                zenscroll.to(e.target, 900)
             } //else console.log(e.target, 'OUT of the view')
          })//for each
-      }, {  threshold: [0.31, 0.41, 0.51, 0.61 ] })//*() observer event
+      }, {  threshold: [0.51, 0.61 ] })//*() observer event
       const secs = document.querySelectorAll('.section')
 
       loadjs.ready('style', function(){//start

@@ -19,30 +19,27 @@ html
       script(src='https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js')
       script(src= ROOT + '/assets/js/setup.js')
 
+      nav#topMenu.columns.is-mobile.is-gapless
+            .column.left
+               .pad.has-text-weight-bold My Crop
+
+            .column.right
+               a.is-hidden-mobile.navbar-item(href= ROOT + '/home') Home
+               a.is-hidden-mobile.navbar-item(href= ROOT + '/blog') Blog
+               a#off-cbut.js-offcanvas-trigger( href='#off-canvas')
+                  i.icon(data-vi='menu', data-vi-size='28', data-vi-primary="#FFF", data-vi-accent="#FFF", data-vi-prop="#FFF")
       .c-offcanvas-content-wrap
-         nav.columns.is-mobile.is-gapless
-               .column.left
-                  .pad.has-text-weight-bold My Crop
-
-               .column.right
-                  a.is-hidden-mobile.navbar-item(href= ROOT + '/home') Blog
-                  a.is-hidden-mobile.navbar-item(href= ROOT + '/forum') Forum
-                  a#off-cbut.js-offcanvas-trigger( href='#off-canvas')
-                     i.icon(data-vi='menu', data-vi-size='28', data-vi-primary="#FFF", data-vi-accent="#FFF", data-vi-prop="#FFF")
-
          #router
             block main
 
       #off-canvas.delayShowing
          nav.has-background-black.has-text-white
-           .pad My Crop
+           .pad 
          ul.menu-list#offItems
             li
-               a(href=ROOT ) Home2
+               a(href=ROOT + '/home') Home
             li
-               a(href=ROOT + '/home') Blog
-            li
-              a(href= ROOT + '/forum') Forum
+              a(href= ROOT + '/blog') Blog
 
 
       link(href= ROOT + '/assets/css/bulma.css', onload='cssLoaded()', rel='stylesheet')
