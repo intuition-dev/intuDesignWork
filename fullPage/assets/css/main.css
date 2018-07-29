@@ -58,3 +58,14 @@ nav a:hover {
    content: '';
    width: 300px;
 }
+
+body, .smooth-container { scroll-behavior: smooth }
+
+/* custom ////////////////////////////////////////////////////////////// */
+
+*{
+   color: white ;
+}
+   H1, H2, H3, H4, H5, H6 {
+   color: white  !important;
+}

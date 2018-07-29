@@ -17,12 +17,13 @@ $(document).ready(function () {
 
 loadjs([
     //'https://cdn.jsdelivr.net/npm/signals@1.0.0/dist/signals.min.js'
-   //'//cdn.jsdelivr.net/npm/intersection-observer@0.5.0/intersection-observer.js'
-     'https://unpkg.com/vivid-icons@1.0.3/dist/vivid-icons.min.js'
+   'https://cdn.jsdelivr.net/npm/intersection-observer@0.5.0/intersection-observer.js'
+   , 'https://unpkg.com/vivid-icons@1.0.3/dist/vivid-icons.min.js'
    , 'https://unpkg.com/js-offcanvas/dist/_js/js-offcanvas.pkgd.min.js'
    , 'https://unpkg.com/js-offcanvas/dist/_css/prefixed/js-offcanvas.css'
    , ROOT + '/assets/css/gridforms/gridforms.css'
    , ROOT + '/assets/js/lorem.js'
+   ,'https://cdn.jsdelivr.net/npm/zenscroll@4.0.2/zenscroll-min.js'
 ], 'cssJs')
 
 function onDeviceReady() { // nothing will work before this
@@ -34,9 +35,18 @@ function cssLoaded() {// called by the style sheet in layout
    loadjs.done('css')
 }
 
-loadjs.ready(['css', 'device', 'cssJs', 'fullPage'], function () {
+loadjs.ready(['css', 'device', 'cssJs'], function () {
    loadjs.done('style')
 })
+
+
+function supportsIntersectionObserver() {
+   return (
+     'IntersectionObserver' in global &&
+     'IntersectionObserverEntry' in global &&
+     'intersectionRatio' in IntersectionObserverEntry.prototype
+   )
+ }
 
 // usage: ////////////////////////////////////////////////////////////////////
 loadjs.ready(['style'], function () {// 'show' page, ex: unhide
@@ -54,23 +64,21 @@ loadjs.ready(['style'], function () {// 'show' page, ex: unhide
    console.log('style done', Date.now() - _start)
 })//ready
 
-//load full page:
-loadjs([
-   '//cdn.jsdelivr.net/npm/fullpage.js@2.9.7/dist/jquery.fullpage.css',
-   '//cdn.jsdelivr.net/npm/fullpage.js@2.9.7/vendors/scrolloverflow.min.js',
-   '//cdn.jsdelivr.net/npm/fullpage.js@2.9.7/dist/jquery.fullpage.js'
-], 'fullPage')
 
-loadjs.ready(['device', 'fullPage'], function () {
-   console.log('onFullPage')
-   $('#fullPage').fullpage({
-      scrollOverflow: true,
-      bxigSectionsDestination: top,
-      pxaddingTop: '1.25em',
-      verticalCentered: false,
+function inView(el) { // is element in viewport
+	//special bonus for jQuery
+	if (typeof jQuery === "function" && el instanceof jQuery) {
+		el = el[0];
+	}
 
-      css3: false,
-      loopBottom: true,
-      lazyLoading: true
-   })
-})//()
+	var rect = el.getBoundingClientRect()
+
+	return (
+		rect.top >= 0 &&
+		rect.left >= 0 &&
+		rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /*or $(window).height() */
+		rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
+	)
+}
+
+

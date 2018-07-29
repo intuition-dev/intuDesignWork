@@ -23,20 +23,18 @@
         <div class="column left">
           <div class="pad has-text-weight-bold">My Crop</div>
         </div>
-        <div class="column right"><a class="is-hidden-mobile navbar-item" href="/home">Blog</a><a class="is-hidden-mobile navbar-item" href="/forum">Forum</a><a class="js-offcanvas-trigger" id="off-cbut" href="#off-canvas"><i class="icon" data-vi="menu" data-vi-size="28" data-vi-primary="#000" data-vi-accent="#000" data-vi-prop="#000"></i></a></div>
+        <div class="column right"><a class="is-hidden-mobile navbar-item" href="/home">Blog</a><a class="is-hidden-mobile navbar-item" href="/forum">Forum</a><a class="js-offcanvas-trigger" id="off-cbut" href="#off-canvas"><i class="icon" data-vi="menu" data-vi-size="28" data-vi-primary="#FFF" data-vi-accent="#FFF" data-vi-prop="#FFF"></i></a></div>
       </nav>
       <div id="router">
         <style>
-           * {
-             color: white ;
-          }
-          #fullPage {
+          #f1ullPage {
              margin-top: -3rem;
              z-index: -1;
           }
           .section {
              background-size: cover;
              background-attachment: fixed;
+             height: 100vh;
           
              display: flex;
              justify-content: center;
@@ -97,6 +95,28 @@
             </div>
           </div>
         </div>
+        <script>
+          let lastEl
+          SECobserver = new IntersectionObserver(function(entries ){
+             entries.forEach(function(e) {
+                if (e.intersectionRatio > 0.5) {
+                   console.log('IN', e.target, e.intersectionRatio)
+                   if(lastEl == e.target) return
+                   lastEl = e.target
+                   zenscroll.to(e.target, 900)
+                } //else console.log(e.target, 'OUT of the view')
+             })//for each
+          }, {  threshold: [0.31, 0.41, 0.51, 0.61 ] })//*() observer event
+          const secs = document.querySelectorAll('.section')
+          
+          loadjs.ready('style', function(){//start
+             console.log('setup zen')
+             secs.forEach(function(sec) {
+                SECobserver.observe(sec)
+             })
+          })
+          
+        </script>
         <!--link(href= ROOT + '/assets/css/debug.css', rel='stylesheet')-->
       </div>
     </div>
