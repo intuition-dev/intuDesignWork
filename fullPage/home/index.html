@@ -104,6 +104,9 @@
           </div>
         </div>
         <script>
+          window.onbeforeunload = function () {
+             window.scrollTo(0, 0);
+          }
           let lastEl
           SECobserver = new IntersectionObserver(function(entries ){
              entries.forEach(function(e) {
@@ -111,14 +114,16 @@
                    if(lastEl == e.target) return
                    console.log('IN', e.target, e.intersectionRatio)
                    lastEl = e.target
-                   zenscroll.to(e.target, 900)
+                   zenscroll.stop()
+                   zenscroll.to(e.target)
                 } //else console.log(e.target, 'OUT of the view')
              })//for each
-          }, {  threshold: [0.51, 0.61 ] })//*() observer event
+          }, {  threshold: [0.51, 0.55 ] })//*() observer event
           const secs = document.querySelectorAll('.section')
           
           loadjs.ready('style', function(){//start
              console.log('setup zen')
+             zenscroll.setup(800, 0)
              secs.forEach(function(sec) {
                 SECobserver.observe(sec)
              })
