@@ -35,10 +35,6 @@
              width: 100%;
              z-index: 20;
           }
-          #fullPage {
-             maargin-top: -3rem;
-             zz-index: -1;
-          }
           .section {
              background-size: cover;
              background-attachment: fixed;
@@ -123,7 +119,7 @@
           
           loadjs.ready('style', function(){//start
              console.log('setup zen')
-             zenscroll.setup(800, 0)
+             zenscroll.setup(920, 0)
              secs.forEach(function(sec) {
                 SECobserver.observe(sec)
              })
@@ -135,7 +131,7 @@
     </div>
     <div class="delayShowing" id="off-canvas">
       <nav class="has-background-black has-text-white">
-        <div class="pad"> </div>
+        <div class="pad">&nbsp;</div>
       </nav>
       <ul class="menu-list" id="offItems">
         <li><a href="/home">Home</a></li>
