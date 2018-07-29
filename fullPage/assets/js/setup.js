@@ -61,7 +61,7 @@ loadjs([
    '//cdn.jsdelivr.net/npm/fullpage.js@2.9.7/dist/jquery.fullpage.js'
 ], 'fullPage')
 
-loadjs.ready('fullPage', function () {
+loadjs.ready('device', 'fullPage', function () {
    console.log('onFullPage')
    $('#fullPage').fullpage({
       scrollOverflow: true,
