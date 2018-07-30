@@ -14,16 +14,20 @@ block main
          background: rgba(0, 0, 0, 0.5);
       }
       .section {
-         background-size: cover;
-         background-attachment: fixed;
+         background-attachment: scroll;
          min-height: 100vh;
+
+         background-position: center center;
+         background-repeat: no-repeat;
+         background-size: 960px 540px;
+         background-size: cover;
 
          display: flex;
          justify-content: center;
          align-items: center;
       }
 
-   #fullPage
+   #fullPage.content
       include sections
 
    script.
@@ -45,6 +49,12 @@ block main
       const secs = document.querySelectorAll('.section')
 
       loadjs.ready('style', function(){//start
+         if (!is.desktop()) { // mobile browser bar resize
+            const viewportHeight = $('.section').outerHeight()
+            console.log(viewportHeight)
+            $('.section').css({ 'min-height': viewportHeight })
+         }
+
          console.log('setup zen')
          zenscroll.setup(920, 0)
          secs.forEach(function(sec) {

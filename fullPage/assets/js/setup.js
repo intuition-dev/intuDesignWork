@@ -24,8 +24,14 @@ loadjs([
    , ROOT + '/assets/css/gridforms/gridforms.css'
    , ROOT + '/assets/js/lorem.js'
    , 'https://cdn.jsdelivr.net/npm/zenscroll@4.0.2/zenscroll-min.js'
+
    , 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css'
    , 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js'
+   , 'https://cdn.jsdelivr.net/npm/blueimp-load-image@2.19.0/js/load-image.all.min.js'
+   , 'https://cdn.jsdelivr.net/npm/is_js@0.9.0/is.min.js'
+
+   , 'https://cdn.rawgit.com/terrylinooo/jquery.disableAutoFill/92cb6f86/src/jquery.disableAutoFill.js'
+
 ], 'cssJs')
 
 function onDeviceReady() { // nothing will work before this

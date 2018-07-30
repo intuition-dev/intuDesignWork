@@ -4,7 +4,7 @@ a:focus { outline: none; }
 
 * {
    letter-spacing: .05em !important;
-   text-shadow: 1px 1px #000 !important;
+   text-shadow: .1px .1px .5px #000 !important;
 }
 
 /* nav */
