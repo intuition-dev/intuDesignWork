@@ -4,14 +4,16 @@ a:focus { outline: none; }
 
 * {
    letter-spacing: .05em !important;
-   text-shadow: .05px .05px .2px #000  !important;
+   /*text-shadow: .05px .05px .2px #000  !important;*/
 }
 a {
    text-shadow: -.2em -.2em .3em #FFF  !important;
    text-shadow: .05px .05px .2px #000  !important;
+   text-decoration: underline  !important;
+   color: lightgrey !important;
 }
 a:hover {
-   color: blue !important;
+   color: white !important;
    text-decoration: underline  !important;
    text-shadow: -.5px -.5px 1px #FFF  !important;
    text-shadow: .5px .5px 1px #FFF  !important;

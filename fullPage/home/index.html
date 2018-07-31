@@ -34,68 +34,72 @@
              overflow: hidden;
              width: 100%;
              z-index: 20;
+          
+             background: rgba(0, 0, 0, 0.5);
           }
           .section {
+             background-attachment: scroll;
+             min-height: 100vh;
+          
+             background-position: center center;
+             background-repeat: no-repeat;
+             background-size: 960px 540px;
              background-size: cover;
-             background-attachment: fixed;
-             height: 100vh;
           
              display: flex;
              justify-content: center;
-             align-items: flex-end;
+             align-items: center;
           }
           
         </style>
-        <div id="fullPage">
+        <div class="content" id="fullPage">
+          <script src="/assets/js/lorem.js"></script>
           <style>
             .section1 {
-               background-image: url(/assets/images/01.jpg)
+               background-image: url(/assets/images/01.jpg);
             }
             .section2 {
-               background-image: url(/assets/images/02.jpg)
+               background-image: url(/assets/images/02.jpg);
             }
             .section3 {
-               background-image: url(/assets/images/03.jpg)
+               background-image: url(/assets/images/03.jpg);
             }
             .section4 {
-               background-image: url(/assets/images/04.jpg)
+               background-image: url(/assets/images/04.jpg);
             }
             .section5 {
-               background-image: url(/assets/images/05.jpg)
-            }
-            .section6 {
-               background-image: url(/assets/images/06.jpg)
+               background-image: url(/assets/images/05.jpg);
             }
             
           </style>
           <div class="section section1"><br>
             <div class="pad">
               <p>Oh hi1</p>
+              <div data-lorem="2p"></div>
             </div>
           </div>
           <div class="section section2"><br>
             <div class="pad">
               <p>Oh hi2</p>
+              <div data-lorem="2p"></div>
             </div>
           </div>
           <div class="section section3"><br>
             <div class="pad">
               <p>Oh hi3</p>
+              <div data-lorem="2p"></div>
             </div>
           </div>
           <div class="section section4"><br>
             <div class="pad">
               <p>Oh hi4</p>
+              <div data-lorem="2p"></div>
             </div>
           </div>
           <div class="section section5"><br>
             <div class="pad">
               <p>Oh hi5</p>
-            </div>
-          </div>
-          <div class="section section6"><br>
-            <div class="pad">
-              <p>Oh hi6</p>
+              <div data-lorem="2p"></div>
             </div>
           </div>
         </div>
@@ -118,6 +122,12 @@
           const secs = document.querySelectorAll('.section')
           
           loadjs.ready('style', function(){//start
+             if (!is.desktop()) { // mobile browser bar resize
+                const viewportHeight = $('.section').outerHeight()
+                console.log(viewportHeight)
+                $('.section').css({ 'min-height': viewportHeight })
+             }
+          
              console.log('setup zen')
              zenscroll.setup(920, 0)
              secs.forEach(function(sec) {

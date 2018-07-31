@@ -22,7 +22,6 @@ loadjs([
    , 'https://unpkg.com/js-offcanvas/dist/_js/js-offcanvas.pkgd.min.js'
    , 'https://unpkg.com/js-offcanvas/dist/_css/prefixed/js-offcanvas.css'
    , ROOT + '/assets/css/gridforms/gridforms.css'
-   , ROOT + '/assets/js/lorem.js'
    , 'https://cdn.jsdelivr.net/npm/zenscroll@4.0.2/zenscroll-min.js'
 
    , 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css'
