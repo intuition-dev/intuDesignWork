@@ -1,10 +1,10 @@
 .tile.is-ancestor
    .tile.is-4.is-vertical.is-parent
       .tile.is-child.box
-         p.title One
+         p.title One 1
          p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
       .tile.is-child.box
-         p.title Two
+         p.title Two 2
          p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
    .tile.is-parent
       .tile.is-child.box
@@ -13,6 +13,29 @@
          p Suspendisse varius ligula in molestie lacinia. Maecenas varius eget ligula a sagittis. Pellentesque interdum, nisl nec interdum maximus, augue diam porttitor lorem, et sollicitudin felis neque sit amet erat. Maecenas imperdiet felis nisi, fringilla luctus felis hendrerit sit amet. Aenean vitae gravida diam, finibus dignissim turpis. Sed eget varius ligula, at volutpat tortor.
          p Integer sollicitudin, tortor a mattis commodo, velit urna rhoncus erat, vitae congue lectus dolor consequat libero. Donec leo ligula, maximus et pellentesque sed, gravida a metus. Cras ullamcorper a nunc ac porta. Aliquam ut aliquet lacus, quis faucibus libero. Quisque non semper leo.
 
-
-p Oh hi1
+p Oh hi2
 div(data-lorem='2p')
+br
+
+.card
+   br
+   .card-image
+      figure.image.is-256x256
+        img.is-rounded(src='/assets/img/wolf.jpg')
+   .card-content
+      .media
+         .media-left
+            figure.image.is-48x48
+               img(src='https://bulma.io/images/placeholders/96x96.png')
+         .media-content
+            p.title.is-4 John Smith
+            p.subtitle.is-6 @johnsmith
+      .content
+         p.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Phasellus nec iaculis mauris.
+         a @bulmaio
+         a(href='#') #css
+         a(href='#') #responsive
+         br
+         time(datetime='2016-1-1') 11:09 PM - 1 Jan 2016
