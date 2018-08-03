@@ -22,9 +22,6 @@ block main
          background-size: 960px 540px;
          background-size: cover;
 
-         display: flex;
-         justify-content: center;
-         align-items: center;
       }
 
       .glow a {
@@ -71,6 +68,7 @@ block main
          console.log('setup zen')
          zenscroll.setup(920, 0)
          secs.forEach(function(sec) {
+            console.log(sec)
             SECobserver.observe(sec)
          })
       })

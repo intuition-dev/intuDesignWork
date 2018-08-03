@@ -46,9 +46,6 @@
              background-size: 960px 540px;
              background-size: cover;
           
-             display: flex;
-             justify-content: center;
-             align-items: center;
           }
           
           .glow a {
@@ -70,17 +67,27 @@
           <style>
             .section1 {
                background-image: url(/assets/images/01.jpg);
+            
+               display: flex;
+               justify-content: space-around;
+               align-items: flex-end;
             }
             
+            .darken {
+               background: rgba(0, 0, 0, 0.5);
+               padding: .6rem;
+            }
             
           </style>
           <div class="section section1"><br>
             <div class="pad has-text-white">
-              <p>Oh hi1</p>
-              <div data-lorem="2p"></div>
+              <div class="darken">
+                <p>Oh hi1</p>
+                <div data-lorem="1p"></div>
+              </div>
             </div>
           </div>
-          <div class="section"><br>
+          <div class="section section2"><br>
             <div class="pad">
               <div class="tile is-ancestor">
                 <div class="tile is-4 is-vertical is-parent">
@@ -102,33 +109,84 @@
                   </div>
                 </div>
               </div>
-              <p>Oh hi2</p>
-              <div data-lorem="2p"></div><br>
-              <div class="card"><br>
-                <div class="card-image">
-                  <figure class="image is-256x256"><img class="is-rounded" src="/assets/img/wolf.jpg"></figure>
-                </div>
-                <div class="card-content">
-                  <div class="media">
-                    <div class="media-left">
-                      <figure class="image is-48x48"><img src="https://bulma.io/images/placeholders/96x96.png"></figure>
+              <hr>
+              <div class="columns">
+                <div class="column">
+                  <div class="card"><br>
+                    <div class="card-image">
+                      <figure class="image is-256x256"><img class="is-rounded" src="/assets/img/wolf.jpg"></figure>
                     </div>
-                    <div class="media-content">
-                      <p class="title is-4">John Smith</p>
-                      <p class="subtitle is-6">@johnsmith</p>
+                    <div class="card-content">
+                      <div class="media">
+                        <div class="media-left">
+                          <figure class="i" data-vi="badge" data-vi-primary="#2E86C1"></figure>
+                        </div>
+                        <div class="media-content">
+                          <p class="title is-4">John Smith</p>
+                          <p class="subtitle is-6">@johnsmith</p>
+                        </div>
+                      </div>
+                      <div class="content">
+                        <div data-lorem="2p"></div><a>@bulmaio</a><a href="#">#css</a><a href="#">#responsive</a><br>
+                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                      </div>
                     </div>
                   </div>
-                  <div class="content">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Phasellus nec iaculis mauris.
-                    </p><a>@bulmaio</a><a href="#">#css</a><a href="#">#responsive</a><br>
-                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                </div>
+                <div class="column">
+                  <div class="card"><br>
+                    <div class="card-image">
+                      <figure class="image is-256x256"><img class="is-rounded" src="/assets/img/wolf.jpg"></figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="media">
+                        <div class="media-left">
+                          <figure class="i" data-vi="badge" data-vi-primary="#2E86C1"></figure>
+                        </div>
+                        <div class="media-content">
+                          <p class="title is-4">John Smith</p>
+                          <p class="subtitle is-6">@johnsmith</p>
+                        </div>
+                      </div>
+                      <div class="content">
+                        <div data-lorem="2p"></div><a>@bulmaio</a><a href="#">#css</a><a href="#">#responsive</a><br>
+                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card"><br>
+                    <div class="card-image">
+                      <figure class="image is-256x256"><img class="is-rounded" src="/assets/img/wolf.jpg"></figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="media">
+                        <div class="media-left">
+                          <figure class="i" data-vi="badge" data-vi-primary="#2E86C1"></figure>
+                        </div>
+                        <div class="media-content">
+                          <p class="title is-4">John Smith</p>
+                          <p class="subtitle is-6">@johnsmith</p>
+                        </div>
+                      </div>
+                      <div class="content">
+                        <div data-lorem="2p"></div><a>@bulmaio</a><a href="#">#css</a><a href="#">#responsive</a><br>
+                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <script>
+            loadjs.ready('cssJs', function () {
+               loadImage('/assets/images/01.jpg', function (img) {
+                  console.log(img)
+               })
+            })
+          </script>
         </div>
         <script>
           window.onbeforeunload = function () {
@@ -158,6 +216,7 @@
              console.log('setup zen')
              zenscroll.setup(920, 0)
              secs.forEach(function(sec) {
+                console.log(sec)
                 SECobserver.observe(sec)
              })
           })

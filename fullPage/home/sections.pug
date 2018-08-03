@@ -3,18 +3,34 @@ script(src= '/assets/js/lorem.js')
 style.
    .section1 {
       background-image: url(/assets/images/01.jpg);
+
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-end;
    }
 
+   .darken {
+      background: rgba(0, 0, 0, 0.5);
+      padding: .6rem;
+   }
 
 .section.section1
    br
    .pad.has-text-white
-      p Oh hi1
-      div(data-lorem='2p')
+      .darken
+         p Oh hi1
+         div(data-lorem='1p')
 
 
-.section
+.section.section2
    br
    .pad
       include two
 
+
+script.
+   loadjs.ready('cssJs', function () {
+      loadImage('/assets/images/01.jpg', function (img) {
+         console.log(img)
+      })
+   })
