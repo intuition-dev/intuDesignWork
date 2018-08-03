@@ -18,7 +18,7 @@
   <body>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
     <script src="/assets/js/setup.js"></script>
-    <nav class="columns is-mobile is-gapless glow" id="topMenu">
+    <nav class="delayShowing columns is-mobile is-gapless glow" id="topMenu">
       <div class="column left">
         <div class="pad has-text-weight-bold has-text-white">My Crop</div>
       </div>
@@ -70,18 +70,6 @@
           <style>
             .section1 {
                background-image: url(/assets/images/01.jpg);
-            }
-            .section2 {
-               background-image: url(/assets/images/02.jpg);
-            }
-            .section3 {
-               background-image: url(/assets/images/03.jpg);
-            }
-            .section4 {
-               background-image: url(/assets/images/04.jpg);
-            }
-            .section5 {
-               background-image: url(/assets/images/05.jpg);
             }
             
             
@@ -141,30 +129,6 @@
               </div>
             </div>
           </div>
-          <div class="section section2"><br>
-            <div class="pad has-text-white">
-              <p>Oh hi2</p>
-              <div data-lorem="2p"></div>
-            </div>
-          </div>
-          <div class="section section3"><br>
-            <div class="pad has-text-white">
-              <p>Oh hi3</p>
-              <div data-lorem="2p"></div>
-            </div>
-          </div>
-          <div class="section section4"><br>
-            <div class="pad has-text-white">
-              <p>Oh hi4</p>
-              <div data-lorem="2p"></div>
-            </div>
-          </div>
-          <div class="section section5"><br>
-            <div class="pad has-text-white">
-              <p>Oh hi5</p>
-              <div data-lorem="2p"></div>
-            </div>
-          </div>
         </div>
         <script>
           window.onbeforeunload = function () {
@@ -211,8 +175,8 @@
         <li><a href="/blog">Blog</a></li>
       </ul>
     </div>
-    <link href="/assets/css/bulma.css" onload="cssLoaded()" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-    <link href="/assets/css/main.css" rel="stylesheet">
+    <link href="/assets/css/bulma.css" rel="stylesheet">
+    <link href="/assets/css/main.css" rel="stylesheet" onload="cssLoaded()">
   </body>
 </html>
