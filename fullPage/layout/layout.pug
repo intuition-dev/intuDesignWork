@@ -9,10 +9,10 @@ html
       meta(charset='utf-8')
       meta(http-equiv='X-UA-Compatible', content='IE=edge')
       meta(name='viewport', content='width=device-width, initial-scale=1')
-      title Upper Bay Management
+      title Metabake
       link(rel='shortcut icon', href= ROOT + '/assets/favicon.png', type='image/x-icon')
       script(src='https://cdn.jsdelivr.net/npm/loadjs@3.5.4/dist/loadjs.js')
-      script(src='https://cdn.jsdelivr.net/npm/riot@3.10.3/riot.min.js')
+      script(src='https://cdn.jsdelivr.net/npm/riot@3.11.1/riot.min.js')
       style.
          .delayShowing { opacity: 0.01; }
 
@@ -59,3 +59,7 @@ html
       link(href= ROOT + '/assets/css/bulma.css', rel='stylesheet')
       link(href= ROOT + '/assets/css/main.css', rel='stylesheet', onload='cssLoaded()')
 
+      script.
+         function userSzSc() {
+            console.log('resize|scroll')
+         }
