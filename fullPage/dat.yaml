@@ -1,5 +1,4 @@
-basedir: .
+basedir: ./
 
 ROOT: ''
 
-pretty: true

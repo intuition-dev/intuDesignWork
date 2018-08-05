@@ -1,0 +1,3 @@
+
+Upper Bay Infrastructure Partners is an independently-owned private investment firm focused primarily on diversified North American infrastructure private equity in the middle market. Upper Bay targets an attractive risk-adjusted return through a balanced portfolio of mature, stable assets and growth-oriented infrastructure investments in partnership with leading operators and developers. Upper Bay seeks to make infrastructure investments primarily in the following sectors: Transportation, Power, Telecommunications and Midstream. Upper Bay was founded in 2018 and is headquartered in New York.
+

@@ -1,0 +1,57 @@
+
+style.
+   .section1 {
+      background-image: url(/assets/images/01.jpg);
+
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-end;
+   }
+   .section4 {
+      background-image: url(/assets/images/last.jpg);
+   }
+   .darken {
+      background: rgba(0, 0, 0, 0.5);
+      padding: .6rem;
+   }
+   .fGara {
+      font-family: 'EB Garamond' ;
+   }
+   .max4 {
+      max-width: 320px;
+   }
+
+#about
+.section.section1
+   .pad.has-text-white
+      .darken
+         include:marked about.md
+
+
+.section
+   #strategy
+   br
+   br
+   .pad
+      h3.fGara Investment Strategy
+      include:marked strategy.md
+      .columns
+         .column
+            include:marked strategy1.md
+         .column
+            include:marked strategy2.md
+
+   hr#team
+   .pad
+      include team/team
+
+
+.section.section4
+   br#contact
+   figure.image
+      img(src='/assets/images/logo.png')
+   .pad.has-text-white.max4
+      .darken
+         include:marked contact.md
+
+

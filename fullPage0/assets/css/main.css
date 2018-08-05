@@ -21,6 +21,21 @@ nav a:hover {
    text-shadow: 0 0 .5px white;
 }
 
+.center, .center-column, .top, .right, .bottom, .left{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.center-column {
+    flex-direction: column;
+}
+
+.top    { align-items:     flex-start; }
+.right  { justify-content: flex-end;   }
+.bottom { align-items:     flex-end;   }
+.left   { justify-content: flex-start; }
+
 #off-cbut {
    margin-top: 10px;
 }
@@ -31,7 +46,6 @@ nav a:hover {
    padding: .6rem;
 }
 
-/* cards */
 .flex {
    display: flex;
    flex-wrap: wrap;
@@ -46,31 +60,7 @@ nav a:hover {
    width: 300px;
 }
 
-/* menu */
-.truncate-ellipsis {
-   display: table;
-   table-layout: fixed;
-   max-width: 100%;
-   white-space: nowrap;
-}
-.truncate-ellipsis > * {
-   display: table-cell;
-   overflow: hidden;
-   text-overflow: ellipsis;
-}
-.center, .center-column, .top, .right, .bottom, .left{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-.center-column {
-    flex-direction: column;
-}
-.top    { align-items:     flex-start; }
-.right  { justify-content: flex-end;   }
-.bottom { align-items:     flex-end;   }
-.left   { justify-content: flex-start; }
-
+body, .smooth-container { scroll-behavior: smooth }
 
 /* custom ////////////////////////////////////////////////////////////// */
 

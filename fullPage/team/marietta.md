@@ -1,0 +1,3 @@
+Marietta Moshiashvili was a Managing Director and Group Head of Infrastructure at Nuveen in New York, leading a team of 12 investment professionals with over 100 years of combined investment experience. In her capacity she set investment strategy; oversaw investments, growth and composition of the portfolio, expansion in new geographies and subsectors with a goal of maximizing returns and diversification. She led the team who screened in excess of 500 infrastructure deals in transportation, midstream infrastructure, utilities, contracted conventional and renewable power and telecommunication sectors worth over 30 billion since 2010 and executed on 26 deals in the portfolio.
+
+[LinkedIn](https://www.linkedin.com/in/marietta-moshiashvili)

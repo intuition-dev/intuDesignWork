@@ -9,29 +9,23 @@ html
       meta(charset='utf-8')
       meta(http-equiv='X-UA-Compatible', content='IE=edge')
       meta(name='viewport', content='width=device-width, initial-scale=1')
-      title Upper Bay Management
+      title MetaBake.org
       link(rel='shortcut icon', href= ROOT + '/assets/favicon.png', type='image/x-icon')
       script(src='https://cdn.jsdelivr.net/npm/loadjs@3.5.4/dist/loadjs.js')
       script(src='https://cdn.jsdelivr.net/npm/riot@3.10.3/riot.min.js')
-      style.
+   style.
          .delayShowing { opacity: 0.01; }
-
-      //link(href= ROOT + '/assets/css/debug.css', rel='stylesheet')
-
    body
       script(src='https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js')
       script(src= ROOT + '/assets/js/setup.js')
 
       nav#topMenu.delayShowing.columns.is-mobile.is-gapless.glow
-            .column.left.truncate-ellipsis
-               .pad.has-text-weight-bold.has-text-white.is-size-4.fGara Upper Bay Infrastructure Partners
+            .column.left
+               .pad.has-text-weight-bold.has-text-white My Crop
 
             .column.right
-               a.is-hidden-touch.navbar-item(href= ROOT + '#about') About Us
-               a.is-hidden-touch.navbar-item(href= ROOT + '#strategy') Investment Strategy
-               a.is-hidden-touch.navbar-item(href= ROOT + '#team') Team
-               a.is-hidden-touch.navbar-item(href= ROOT + '#contact') Contact Us
-
+               a.is-hidden-mobile.navbar-item(href= ROOT + '/home') Home
+               a.is-hidden-mobile.navbar-item(href= ROOT + '/blog') Blog
                a#off-cbut.js-offcanvas-trigger( href='#off-canvas')
                   i.icon(data-vi='menu', data-vi-size='28', data-vi-primary="#FFF", data-vi-accent="#FFF", data-vi-prop="#FFF")
 
@@ -40,22 +34,15 @@ html
             block main
 
       #off-canvas.delayShowing
-         .pad &nbsp;
-         br
-         ul.menu-list#offItems.has-text-black
+         nav.has-background-black.has-text-white
+           .pad &nbsp;
+         ul.menu-list#offItems
             li
-               a(href=ROOT + '#about') About Us
+               a(href=ROOT + '/home') Home
             li
-               a(href= ROOT + '#strategy') Investment Strategy
-            li
-               a(href=ROOT + '#team') Team
-            li
-               a(href= ROOT + '#contact') Contact Us
+              a(href= ROOT + '/blog') Blog
 
 
       link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700', rel='stylesheet')
-      link(href='https://fonts.googleapis.com/css?family=EB+Garamond', rel='stylesheet')
-
       link(href= ROOT + '/assets/css/bulma.css', rel='stylesheet')
       link(href= ROOT + '/assets/css/main.css', rel='stylesheet', onload='cssLoaded()')
-
