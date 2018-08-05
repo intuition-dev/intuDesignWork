@@ -1,3 +1,0 @@
-Mario Maselli was a Managing Director and Deputy Head of Infrastructure at Nuveen in New York, with over eighteen years of experience in debt and equity underwriting, sales and trading, and investment management. He was responsible for originating transactions in the energy and infrastructure sectors as well as managing a number of infrastructure portfolio investments. Mr. Maselli previously worked on the Syndicate and Private Placements desk at Dresdner Kleinwort structuring both debt and equity transactions domestically and internationally. Prior to that, Mr. Maselli was employed at Momentum Equity Group, LLC a boutique technology merchant bank with a focus on energy and technology transactions.
-
-[LinkedIn](https://www.linkedin.com/in/mariomaselli/)

@@ -23,17 +23,17 @@ html
       script(src= ROOT + '/assets/js/setup.js')
 
       nav#topMenu.delayShowing.columns.is-mobile.is-gapless.glow
-            .column.left.truncate-ellipsis
-               .pad.has-text-weight-bold.has-text-white.is-size-4.fGara Upper Bay Infrastructure Partners
+         .column.left.truncate-ellipsis
+            .pad.has-text-weight-bold.has-text-white.is-size-4.fGara MetaBake.org
 
-            .column.right
-               a.is-hidden-touch.navbar-item(href= ROOT + '#about') About Us
-               a.is-hidden-touch.navbar-item(href= ROOT + '#strategy') Investment Strategy
-               a.is-hidden-touch.navbar-item(href= ROOT + '#team') Team
-               a.is-hidden-touch.navbar-item(href= ROOT + '#contact') Contact Us
+         .column.right
+            a.is-hidden-touch.navbar-item(href= ROOT + '#about') About Us
+            a.is-hidden-touch.navbar-item(href= ROOT + '#services') Services
+            a.is-hidden-touch.navbar-item(href= ROOT + '#team') Team
+            a.is-hidden-touch.navbar-item(href= ROOT + '#contact') Contact Us
 
-               a#off-cbut.js-offcanvas-trigger( href='#off-canvas')
-                  i.icon(data-vi='menu', data-vi-size='28', data-vi-primary="#FFF", data-vi-accent="#FFF", data-vi-prop="#FFF")
+            a#off-cbut.js-offcanvas-trigger( href='#off-canvas')
+               i.icon(data-vi='menu', data-vi-size='28', data-vi-primary="#FFF", data-vi-accent="#FFF", data-vi-prop="#FFF")
 
       .c-offcanvas-content-wrap
          #router
@@ -46,7 +46,7 @@ html
             li
                a(href=ROOT + '#about') About Us
             li
-               a(href= ROOT + '#strategy') Investment Strategy
+               a(href= ROOT + '#services') Services
             li
                a(href=ROOT + '#team') Team
             li
