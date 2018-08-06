@@ -6,7 +6,7 @@ a:focus { outline: none; }
    letter-spacing: .05em !important;
 }
 
-/* nav */
+/* nav */  .menu-list a {    text-decoration: none; }
 nav {
    margin-bottom: 0 !important;
    padding-right: .75rem;
