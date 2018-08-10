@@ -56,26 +56,27 @@ function setupUserSzSc() {
         _scSz = true
     })
 }//()
-setInterval(function () {
-    if (_scSz) {
-        _scSz = false
-        userSzSc()
-    }
-}, 150)
+
 
 // usage: ////////////////////////////////////////////////////////////////////
 loadjs.ready(['style'], function () {// 'show' page, ex: unhide
-    setupUserSzSc()
+   setupUserSzSc()
 
-    $('#off-canvas').offcanvas({
-        triggerButton: '#off-cbut' // btn to open offcanvas
-    })
-    let offcanvas = $('#off-canvas').data('offcanvas-component')
-    $('#offItems').click(function () {
-        console.log('#offItems')
-        offcanvas.close()
-    })
-    $('.delayShowing').removeClass('delayShowing') // show
+   $('#off-canvas').offcanvas({
+      triggerButton: '#off-cbut' // btn to open offcanvas
+   })
+   let offcanvas = $('#off-canvas').data('offcanvas-component')
+   $('#offItems').click(function () {
+      console.log('#offItems')
+      offcanvas.close()
+   })
+   $('.delayShowing').removeClass('delayShowing') // show
+   setInterval(function () {
+      if (_scSz) {
+            _scSz = false
+            userSzSc()
+      }
+   }, 150)
 
     console.log('style done', Date.now() - _start)
 })//ready
