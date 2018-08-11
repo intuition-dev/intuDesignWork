@@ -42,7 +42,6 @@ log.log('Hello, this is just a test')
 */
 
 // ////////////////////////////////////////////////////////////////////////////
-// add ie 11 fetch and promise as needed
 
 loadjs([
     '//cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/components/sidebar.min.js'
