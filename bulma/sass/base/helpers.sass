@@ -158,6 +158,17 @@ $displays: 'block' 'flex' 'inline' 'inline-block' 'inline-flex'
 .is-hidden
   display: none !important
 
+.is-sr-only
+  border: none !important
+  clip-path: inset(50%) !important
+  clip: rect(0, 0, 0, 0) !important
+  height: 0.01em !important
+  overflow: hidden !important
+  padding: 0 !important
+  position: absolute !important
+  white-space: nowrap !important
+  width: 0.01em !important
+
 +mobile
   .is-hidden-mobile
     display: none !important
