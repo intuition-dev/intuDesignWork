@@ -18,7 +18,8 @@ $(document).ready(function () {
 loadjs([
    'https://cdn.jsdelivr.net/npm/signals@1.0.0/dist/signals.min.js'
    ,
-   , 'https://unpkg.com/vivid-icons@1.0.9/dist/vivid-icons.min.js'
+   , 'https://use.fontawesome.com/releases/v5.2.0/js/solid.js'
+   , 'https://use.fontawesome.com/releases/v5.2.0/js/fontawesome.js'
    , 'https://cdn.jsdelivr.net/npm/js-offcanvas@1.2.6/dist/_js/js-offcanvas.pkgd.js'
    , 'https://cdn.jsdelivr.net/npm/js-offcanvas@1.2.6/dist/_css/prefixed/js-offcanvas.css'
    , ROOT + '/assets/css/gridforms/gridforms.css'
