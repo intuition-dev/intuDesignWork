@@ -68,11 +68,11 @@ loadjs.ready(['style'], function () {// 'show' page, ex: unhide
    })
    let offcanvas = $('#navOpen').data('offcanvas-component')
    $('#off-cbut').click(function () {
-      console.re.log('#offItems')
+      console.log('#offItems')
       offcanvas.open()
    })
    $('#navOpen').click(function () {
-      console.re.log('#navOpen')
+      console.log('#navOpen')
       offcanvas.close()
    })
    $('.delayShowing').removeClass('delayShowing') // show
