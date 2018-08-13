@@ -21,27 +21,26 @@ html
       script(src='https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js')
       script(src= ROOT + '/assets/js/setup.js')
 
-      nav#topMenu.delayShowing.columns.is-mobile.is-gapless.glow
-         .column.left.truncate-ellipsis
-            .pad.has-text-weight-bold.has-text-white.is-size-4.Dido MetaBake.org
-
-         .column.right
-            a.is-hidden-touch.navbar-item(href= ROOT + '#about') About Us
-            a.is-hidden-touch.navbar-item(href= ROOT + '#services') Services
-            a.is-hidden-touch.navbar-item(href= ROOT + '#team') Team
-            a.is-hidden-touch.navbar-item(href= ROOT + '#contact') Contact Us
-
-            a#off-cbut.js-offcanvas-trigger( href='#off-canvas')
-               i.icon(data-vi='menu', data-vi-size='28', data-vi-primary="#FFF", data-vi-accent="#FFF", data-vi-prop="#FFF")
-
       .c-offcanvas-content-wrap
+         #navBar.nav.flex.edge.delayShowing
+            .left
+               .pad.has-text-white.is-size-4 Metabake.org
+            .right
+               .pad
+                  a.is-hidden-touch.navItem(href= ROOT + '#about') About Us
+                  a.is-hidden-touch.navItem(href= ROOT + '#services') Services
+                  a.is-hidden-touch.navItem(href= ROOT + '#team') Team
+                  a.is-hidden-touch.navItem(href= ROOT + '#contact') Contact Us
+                  a#off-cbut.js-offcanvas-trigger( href='#navOpen')
+                     i#bars.bord.is-hidden-desktop.fas.fa-bars(style='color:white')
+
          #router
             block main
 
-      #off-canvas.delayShowing
-         .pad &nbsp;
-         br
-         ul.menu-list#offItems.has-text-black
+      #navOpen.delayShowing
+         .navOpenBrand.has-background-black.has-text-white
+           .pad.is-size-4 My App
+         ul.navOpen-list
             li
                a(href=ROOT + '#about') About Us
             li
