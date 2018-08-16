@@ -5,14 +5,40 @@ head
    link(href= 'exp.css', rel='stylesheet')
 
 body
-   header.navbar
+   header.navbar.white
       section.navbar-section.pad
          a.navbar-brand.mr-2(href='...') Spectre.css
          a.btn.btn-link(href='...') Docs
          a.btn.btn-link(href='...') GitHub
-      section.navbar-section.pad
+      section.navbar-section.pad.white
          a.btn.btn-link(href='...') Docs
          button.btn.btn-primary.input-group-btn Search
+         .white
+            svg.bord.feather(width='24', height='24', viewBox='0 0 24 24')
+               line(x1='3', y1='12', x2='21', y2='12')
+               line(x1='3', y1='6',  x2='21', y2='6')
+               line(x1='3', y1='18', x2='21', y2='18')
+
+   .pad
+      ul.nav
+         li.nav-item
+            a(href='#') Elements
+         li.nav-item.active
+            a(href='#') Layout
+            ul.nav
+               li.nav-item
+               a(href='#') Flexbox grid
+               li.nav-item
+               a(href='#') Responsive
+               li.nav-item
+               a(href='#') Navbar
+               li.nav-item
+               a(href='#') Empty states
+         li.nav-item
+            a(href='#') Components
+         li.nav-item
+            a(href='#') Utilities
+
    br
    .pad
       p oh hi
