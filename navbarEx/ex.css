@@ -1,0 +1,42 @@
+
+#topNav {
+   background: rgba(0, 0, 0, 0.5);
+}
+
+.cAccent {
+   color: #0F3557;
+}
+
+.mainBack {
+   background-attachment: scroll;
+   min-height: 45vh;
+
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.fBod {
+   font-family: 'Playfair Display', sans-serif;
+}
+.fLarge {
+   font-size: 3.5rem;
+}
+.trans {
+   margin-top: -2rem;
+   z-index: -1;
+   background-color: #F7F7F7;
+   min-height: 12vh;
+   min-width: 100vh;
+}
+.line:after {
+   background-color: #5F2167;
+   content: "";
+   display: block;
+   height: 4px;
+   margin-top: 20px;
+   width: 55px;
+}
+.copy {
+   line-height: 30px;
+}
+

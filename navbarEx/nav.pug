@@ -1,0 +1,81 @@
+
+link(href='/assets/SCSS/navbar.css', rel='stylesheet')
+link(href='/navbarEx/ex.css', rel='stylesheet')
+script(src='/assets/js/minifill.min.js')
+script(src='https://cdn.jsdelivr.net/npm/navbar.js@1.0.7/navbar.min.js')
+
+.flex.edge
+   .left
+      h2.pad.white.text-bold Metabake.org
+   .right
+      #navBarCont.pad
+         // on bar, clone element to navOpen is-hidden-touch
+         ul#navBar.hide-lg.nav(data-function='navbar')
+            li.navFirst
+               a(href='#') ABOUT
+               ul
+                  li
+                     a(href='#') About Us
+                  li
+                     a(href='#') Services
+                  li
+                     a(href='#') Corporate
+                  li
+                     a(href='#') Career
+
+            li
+               a(href='#') TEAM
+            li
+               a(href='#') BLOG
+            li
+               a(href='#') CONTACT US
+            li
+               a(href='#') CLIENT LOGIN
+
+         .show-lg(style='color:white')
+            svg.bord.feather(width='24', height='24', viewBox='0 0 24 24')
+               line(x1='3', y1='12', x2='21', y2='12')
+               line(x1='3', y1='6',  x2='21', y2='6')
+               line(x1='3', y1='18', x2='21', y2='18')
+
+// used to inject open nav on bars click
+#navOpen.show-lg
+
+
+// dev only:
+script(src='https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js')
+script.
+   $( document ).ready(function() {
+      console.log('nav')
+      new Navbar('.nav') // top
+
+      //toggle
+      $( "#navBarCont" ).click(function() { //side
+
+         if(isOpen)
+            navClose()
+         else
+            navOpen()
+      })
+   })//()
+
+   isOpen = false
+   function navOpen() {
+      let $clone= $("#navBar").clone(true)
+      $clone.removeClass('hide-lg')
+      $('#navOpen').html($clone)
+      new Navbar('#navOpen')
+      $('.navFirst').addClass('open')
+      $('.navFirst').addClass('open-position')
+
+      isOpen = true
+   }
+   function navClose() {
+      $('#navOpen').empty()
+      $('.navFirst').removeClass('open')
+      $('.navFirst').removeClass('open-position')
+      isOpen = false
+   }
+
+
+//
