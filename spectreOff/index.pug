@@ -6,11 +6,11 @@ head
 
 body
    header.navbar.white
-      section.navbar-section.pad
-         a.navbar-brand.mr-2(href='...') Spectre.css
+      section.navbar-section
+         a.navbar-brand.mr-2(href='...') Metabake.org
          a.btn.btn-link(href='...') Docs
          a.btn.btn-link(href='...') GitHub
-      section.navbar-section.pad.white
+      section.navbar-section.white
          a.btn.btn-link(href='...') Docs
          button.btn.btn-primary.input-group-btn Search
          .white
@@ -19,26 +19,29 @@ body
                line(x1='3', y1='6',  x2='21', y2='6')
                line(x1='3', y1='18', x2='21', y2='18')
 
-   .pad
-      ul.nav
-         li.nav-item
-            a(href='#') Elements
-         li.nav-item.active
-            a(href='#') Layout
-            ul.nav
-               li.nav-item
-               a(href='#') Flexbox grid
-               li.nav-item
-               a(href='#') Responsive
-               li.nav-item
-               a(href='#') Navbar
-               li.nav-item
-               a(href='#') Empty states
-         li.nav-item
-            a(href='#') Components
-         li.nav-item
-            a(href='#') Utilities
+
+   ul.nav.navBarOpen(style='border-style: solid')
+      li.navBarOpenHead
+         .navbar-brand Metabake.org
+
+      li.nav-item
+         a(href='#') Elements
+      li.nav-item
+         a(href='#') Layout
+         ul.nav
+            li.nav-item
+            a(href='#') Flexbox grid
+            li.nav-item
+            a(href='#') Responsive
+            li.nav-item
+            a(href='#') Navbar
+            li.nav-item
+            a(href='#') Empty states
+      li.nav-item.active
+         a(href='#') Components
+      li.nav-item
+         a(href='#') Utilities
 
    br
-   .pad
+   .p-2
       p oh hi

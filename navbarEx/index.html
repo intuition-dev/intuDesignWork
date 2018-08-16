@@ -1,101 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" >
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/>
-  <link href="/assets/css/spectre.css" rel="stylesheet"/>
-  <link href="/assets/css/main.css" rel="stylesheet"/>
+  <meta charset="UTF-8">
+  <title>Navbar.js</title>
+  
+  
+  <link rel='stylesheet' href='https://cdn.rawgit.com/thednp/navbar.js/master/dist/navbar.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
 </head>
+
 <body>
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet"/>
-  <style>
-    .mainBack {
-       background-image: url(img.jpg);
-    }
-    
-    
-  </style>
-  <div class="mainBack">
-    <link href="/assets/SCSS/navbar.css" rel="stylesheet"/>
-    <link href="/navbarEx/ex.css" rel="stylesheet"/>
-    <script src="/assets/js/minifill.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/navbar.js@1.0.7/navbar.min.js"></script>
-    <div class="flex edge">
-      <div class="left">
-        <h2 class="pad white text-bold">Metabake.org</h2>
-      </div>
-      <div class="right">
-        <div class="pad" id="navBarCont">
-          <!-- on bar, clone element to navOpen is-hidden-touch-->
-          <ul class="hide-lg nav" id="navBar" data-function="navbar">
-            <li class="navFirst"><a href="#">ABOUT</a>
-              <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Corporate</a></li>
-                <li><a href="#">Career</a></li>
-              </ul>
-            </li>
-            <li><a href="#">TEAM</a></li>
-            <li><a href="#">BLOG</a></li>
-            <li><a href="#">CONTACT US</a></li>
-            <li><a href="#">CLIENT LOGIN</a></li>
-          </ul>
-          <div class="bord show-lg" style="color:white">
-            <svg class="feather" width="24" height="24" viewBox="0 0 24 24">
-              <line x1="3" y1="12" x2="21" y2="12"></line>
-              <line x1="3" y1="6" x2="21" y2="6"></line>
-              <line x1="3" y1="18" x2="21" y2="18"></line>
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- used to inject open nav on bars click-->
-    <div class="show-lg" id="navOpen"></div>
-    <!-- dev only:-->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
-    <script>
-      $( document ).ready(function() {
-         console.log('nav')
-         new Navbar('.nav') // top
-      
-         //toggle
-         $( "#navBarCont" ).click(function() { //side
-      
-            if(isOpen)
-               navClose()
-            else
-               navOpen()
-         })
-      })//()
-      
-      isOpen = false
-      function navOpen() {
-         let $clone= $("#navBar").clone(true)
-         $clone.removeClass('hide-lg')
-         $('#navOpen').html($clone)
-         new Navbar('#navOpen')
-         $('.navFirst').addClass('open')
-         $('.navFirst').addClass('open-position')
-      
-         isOpen = true
-      }
-      function navClose() {
-         $('#navOpen').empty()
-         $('.navFirst').removeClass('open')
-         $('.navFirst').removeClass('open-position')
-         isOpen = false
-      }
-      
-      
-    </script>
-    <!----><br/>
-    <H1 class="flex white fLarge fBod">Metabake Org</H1>
-  </div>
-  <div class="trans"></div><br/>
-  <div class="pad">
-    <H1 class="cAccent line fBod">About Us</H1>
-    <h5 class="copy">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</h5>
-  </div>
-  <!--link(href= ROOT + '/assets/css/debug.css', rel='stylesheet')-->
+
+  <ul class="nav" data-function="navbar">
+  <li><a href="#">Item 1</a></li>
+  <li><a href="#">Item 2</a></li>
+  <li>
+    <a href="#">Item 3</a>
+    <ul>
+      <li><a href="#">Item 3/1</a></li>
+      <li><a href="#">Item 3/2</a></li>
+    </ul>
+  </li>
+</ul>
+  <script src='https://cdn.rawgit.com/thednp/navbar.js/master/dist/navbar.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
 </body>
+
+</html>

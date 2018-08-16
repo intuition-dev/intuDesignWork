@@ -1,14 +1,32 @@
 
-.pad {
-   padding: .6rem;
-}
 
 .white, .white * { color: white !important; }
 
 /* nav */
-header {
+header, bblack {
    background-color: black;
+   padding-left: 15px;
+   height: 50px;
+   line-height: 50px;
+
 }
+.navBarOpen {
+   width: 200px;
+}
+.navBarOpenHead {
+   background-color: black;
+   color: white !important;
+   margin: 0;
+   height: 50px;
+   padding-left: 15px;
+   line-height: 50px;
+
+}
+.nav-item a {
+   padding-left: 15px !important;
+}
+
+
 .bord { /* bars */
    outline-style: solid;
    outline-offset: 7px;
@@ -16,7 +34,6 @@ header {
    margin-right: 15px;
    margin-left: 25px ;
 }
-
 
 /* icons */
 .feather {

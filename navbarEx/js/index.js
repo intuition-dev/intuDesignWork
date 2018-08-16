@@ -1,0 +1,1 @@
+var menu = new Navbar('.nav');
