@@ -2,7 +2,8 @@
 
 .white, .white * { color: white !important; }
 
-/* nav */
+/*
+ Nav */
 header, bblack {
    background-color: black;
    padding-left: 15px;
@@ -25,17 +26,17 @@ header, bblack {
 .nav-item a {
    padding-left: 15px !important;
 }
+/*
+End Nav */
 
 
-.bord { /* bars */
+.bord { /* icons & bars */
    outline-style: solid;
    outline-offset: 7px;
    outline-width: thin;
    margin-right: 15px;
    margin-left: 25px ;
 }
-
-/* icons */
 .feather {
    width: 24px;
    height: 24px;
@@ -45,7 +46,5 @@ header, bblack {
    stroke-linejoin: round;
    fill: none;
  }
-
-
 
 /* */

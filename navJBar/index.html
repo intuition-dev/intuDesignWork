@@ -17,16 +17,34 @@
     <link href="ex.css" rel="stylesheet"/>
     <script src="/minifill.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/navbar.js@1.0.7/navbar.min.js"></script>
-    <ul class="navJBar" data-function="navbar">
-      <li><a href="#">Item 3</a>
-        <ul>
-          <li><a href="#">Item 3/1</a></li>
-          <li><a href="#">Item 3/2</a></li>
+    <header class="navbar white">
+      <section class="navbar-section"><a class="navbar-brand mr-2" href="...">Metabake.org</a></section>
+      <section class="navbar-section">
+        <ul class="navJBar" data-function="navbar">
+          <li><a href="#">Item 3</a>
+            <ul>
+              <li><a href="#">Item 3/1</a></li>
+              <li><a href="#">Item 3/2</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Item 1</a></li>
+          <li><a href="#">Item 2</a></li>
         </ul>
-      </li>
-      <li><a href="#">Item 1</a></li>
-      <li><a href="#">Item 2</a></li>
-    </ul>
-    <script>new Navbar('.navJBar')</script>
-  </div>
+        <div class="white">
+          <svg class="bord feather" viewBox="0 0 24 24">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </div>
+      </section>
+    </header>
+    <script>
+      new Navbar('.navJBar')
+      
+    </script>
+    <!--link(href= 'debug.css', rel='stylesheet')--><br/>
+    <p>oh hi 1</p>
+  </div><br/>
+  <p>oh hi 2</p>
 </body>

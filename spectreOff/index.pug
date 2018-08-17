@@ -2,9 +2,10 @@ head
    meta(name='viewport', content='width=device-width, initial-scale=1')
    //script(src= ROOT + '/assets/js/setup.js')
    link(href= 'spectreOff.css', rel='stylesheet')
-   link(href= 'exp.css', rel='stylesheet')
+   link(href= 'ex.css', rel='stylesheet')
 
 body
+   //top
    header.navbar.white
       section.navbar-section
          a.navbar-brand.mr-2(href='...') Metabake.org
@@ -14,12 +15,12 @@ body
          a.btn.btn-link(href='...') Docs
          button.btn.btn-primary.input-group-btn Search
          .white
-            svg.bord.feather(width='24', height='24', viewBox='0 0 24 24')
+            svg.bord.feather(viewBox='0 0 24 24')
                line(x1='3', y1='12', x2='21', y2='12')
                line(x1='3', y1='6',  x2='21', y2='6')
                line(x1='3', y1='18', x2='21', y2='18')
 
-
+   //side
    ul.nav.navBarOpen(style='border-style: solid')
       li.navBarOpenHead
          .navbar-brand Metabake.org

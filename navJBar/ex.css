@@ -1,18 +1,43 @@
 
-/* nav */
 
-ul.navJBar { margin:0 }
-ul { padding:0 }
+.white, .white * { color: white !important; }
+
+
+/*
+   Nav:
+   ul.navJBar { margin:0 }
+*/
+
+/* level 1 */
+.navJBar li > a {
+   color: white;
+   text-decoration: none;
+   background: transparent;
+   font-size: 16px;
+}
 ul.navJBar li {
-  background:green;
-  list-style-type:none;
+   list-style-type: none;
 }
 ul.navJBar a:hover {
-  background:#030;
-  color:#4aa872;
+   background: #0F3557;
+   color: white;
 }
+/* level 2 */
+.navJBar li li a {
+   color: #888;
+   background: white;
+   font-size: 16px;
+}
+.navJBar li li a:hover {
+   background: #0F3557;
+   color: white;
+}
+ul {
+   padding: 0;
+}
+/* End Nav
+*/
 
-/* end nav */
 
 .mainBack {
    background-attachment: scroll;
@@ -22,15 +47,14 @@ ul.navJBar a:hover {
    background-repeat: no-repeat;
    background-size: cover;
 }
-.bord { /* bars */
+
+.bord { /* icons & bars */
    outline-style: solid;
    outline-offset: 7px;
    outline-width: thin;
    margin-right: 15px;
    margin-left: 25px ;
 }
-
-/* icons */
 .feather {
    width: 24px;
    height: 24px;
