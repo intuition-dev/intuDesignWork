@@ -15,7 +15,7 @@
   <div class="mainBack">
     <link href="navJBar.css" rel="stylesheet"/>
     <link href="ex.css" rel="stylesheet"/>
-    <script src="/minifill.min.js"></script>
+    <script src="/mini.min.js"></script>
     <script src="navJBar.js"></script>
     <header class="flex edge">
       <div class="left white">
@@ -24,7 +24,7 @@
         </div>
       </div>
       <div class="right white">
-        <ul class="hide-lg navJBar" data-function="navJBar">
+        <ul class="hide-lg navJBar" id="navJBar" data-function="navJBar">
           <li class="navFirst"><a href="#">ABOUT</a>
             <ul>
               <li><a href="#">About Us</a></li>
@@ -37,7 +37,7 @@
           <li><a href="#">CONTACT US</a></li>
           <li><a href="#">CLIENT LOGIN</a></li>
         </ul>
-        <div class="white">
+        <div class="white show-lg" id="navBarCont">
           <svg class="bord feather" viewBox="0 0 24 24">
             <line x1="3" y1="12" x2="21" y2="12"></line>
             <line x1="3" y1="6" x2="21" y2="6"></line>
@@ -46,8 +46,38 @@
         </div>
       </div>
     </header>
+    <div id="navOpen"></div>
     <script>
-      new Navbar('.navJBar')
+      $( document ).ready(function() { // dev only
+         console.log('navJBar')
+         new Navbar('.navJBar') // top
+      
+         //toggle
+         $( "#navBarCont" ).click(function() { //side
+            console.log(isOpen)
+            if(isOpen)
+               navClose()
+            else
+               navOpen()
+         })
+      })//ready
+      
+      isOpen = false
+      function navOpen() {
+         let $clone= $("#navJBar").clone(true)
+         $clone.removeClass('hide-lg')
+         $('#navOpen').html($clone)
+         new Navbar('#navOpen')
+         $('.navFirst').addClass('open')
+         $('.navFirst').addClass('open-position')
+         isOpen = true
+      }
+      function navClose() {
+         $('#navOpen').empty()
+         $('.navFirst').removeClass('open')
+         $('.navFirst').removeClass('open-position')
+         isOpen = false
+      }
       
     </script>
     <!--link(href= 'debug.css', rel='stylesheet')--><br/>
