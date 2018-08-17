@@ -8,9 +8,6 @@
    background-size: cover;
 }
 
-#navJBar {
-   padding-right: 15px;
-}
 /* main off */
 .white, .white * { color: white !important; }
 
@@ -37,6 +34,14 @@
 
 /*
  Nav */
+ #navJBar {
+   padding-right: 15px;
+}
+#navOpen {
+   background-color: #0F3557;
+   max-width: calc(100vw - 40px);
+   margin-left: 20px;
+}
 .flex, .center, .top, .right, .bottom, .left{
    display: flex;
    justify-content: center;
@@ -57,26 +62,10 @@
    width: 250px;
 }
 /* off
-#navBarOpenHead, .navBarOpenHead {
-   background-color: black;
-   color: white !important;
-   margin: 0;
-   height: 60px;
-   padding-left: 15px;
-   line-height: 60px !important;
-}
 #navBarHead {
    margin-top: 5px;
 }
-header, bblack {
-   background-color: black;
-   padding-left: 15px;
-   height: 60px;
-   line-height: 60px;
-}
-.nav-item a {
-   padding-left: 15px !important;
-}
+
 */
 /* bar */
 
