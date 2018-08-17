@@ -25,7 +25,7 @@ a {
   color: $link-color;
   outline: none;
   text-decoration: none;
-
+/*
   &:focus {
     @include control-shadow();
   }
@@ -37,7 +37,7 @@ a {
     color: $link-color-dark;
     text-decoration: underline;
   }
-
+*/
   &:visited {
     color: $link-color-light;
   }
