@@ -1,9 +1,8 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <link href="spectreBar.css" rel="stylesheet"/>
-  <link href="navbar.css" rel="stylesheet"/>
-  <link href="ex.css" rel="stylesheet"/>
+  <link href="/spectreBar/spectreBar.css" rel="stylesheet"/>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
 </head>
 <body>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/>
@@ -13,17 +12,21 @@
        background-image: url(img.jpg);
     }
   </style>
-  <div class="mainBack"></div>
-  <ul class="nav" data-function="navbar">
-    <li><a href="#">Item 1</a></li>
-    <li><a href="#">Item 2</a></li>
-    <li><a href="#">Item 3</a>
-      <ul>
-        <li><a href="#">Item 3/1</a></li>
-        <li><a href="#">Item 3/2</a></li>
-      </ul>
-    </li>
-  </ul>
-  <script src="https://cdn.rawgit.com/thednp/navbar.js/master/dist/navbar.min.js"></script>
-  <script>new Navbar('.nav');</script>
+  <div class="mainBack">
+    <link href="navJBar.css" rel="stylesheet"/>
+    <link href="ex.css" rel="stylesheet"/>
+    <script src="/minifill.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/navbar.js@1.0.7/navbar.min.js"></script>
+    <ul class="navJBar" data-function="navbar">
+      <li><a href="#">Item 3</a>
+        <ul>
+          <li><a href="#">Item 3/1</a></li>
+          <li><a href="#">Item 3/2</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Item 1</a></li>
+      <li><a href="#">Item 2</a></li>
+    </ul>
+    <script>new Navbar('.navJBar')</script>
+  </div>
 </body>
