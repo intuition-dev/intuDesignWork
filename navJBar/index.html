@@ -16,11 +16,14 @@
     <link href="navJBar.css" rel="stylesheet"/>
     <link href="ex.css" rel="stylesheet"/>
     <script src="/minifill.min.js"></script>
-    <script src="navbar.js"></script>
-    <header class="navbar white">
-      <section class="navbar-section"><a class="navbar-brand mr-2 padL" href="...">
-          <h2>Metabake.org</h2></a></section>
-      <section class="navbar-section">
+    <script src="navJBar.js"></script>
+    <header class="flex edge">
+      <div class="left white">
+        <div class="navbar-brand mr-2 padL">
+          <h1>Metabake.org</h1>
+        </div>
+      </div>
+      <div class="right white">
         <ul class="hide-lg navJBar" data-function="navJBar">
           <li class="navFirst"><a href="#">ABOUT</a>
             <ul>
@@ -41,14 +44,14 @@
             <line x1="3" y1="18" x2="21" y2="18"></line>
           </svg>
         </div>
-      </section>
+      </div>
     </header>
     <script>
       new Navbar('.navJBar')
       
     </script>
     <!--link(href= 'debug.css', rel='stylesheet')--><br/>
-    <p>oh hi 1</p>
+    <div class="padL white">oh hi 1</div>
   </div><br/>
-  <p>oh hi 2</p>
+  <div class="padL">oh hi 2</div>
 </body>

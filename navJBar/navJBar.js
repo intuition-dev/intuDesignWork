@@ -1,7 +1,4 @@
-/* navbar.js - Minimal navigation script
- * by dnp_theme
- * Licensed under MIT-License
- */
+
 
 (function (root,factory) {
   if (typeof define === 'function' && define.amd) {
