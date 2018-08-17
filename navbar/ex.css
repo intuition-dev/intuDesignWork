@@ -1,3 +1,6 @@
+
+/* nav */
+
 ul.nav { margin:0 }
 ul { padding:0 }
 ul.nav li {
@@ -8,3 +11,33 @@ ul.nav a:hover {
   background:#030;
   color:#4aa872;
 }
+
+/* end nav */
+
+.mainBack {
+   background-attachment: scroll;
+   min-height: 45vh;
+
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.bord { /* bars */
+   outline-style: solid;
+   outline-offset: 7px;
+   outline-width: thin;
+   margin-right: 15px;
+   margin-left: 25px ;
+}
+
+/* icons */
+.feather {
+   width: 24px;
+   height: 24px;
+   stroke: currentColor;
+   stroke-width: 2;
+   stroke-linecap: round;
+   stroke-linejoin: round;
+   fill: none;
+ }
+

@@ -7,14 +7,7 @@
    color: #0F3557;
 }
 
-.mainBack {
-   background-attachment: scroll;
-   min-height: 45vh;
 
-   background-position: center center;
-   background-repeat: no-repeat;
-   background-size: cover;
-}
 .fBod {
    font-family: 'Playfair Display', sans-serif;
 }
