@@ -1,13 +1,13 @@
 
 /* nav */
 
-ul.nav { margin:0 }
+ul.navJBar { margin:0 }
 ul { padding:0 }
-ul.nav li {
+ul.navJBar li {
   background:green;
   list-style-type:none;
 }
-ul.nav a:hover {
+ul.navJBar a:hover {
   background:#030;
   color:#4aa872;
 }

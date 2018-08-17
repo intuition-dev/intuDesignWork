@@ -137,7 +137,7 @@ template { display: none; }
 
 html { box-sizing: border-box; font-size: 20px; line-height: 1.5; -webkit-tap-highlight-color: transparent; }
 
-body { background: #fff; color: #50596c; font-family: "Open Sans", sans-serif, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto; font-size: 0.8rem; overflow-x: hidden; text-rendering: optimizeLegibility; }
+body { background: #fff; color: #50596c; font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 0.8rem; overflow-x: hidden; text-rendering: optimizeLegibility; }
 
 a { color: #5755d9; outline: none; text-decoration: none; }
 

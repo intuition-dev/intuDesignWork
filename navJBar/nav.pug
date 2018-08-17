@@ -1,0 +1,23 @@
+
+link(href= 'navbar.css', rel='stylesheet')
+link(href= 'ex.css',  rel='stylesheet')
+
+script(src='/minifill.min.js')
+script(src='https://cdn.jsdelivr.net/npm/navbar.js@1.0.7/navbar.min.js')
+
+ul.navJBar(data-function='navbar')
+   li
+      a(href='#') Item 3
+      ul
+         li
+            a(href='#') Item 3/1
+         li
+            a(href='#') Item 3/2
+   li
+      a(href='#') Item 1
+   li
+      a(href='#') Item 2
+
+
+script.
+   new Navbar('.navJBar');
