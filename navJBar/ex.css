@@ -6,11 +6,48 @@
    padding-left: 15px;
 }
 
+.mainBack {
+   background-attachment: scroll;
+   min-height: 45vh;
+
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.bord { /* icons & bars */
+   outline-style: solid;
+   outline-offset: 7px;
+   outline-width: thin;
+   margin-right: 25px;
+   margin-left: 25px ;
+}
+.feather {
+   width: 24px;
+   height: 24px;
+   stroke: currentColor;
+   stroke-width: 2;
+   stroke-linecap: round;
+   stroke-linejoin: round;
+   fill: none;
+ }
 
 /*
-   Nav:
-   ul.navJBar { margin:0 }
-*/
+ Nav
+   ul.navJBar { margin:0 }*/
+ .flex, {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-content: flex-start;
+}
+.top    { align-items:     flex-start; }
+.right  { justify-content: flex-end;   }
+.bottom { align-items:     flex-end;   }
+.left   { justify-content: flex-start; }
+/* override */
+.edge  { justify-content: space-between; }
+
 /* level 1 */
 .navJBar li > a {
    color: white;
@@ -40,31 +77,3 @@ ul {
 }
 /* End Nav
 */
-
-
-.mainBack {
-   background-attachment: scroll;
-   min-height: 45vh;
-
-   background-position: center center;
-   background-repeat: no-repeat;
-   background-size: cover;
-}
-
-.bord { /* icons & bars */
-   outline-style: solid;
-   outline-offset: 7px;
-   outline-width: thin;
-   margin-right: 25px;
-   margin-left: 25px ;
-}
-.feather {
-   width: 24px;
-   height: 24px;
-   stroke: currentColor;
-   stroke-width: 2;
-   stroke-linecap: round;
-   stroke-linejoin: round;
-   fill: none;
- }
-

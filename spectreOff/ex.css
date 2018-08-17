@@ -1,14 +1,43 @@
 
-
 .white, .white * { color: white !important; }
 
 .padL {
    padding-left: 15px;
 }
 
+.bord { /* icons & bars */
+   outline-style: solid;
+   outline-offset: 7px;
+   outline-width: thin;
+   margin-right: 25px;
+   margin-left: 25px ;
+}
+.feather {
+   width: 24px;
+   height: 24px;
+   stroke: currentColor;
+   stroke-width: 2;
+   stroke-linecap: round;
+   stroke-linejoin: round;
+   fill: none;
+ }
+
 /*
  Nav */
-header, bblack {
+ .flex, {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-content: flex-start;
+}
+.top    { align-items:     flex-start; }
+.right  { justify-content: flex-end;   }
+.bottom { align-items:     flex-end;   }
+.left   { justify-content: flex-start; }
+/* override */
+.edge  { justify-content: space-between; }
+
+ header, bblack {
    background-color: black;
    padding-left: 15px;
    height: 50px;
@@ -34,21 +63,3 @@ header, bblack {
 End Nav */
 
 
-.bord { /* icons & bars */
-   outline-style: solid;
-   outline-offset: 7px;
-   outline-width: thin;
-   margin-right: 25px;
-   margin-left: 25px ;
-}
-.feather {
-   width: 24px;
-   height: 24px;
-   stroke: currentColor;
-   stroke-width: 2;
-   stroke-linecap: round;
-   stroke-linejoin: round;
-   fill: none;
- }
-
-/* */

@@ -13,7 +13,7 @@
   position: absolute;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   .navJBar li > ul {
     width: auto;
   }
@@ -75,7 +75,7 @@
   opacity: 1;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   .navJBar li.open-position > ul {
     position: static;
   }
@@ -103,7 +103,7 @@
   float: left;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   .navJBar > li > a {
     float: none;
   }
@@ -114,7 +114,7 @@
   float: left;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   .navJBar > li {
     float: none;
   }

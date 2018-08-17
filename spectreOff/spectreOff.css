@@ -457,16 +457,6 @@ video.video-responsive::before { content: none; }
   .hide-xs { display: none !important; }
   .show-xs { display: block !important; } }
 
-.navbar { align-items: stretch; display: flex; flex-wrap: wrap; justify-content: space-between; }
-
-.navbar .navbar-section { align-items: center; display: flex; flex: 1 0 0; }
-
-.navbar .navbar-section:not(:first-child):last-child { justify-content: flex-end; }
-
-.navbar .navbar-center { align-items: center; display: flex; flex: 0 0 auto; }
-
-.navbar .navbar-brand { font-size: 0.9rem; font-weight: 500; text-decoration: none; }
-
 .avatar { font-size: 0.8rem; height: 1.6rem; width: 1.6rem; background: #5755d9; border-radius: 50%; color: rgba(255, 255, 255, 0.85); display: inline-block; font-weight: 300; line-height: 1.25; margin: 0; position: relative; vertical-align: middle; }
 
 .avatar.avatar-xs { font-size: 0.4rem; height: 0.8rem; width: 0.8rem; }
