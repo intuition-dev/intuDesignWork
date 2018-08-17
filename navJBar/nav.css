@@ -39,8 +39,9 @@
 }
 #navOpen {
    background-color: #0F3557;
-   max-width: calc(100vw - 40px);
+   width: calc(100vw - 40px);
    margin-left: 20px;
+   position: absolute;
 }
 .flex, .center, .top, .right, .bottom, .left{
    display: flex;
