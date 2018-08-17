@@ -6,35 +6,17 @@ head
 
 body
    //top
-   .flex.edge
+   header.flex.edge
       .left.white
-         a.navbar-brand.mr-2(href='...')
-            h2 Metabake.org
-         a.btn.btn-link(href='...') Docs
-         a.btn.btn-link(href='...') GitHub
+         .navbar-brand.mr-2
+            h2#navBarHead Metabake.org
 
       .right.white
-         li.white
-            a(href='#') ABOUT
-            ul
-               li
-                  a(href='#') About Us
-               li
-                  a(href='#') Services
-               li
-                  a(href='#') Career
-
-         li
-            a(href='#') TEAM
-         li
-            a(href='#') BLOG
-         li
-            a(href='#') CONTACT US
-         li
-            a(href='#') CLIENT LOGIN
-
-         a.btn.btn-link(href='...') Docs
-         button.btn.btn-primary.input-group-btn Search
+         a.btn.btn-link(href='#') ABOUT
+         a.btn.btn-link(href='#') TEAM
+         a.btn.btn-link(href='#') BLOG
+         a.btn.btn-link(href='#') CONTACT US
+         a.btn.btn-link(href='#') CLIENT LOGIN
          .white
             svg.bord.feather(viewBox='0 0 24 24')
                line(x1='3', y1='12', x2='21', y2='12')
@@ -43,8 +25,8 @@ body
 
    //side
    ul.nav.navBarOpen(style='border-style: solid')
-      li.navBarOpenHead
-         .navbar-brand Metabake.org
+
+      h3#navBarOpenHead.navBarOpenHea.navbar-brand Metabake.org
 
       li.nav-item
          a(href='#') Elements

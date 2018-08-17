@@ -177,6 +177,7 @@ blockquote { border-left: 0.1rem solid #e7e9ed; margin-left: 0; padding: 0.4rem 
 
 blockquote p:last-child { margin-bottom: 0; }
 
+/* Lists */
 ul, ol { margin: 0.8rem 0 0.8rem 0.8rem; padding: 0; }
 
 ul ul, ul ol, ol ul, ol ol { margin: 0.8rem 0 0.8rem 0.8rem; }

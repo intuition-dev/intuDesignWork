@@ -24,10 +24,12 @@
 
 /*
  Nav */
- .flex, {
+.flex, .center, .top, .right, .bottom, .left{
    display: flex;
-   flex-wrap: wrap;
    justify-content: center;
+   align-items: center;
+}
+.flex {
    align-content: flex-start;
 }
 .top    { align-items:     flex-start; }
@@ -35,26 +37,29 @@
 .bottom { align-items:     flex-end;   }
 .left   { justify-content: flex-start; }
 /* override */
-.edge  { justify-content: space-between; }
-
- header, bblack {
-   background-color: black;
-   padding-left: 15px;
-   height: 50px;
-   line-height: 50px;
-
+.edge  { justify-content: space-between;
+   flex-wrap: nowrap;
 }
 .navBarOpen {
-   width: 200px;
+   width: 250px;
 }
-.navBarOpenHead {
+/* off */
+#navBarOpenHead, .navBarOpenHead {
    background-color: black;
    color: white !important;
    margin: 0;
-   height: 50px;
+   height: 60px;
    padding-left: 15px;
-   line-height: 50px;
-
+   line-height: 60px !important;
+}
+#navBarHead {
+   margin-top: 5px;
+}
+header, bblack {
+   background-color: black;
+   padding-left: 15px;
+   height: 60px;
+   line-height: 60px;
 }
 .nav-item a {
    padding-left: 15px !important;

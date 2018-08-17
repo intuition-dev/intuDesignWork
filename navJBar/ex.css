@@ -1,11 +1,4 @@
 
-
-.white, .white * { color: white !important; }
-
-.padL {
-   padding-left: 15px;
-}
-
 .mainBack {
    background-attachment: scroll;
    min-height: 45vh;
@@ -13,6 +6,13 @@
    background-position: center center;
    background-repeat: no-repeat;
    background-size: cover;
+}
+
+
+.white, .white * { color: white !important; }
+
+.padL {
+   padding-left: 15px;
 }
 
 .bord { /* icons & bars */
@@ -33,12 +33,13 @@
  }
 
 /*
- Nav
-   ul.navJBar { margin:0 }*/
- .flex, {
+ Nav */
+.flex, .center, .top, .right, .bottom, .left{
    display: flex;
-   flex-wrap: wrap;
    justify-content: center;
+   align-items: center;
+}
+.flex {
    align-content: flex-start;
 }
 .top    { align-items:     flex-start; }
@@ -46,7 +47,35 @@
 .bottom { align-items:     flex-end;   }
 .left   { justify-content: flex-start; }
 /* override */
-.edge  { justify-content: space-between; }
+.edge  { justify-content: space-between;
+   flex-wrap: nowrap;
+}
+.navBarOpen {
+   width: 250px;
+}
+/* off
+#navBarOpenHead, .navBarOpenHead {
+   background-color: black;
+   color: white !important;
+   margin: 0;
+   height: 60px;
+   padding-left: 15px;
+   line-height: 60px !important;
+}
+#navBarHead {
+   margin-top: 5px;
+}
+header, bblack {
+   background-color: black;
+   padding-left: 15px;
+   height: 60px;
+   line-height: 60px;
+}
+.nav-item a {
+   padding-left: 15px !important;
+}
+*/
+/* bar */
 
 /* level 1 */
 .navJBar li > a {
