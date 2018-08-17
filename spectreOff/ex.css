@@ -2,6 +2,10 @@
 
 .white, .white * { color: white !important; }
 
+.padL {
+   padding-left: 15px;
+}
+
 /*
  Nav */
 header, bblack {
@@ -34,7 +38,7 @@ End Nav */
    outline-style: solid;
    outline-offset: 7px;
    outline-width: thin;
-   margin-right: 15px;
+   margin-right: 25px;
    margin-left: 25px ;
 }
 .feather {

@@ -2,18 +2,21 @@
 
 .white, .white * { color: white !important; }
 
+.padL {
+   padding-left: 15px;
+}
+
 
 /*
    Nav:
    ul.navJBar { margin:0 }
 */
-
 /* level 1 */
 .navJBar li > a {
    color: white;
    text-decoration: none;
    background: transparent;
-   font-size: 16px;
+   font-size: 17px;
 }
 ul.navJBar li {
    list-style-type: none;
@@ -24,7 +27,7 @@ ul.navJBar a:hover {
 }
 /* level 2 */
 .navJBar li li a {
-   color: #888;
+   color: black !important;
    background: white;
    font-size: 16px;
 }
@@ -52,7 +55,7 @@ ul {
    outline-style: solid;
    outline-offset: 7px;
    outline-width: thin;
-   margin-right: 15px;
+   margin-right: 25px;
    margin-left: 25px ;
 }
 .feather {

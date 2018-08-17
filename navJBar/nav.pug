@@ -3,14 +3,16 @@ link(href= 'navJBar.css', rel='stylesheet')
 link(href= 'ex.css',  rel='stylesheet')
 
 script(src='/minifill.min.js')
-script(src='https://cdn.jsdelivr.net/npm/navbar.js@1.0.7/navbar.min.js')
+script(src='navbar.js')
 
 
 header.navbar.white
    section.navbar-section
-      a.navbar-brand.mr-2(href='...') Metabake.org
+      a.navbar-brand.mr-2.padL(href='...')
+         h2 Metabake.org
    section.navbar-section
-      ul.navJBar(data-function='navbar')
+
+      ul.navJBar(data-function='navJBar')
          li
             a(href='#') Item 3
             ul
@@ -22,6 +24,7 @@ header.navbar.white
             a(href='#') Item 1
          li
             a(href='#') Item 2
+
       .white
          svg.bord.feather(viewBox='0 0 24 24')
             line(x1='3', y1='12', x2='21', y2='12')
