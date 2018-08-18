@@ -76,7 +76,7 @@
         clearTimeout(that[timer]);
         that[timer] = setTimeout( function() {
           close(that);
-        }, 500);
+        }, 300);
       };
 
     // initialize

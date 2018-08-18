@@ -13,10 +13,10 @@ $brand_color: #006699 !default;
 $nav_layout: 'main-menu' !default; // left-side | right-side
 
 // some dimensions
-$item_font_size: 14px !default;
-$item_line_height: 32px !default;
+$item_font_size: 15px !default;
+$item_line_height: 34px !default;
 $item_vertical_spacing: 10px !default;
-$item_horizontal_spacing: 20px !default;
+$item_horizontal_spacing: 24px !default;
 
 // root items
 $root_item_padding: $item_vertical_spacing $item_horizontal_spacing !default;
@@ -32,7 +32,7 @@ $root_item_active_background: $brand_color !default;
 
 // submenu items
 $submenu_background: #e6e6e6 !default;
-$submenu_width: 200px !default;
+$submenu_width: 250px !default;
 
 $submenu_item_padding: $item_vertical_spacing $item_horizontal_spacing !default;
 $submenu_item_background: #fff !default;
@@ -64,15 +64,15 @@ $submenu_item_active_color: #fff !default;
     >ul {
       left: -999em;
       top: 85%;
-      transition: top .5s ease, opacity .3s linear;
-      -webkit-transition: top .5s ease, opacity .3s linear;
+      transition: top .3s ease, opacity .2s linear;
+      -webkit-transition: top .3s ease, opacity .2s linear;
     }
     li {
       >ul {
         top: -999em;
         left: 85%;
-        transition: left .5s ease, opacity .3s linear;
-        -webkit-transition: left .5s ease, opacity .3s linear;
+        transition: left .3s ease, opacity .2s linear;
+        -webkit-transition: left .3s ease, opacity .2s linear;
       }
     }
     li.open {
@@ -103,8 +103,8 @@ $submenu_item_active_color: #fff !default;
     >ul {
       top: -999em;
       left: 85%;
-      transition: left .5s, opacity .3s;
-      -webkit-transition: left .5s ease 0s, opacity .3s linear 0s;
+      transition: left .3s, opacity .2s;
+      -webkit-transition: left .3s ease 0s, opacity .2s linear 0s;
     }
   }
   li.open {
@@ -126,8 +126,8 @@ $submenu_item_active_color: #fff !default;
     >ul {
       top: -999em;
       right: 85%;
-      transition: right .5s, opacity .3s;
-      -webkit-transition: right .5s ease 0s, opacity .3s linear 0s;
+      transition: right .3s, opacity .2s;
+      -webkit-transition: right .3s ease 0s, opacity .2s linear 0s;
     }
   }
   li.open {
