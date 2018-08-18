@@ -8,17 +8,25 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet"/>
   <style>
-    .mainBack {
+    .pageBack {
+       background-attachment: scroll;
+       min-height: 45vh;
+       background-position: center center;
+       background-repeat: no-repeat;
+       background-size: cover;
+    }
+    
+    .pageBack {
        background-image: url(img.jpg);
     }
   </style>
-  <div class="mainBack">
+  <div class="pageBack">
     <link href="navJBar.css" rel="stylesheet"/>
     <link href="nav.css" rel="stylesheet"/>
     <script src="/mini.min.js"></script>
     <script src="navJBar.js"></script>
-    <header class="flex edge">
-      <div class="left white">
+    <header class="flex edge delayShowing">
+      <div class="left white" id="navbar-brand">
         <div class="navbar-brand mr-2 padL">
           <h1>Metabake.org</h1>
         </div>

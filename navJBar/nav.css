@@ -1,12 +1,16 @@
+
 /* nav jbar */
 
-.mainBack {
-   background-attachment: scroll;
-   min-height: 45vh;
+header {
+   background:rgba(1,1,1,0.3);
+   padding-left: 15px;
+   height: 65px;
+   line-height: 65px;
+}
 
-   background-position: center center;
-   background-repeat: no-repeat;
-   background-size: cover;
+#navbar-brand, #navbar-brand * {
+   height: 65px;
+   line-height: 65px;
 }
 
 .white, .white * { color: white !important; }
@@ -18,6 +22,9 @@
    padding: 15px;
 }
 
+#navBarCont {
+   margin-top: 10px;
+}
 .bord { /* icons & bars */
    outline-style: solid;
    outline-offset: 7px;
@@ -37,13 +44,11 @@
 
 /*
  Nav */
- #navJBar {
-   padding-right: 15px;
-}
 #navOpen {
    background-color: #0F3557;
-   width: calc(100vw - 40px);
-   margin-left: 20px;
+   width: calc(100vw - 70px);
+   overflow: hidden;
+   margin-left: 25px;
    position: absolute;
 }
 .flex, .center, .top, .right, .bottom, .left{
@@ -65,12 +70,7 @@
 .navBarOpen {
    width: 250px;
 }
-/* off
-#navBarHead {
-   margin-top: 5px;
-}
 
-*/
 /* bar */
 
 /* level 1 */
@@ -95,7 +95,7 @@ ul.navJBar a:hover {
 }
 .navJBar li li a:hover {
    background: #0F3557;
-   color: white;
+   color: white !important;
 }
 ul {
    padding: 0;
