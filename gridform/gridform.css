@@ -97,11 +97,11 @@
   border-right: none;
 }
 .grid-form [data-row-span] [data-field-span]:hover {
-  background: #5755d9;
+  background: #ededed;
   cursor: text;
 }
 .grid-form [data-row-span] [data-field-span].focus {
-  background: #4240d4;
+  background: #e0e0e0;
 }
 .grid-form [data-row-span] [data-field-span].focus label {
   color: #262626;

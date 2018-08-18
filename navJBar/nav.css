@@ -15,6 +15,9 @@
 .padL {
    padding-left: 15px;
 }
+.pad {
+   padding: 15px;
+}
 
 .bord { /* icons & bars */
    outline-style: solid;

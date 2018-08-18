@@ -1,0 +1,14 @@
+head
+   meta(name='viewport', content='width=device-width, initial-scale=1')
+   link(href= 'gridform.css', rel='stylesheet')
+body
+    form.grid-form
+      fieldset
+        legend Form Section
+        div(data-row-span='2')
+          div(data-field-span='1')
+            label Field 1
+            input(type='text')
+          div(data-field-span='1')
+            label Field 2
+            input(type='text')
