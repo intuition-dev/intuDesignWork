@@ -2,10 +2,12 @@
 /* nav jbar */
 
 header {
-   background:rgba(1,1,1,0.3);
+   background:rgba(1,1,1,0.1);
    padding-left: 15px;
    height: 65px;
    line-height: 65px;
+   box-shadow: -1px 3px 10px #888888;
+   z-index: 10;
 }
 
 #navbar-brand, #navbar-brand * {
