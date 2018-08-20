@@ -22,8 +22,8 @@ loadjs([
 
     , 'https://cdn.jsdelivr.net/npm/js-offcanvas@1.2.6/dist/_js/js-offcanvas.pkgd.js'
     , 'https://cdn.jsdelivr.net/npm/js-offcanvas@1.2.6/dist/_css/prefixed/js-offcanvas.css'
-    , ROOT + '/assets/css/gridforms/gridforms.css'
-    , ROOT + '/assets/js/lorem.js'
+    , ROOT + 'assets/css/gridforms/gridforms.css'
+    , ROOT + 'assets/js/lorem.js'
 ], 'cssJs')
 
 function onDeviceReady() { // nothing will work before this
@@ -70,7 +70,7 @@ loadjs.ready(['style'], function() {// 'show' page, ex: unhide
     })
     $('.delayShowing').removeClass('delayShowing') // show
 
-    loadjs(ROOT + '/assets/router/spa-router.js')
+    loadjs(ROOT + 'assets/router/spa-router.js')
 
     console.log('style done', Date.now() - _start)
 })//ready
