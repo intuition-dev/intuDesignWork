@@ -5,7 +5,7 @@ But this section is a part of 'Foundation'.
 
 # FE FWs
 
-Selected FE(Front End) frameworks(FW) with Sass/LESS you can make, ex: w/ Prepros.io
+Selected SCSS theme frameworks with Sass/LESS you can make, ex: w/ Prepros.io
 
 SemanticUI and 'UI Kit' are eliminated due to size.
 
