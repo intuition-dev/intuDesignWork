@@ -1,4 +1,4 @@
-// License LGPL v2.1, Copyright Metabake.org | Wolfgang | Cekvenich
+// License LGPL v2.1, Copyright Metabake.net | Cekvenich
 
 
 $(window).on('popstate', function (e) {//back/forward button
