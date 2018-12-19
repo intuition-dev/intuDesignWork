@@ -1,0 +1,3 @@
+* {
+   letter-spacing: .05em !important;
+}
