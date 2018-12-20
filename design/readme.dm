@@ -1,4 +1,6 @@
 
+Kurosawa
+Ghost in a Shell
 
 https://blog.designcrowd.com/article/620/design-principles-6-design-fundamentals-to-guide-your-work
 
