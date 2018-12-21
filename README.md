@@ -1,8 +1,5 @@
 
 
-Likely you want to go here first http://doc.metabake.org/mbake
-But this section is a part of 'Foundation'.
-
 # FE FWs
 
 Selected SCSS theme frameworks with Sass/LESS you can make, ex: w/ Prepros.io
