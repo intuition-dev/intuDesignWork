@@ -1,7 +1,6 @@
 
 Navbar js
 
-Uses spectre.cssar scss
 
 Comments out lists in Spectre typography
 

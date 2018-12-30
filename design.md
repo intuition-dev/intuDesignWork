@@ -1,14 +1,20 @@
-# 6 fundamental elements of design
 
-1. Balance
-2. Hierarchy
-3. Dominance/Emphasis
-4. Contrast
-5. Space
-6. Unity/Harmony
+#  Design Principles
 
 
-# Principles of design
+## Similar environment
+
+There are several ways to develop a similar environment:
+
+* Manipulate shapes of images and text to correlate together.
+* Express continuity from page to page in publications (headers, themes, borders, and spaces).
+* Develop a style manual and adhere to it.
+
+
+## Dominance/emphasis
+
+Dominance is created by contrasting size, positioning, color, style, or shape.
+
 
 ## Unity/harmony
 
@@ -47,24 +53,22 @@ Using the relative size of elements against each other can attract attention to 
 
 Space, or "negative space". The principle of space allows viewers to have the freedom to move through a design and discover each element. If you don't leave enough "breathing room" in your design, your positive elements can become visually overwhelming, appearing messy and cluttered. Space can also convey attributes such as simplicity, cleanliness and openness. Space should be thought out and considered – you don't want to waste space by overfilling the composition with positive elements. Overfilling will not allow a connection between all the spaces in the design.
 
-## Dominance/emphasis
-
-Dominance is created by contrasting size, positioning, color, style, or shape.
 
 ## Similarity and contrast
 
 Planning a consistent and similar design is an important aspect of a designer's work to make their focal point visible. Too much similarity is boring but without similarity important elements will not exist and an image without contrast is uneventful so the key is to find the balance between similarity and contrast.
 
-### Similar environment
+* Form
+    * Simple / Complex
+    * Beauty / Ugly
+    * Whole / Broken
 
-There are several ways to develop a similar environment:
+* Gravity
+    * Light / Heavy
+    * Stable / Unstable
 
-* Build a unique internal organization structure.
-* Manipulate shapes of images and text to correlate together.
-* Express continuity from page to page in publications (headers, themes, borders, and spaces).
-* Develop a style manual and adhere to it.
 
-### Contrasts
+##### Contrasts
 
 * Space
     * Filled / Empty
@@ -76,11 +80,6 @@ There are several ways to develop a similar environment:
     * Isolated / Grouped
     * Centered / Off-Center
     * Top / Bottom
-
-* Form
-    * Simple / Complex
-    * Beauty / Ugly
-    * Whole / Broken
 
 * Direction
     * Stability / Movement
@@ -109,6 +108,4 @@ There are several ways to develop a similar environment:
     * Thick / Thin
     * Liquid / Solid
 
-* Gravity
-    * Light / Heavy
-    * Stable / Unstable
+## Animation & Interaction: 
