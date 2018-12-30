@@ -1,8 +1,6 @@
 
 Navbar js
 
+Comment out lists in Spectre typography
 
-Comments out lists in Spectre typography
-
-Fixed $responsive_breakpoint so they match
-
+Fix $responsive_breakpoint so they match
