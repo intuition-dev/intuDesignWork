@@ -6,52 +6,57 @@ head
 
    link(href= 'nav.css', rel='stylesheet')
 
-
 body
-   //top
-   header.flex.edge
-      .left.white
-         .navbar-brand.mr-2
-            h2#navBarHead MetaBake.org
+   .c-offcanvas-content-wrap
 
-      .right.white
-         a.btn.btn-link(href='#') ABOUT
-         a.btn.btn-link(href='#') TEAM
-         a.btn.btn-link(href='#') BLOG
-         a.btn.btn-link(href='#') CONTACT US
-         a.btn.btn-link(href='#') CLIENT LOGIN
-         .white
-            svg.bord.featherSVG(viewBox='0 0 24 24')
-               line(x1='3', y1='12', x2='21', y2='12')
-               line(x1='3', y1='6',  x2='21', y2='6')
-               line(x1='3', y1='18', x2='21', y2='18')
+      //-top
+      header.flex.edge
+         .left.white
+            .navbar-brand.mr-2
+               h2#navBarHead MetaBake.org
 
-   //side
-   ul.nav.navBarOpen(style='border-style: solid')
+         .right.white
+            a.btn.btn-link(href='#') ABOUT
+            a.btn.btn-link(href='#') TEAM
+            a.btn.btn-link(href='#') BLOG
+            a.btn.btn-link(href='#') CONTACT US
+            a.btn.btn-link(href='#') CLIENT LOGIN
 
-      h3#navBarOpenHead.navBarOpenHea.navbar-brand Metabake.org
+            a#off-cbut.js-offcanvas-trigger( href='#navOpen')
+               .white
+                  svg.bord.featherSVG(viewBox='0 0 24 24')
+                     line(x1='3', y1='12', x2='21', y2='12')
+                     line(x1='3', y1='6',  x2='21', y2='6')
+                     line(x1='3', y1='18', x2='21', y2='18')
 
-      li.nav-item
-         a(href='#') Elements
-      li.nav-item
-         a(href='#') Layout
-         ul.nav
-            li.nav-item
-            a(href='#') Flexbox grid
-            li.nav-item
-            a(href='#') Responsive
-            li.nav-item
-            a(href='#') Navbar
-            li.nav-item
-            a(href='#') Empty states
-      li.nav-item.active
-         a(href='#') Components
-      li.nav-item
-         a(href='#') Utilities
+         //-main
+         #router
+            p 
+            p oh hi
 
-   br
-   .p-2
-      p oh hi
+   //-side
+   #navOpen
+      ul.nav.navBarOpen(style='border-style: solid')
+
+         h3#navBarOpenHead.navBarOpenHea.navbar-brand Metabake.org
+
+         li.nav-item
+            a(href='#') Elements
+         li.nav-item
+            a(href='#') Layout
+            ul.nav
+               li.nav-item
+               a(href='#') Flexbox grid
+               li.nav-item
+               a(href='#') Responsive
+               li.nav-item
+               a(href='#') Navbar
+               li.nav-item
+               a(href='#') Empty states
+         li.nav-item.active
+            a(href='#') Components
+         li.nav-item
+            a(href='#') Utilities
 
    script.
       
@@ -83,6 +88,5 @@ body
          })
 
 
-      }//*
-
+      }//*()
 
