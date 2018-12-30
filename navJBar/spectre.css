@@ -13,15 +13,6 @@ kbd { border-radius: 0.1rem; line-height: 1.2; padding: .1rem .2rem; background:
 mark { background: #ffe9b3; color: #3b4351; border-bottom: 0.05rem solid #ffd367; border-radius: 0.1rem; padding: 0.05rem 0.1rem 0; }
 blockquote { border-left: 0.1rem solid #dadee4; margin-left: 0; padding: 0.4rem 0.8rem; }
 blockquote p:last-child { margin-bottom: 0; }
-ul, ol { margin: 0.8rem 0 0.8rem 0.8rem; padding: 0; }
-ul ul, ul ol, ol ul, ol ol { margin: 0.8rem 0 0.8rem 0.8rem; }
-ul li, ol li { margin-top: 0.4rem; }
-ul { list-style: disc inside; }
-ul ul { list-style-type: circle; }
-ol { list-style: decimal inside; }
-ol ol { list-style-type: lower-alpha; }
-dl dt { font-weight: bold; }
-dl dd { margin: 0.4rem 0 0.8rem 0; }
 .table { border-collapse: collapse; border-spacing: 0; width: 100%; text-align: left; }
 .table.table-striped tbody tr:nth-of-type(odd) { background: #f7f8f9; }
 .table tbody tr.active, .table.table-striped tbody tr.active { background: #eef0f3; }
@@ -316,4 +307,4 @@ a.text-error:visited { color: #ff6003; }
 .text-large { font-size: 1.2em; }
 .text-ellipsis { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .text-clip { overflow: hidden; text-overflow: clip; white-space: nowrap; }
-.text-break { -webkit-hyphens: auto; -ms-hyphens: auto; hyphens: auto; word-break: break-word; word-wrap: break-word; } /* mB v4.14.10 on 2018-12-30T16:41:51.251Z */
+.text-break { -webkit-hyphens: auto; -ms-hyphens: auto; hyphens: auto; word-break: break-word; word-wrap: break-word; } /* mB v4.14.10 on 2018-12-30T19:49:43.372Z */
