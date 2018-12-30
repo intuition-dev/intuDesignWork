@@ -2,7 +2,6 @@
 link(href= 'navJBar.css', rel='stylesheet')
 link(href= 'nav.css',  rel='stylesheet')
 
-script(src='/mini.min.js')
 script(src='navJBar.js')
 
 header.flex.edge.delayShowing
@@ -10,7 +9,9 @@ header.flex.edge.delayShowing
       .navbar-brand.mr-2.padL
          h1 MetaBake.org
    .right.white
+
       ul#navJBar.hide-lg.navJBar(data-function='navJBar')
+
          li.navFirst
             a(href='#') ABOUT
             ul
