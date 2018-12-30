@@ -12,7 +12,7 @@
 }
 
 .bord { /* icons & bars */
-   margin-top: 23px;
+   margin-top: 0px;
    outline-style: solid;
    outline-offset: 7px;
    outline-width: thin;
