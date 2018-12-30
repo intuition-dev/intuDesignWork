@@ -3,6 +3,7 @@ head
    link(href= 'spectreTop.css', rel='stylesheet')
    link(href= 'spectre.css', rel='stylesheet')
    link(href= 'nav.css', rel='stylesheet')
+   script(src='https://cdn.jsdelivr.net/npm/johnnydepp@0.0.3/dist/depp.min.js')
 
 body
    //top
@@ -49,3 +50,16 @@ body
    br
    .p-2
       p oh hi
+
+   script.
+      depp.define({ 'pre': [
+         'https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.slim.min.js'
+         , 'https://cdn.jsdelivr.net/npm/js-offcanvas@1.2.8/dist/_js/js-offcanvas.pkgd.js'
+         , 'https://cdn.jsdelivr.net/npm/js-offcanvas@1.2.8/dist/_css/prefixed/js-offcanvas.css'
+         ]
+      )}
+
+      depp.require(['pre'], onLoaded)
+
+
+
