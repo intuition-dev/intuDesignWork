@@ -60,6 +60,10 @@ End Main section
 /*
  Nav **************************************************/
 
+ #navJBar ul {
+   margin-left: 0;
+ }
+
  #navbar-brand, #navbar-brand * {
    height: 65px;
    line-height: 65px;
