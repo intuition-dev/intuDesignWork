@@ -1,8 +1,9 @@
 
-Kurosawa
-Ghost in a Shell - 1995
-
 https://squoosh.app/editor
+
+Kurosawa
+
+Ghost in a Shell - 1995
 
 https://blog.designcrowd.com/article/620/design-principles-6-design-fundamentals-to-guide-your-work
 
