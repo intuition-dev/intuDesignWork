@@ -1,6 +1,6 @@
 
 
-run css.sh
+run CSS.sh
 
 Navbar js
 

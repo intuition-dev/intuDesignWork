@@ -14,7 +14,7 @@ On page where you need:
 http://jsdelivr.com/package/npm/semantic-ui?path=dist%2Fcomponents
 
 
-load smalles css semnatic 1
+load smalles CSS semnatic 1
 and then after load semantic 2
 
 ex:
@@ -22,7 +22,7 @@ ex:
 loadjs([ '//cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/components/sidebar.min.js'
 
 
-loadjs.ready(['style'], function () { //load large css
+loadjs.ready(['style'], function () { //load large CSS
 	loadjs([ '/assets/css/semnatic2.css'
 	])
 })
