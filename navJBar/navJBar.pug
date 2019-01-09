@@ -40,12 +40,12 @@ header.flex.edge.delayShowing
 
 script.
    $( document ).ready(function() { // dev only
-      console.log('navJBar')
+      console.info('navJBar')
       new Navbar('.navJBar') // top
 
       //toggle
       $( "#navBarCont" ).click(function() { //side
-         console.log(isOpen)
+         console.info(isOpen)
          if(isOpen)
             navClose()
          else

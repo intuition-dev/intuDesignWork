@@ -13,7 +13,7 @@
 
    <script>
       this.on('mount', function(){
-         console.log('m')
+         console.info('m')
          var width = 200, speed = 15, //pixels per second
          duration = width / speed
          var leftPosition = - width + (speed / 60) //adjust the end position assuming 60fps - per Jack of gsap

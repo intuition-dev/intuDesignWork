@@ -1,4 +1,4 @@
-console.log('setup', "v2.06.2")
+console.info('setup', "v2.06.2")
 
 /*
 // http://github.com/logzio/logzio-js
@@ -29,7 +29,7 @@ console.log('setup', "v2.06.2")
 			logImg.src = logUrl
 		 } catch (ex) {
 			if (window && window.console && typeof window.console.log == 'function')
-				console.log("Failed to send log because of exception:\n" + ex)
+				console.info("Failed to send log because of exception:\n" + ex)
 		 }
 	}
 	window.LogzioLogger = LogzioLogger
@@ -52,7 +52,7 @@ $(document).ready(function () {
 })
 
 function cssLoaded() {// called by the style sheet in layout
-    console.log('css loaded', Date.now() - _start)
+    console.info('css loaded', Date.now() - _start)
     loadjs.done('css')
 }
 

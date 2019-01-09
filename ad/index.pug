@@ -91,7 +91,7 @@ body
          riot.compile(function(){ // wait for it
             var comps = riot.mount('spil-comp')
             _vspil= comps[0]
-            console.log(_vspil)
+            console.info(_vspil)
             _loaded = true
          })
 
@@ -122,13 +122,13 @@ body
          })
          function onTilt(e) {
             var rot = e.beta //gamma
-            console.log(rot)
+            console.info(rot)
             if(rot < 40) left()
             else right()
          }
 
          window.addEventListener("deviceorientation", onTilt)
 
-         console.log('loaded')
+         console.info('loaded')
          TweenMax.from($('#adam'),.15,{scale:.95},.1)
          TweenMax.from($('.headline'), .8, {opacity:0.01, scale: 0.3, ease: Back.easeOut }, .4)

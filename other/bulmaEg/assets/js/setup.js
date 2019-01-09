@@ -7,7 +7,7 @@ $(document).ready(function() {
         window.isphone = true
     }
 
-    console.log('phonegap?', window.isphone)
+    console.info('phonegap?', window.isphone)
     if (window.isphone) { // //file is a browser
         document.addEventListener("deviceready", onDeviceReady, false)
     } else {
@@ -27,7 +27,7 @@ loadjs([
 ], 'cssJs')
 
 function onDeviceReady() { // nothing will work before this
-    console.log('deviceready!')
+    console.info('deviceready!')
     loadjs.done('device')
 }
 
@@ -65,14 +65,14 @@ loadjs.ready(['style'], function() {// 'show' page, ex: unhide
     })
     let offcanvas = $('#off-canvas').data('offcanvas-component')
     $('#offItems').click(function() {
-        console.log('#offItems')
+        console.info('#offItems')
         offcanvas.close()
     })
     $('.delayShowing').removeClass('delayShowing') // show
 
     loadjs(ROOT + 'assets/router/spa-router.js')
 
-    console.log('style done', Date.now() - _start)
+    console.info('style done', Date.now() - _start)
 })//ready
 
 // util: /////////////////////////////////////////////////////////////////////

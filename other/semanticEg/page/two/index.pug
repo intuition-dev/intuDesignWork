@@ -16,7 +16,7 @@ block main
 		loadjs('pinc_d.js', 'binding')
 
 		loadjs.ready(['site','binding'], function () {
-			console.log('page 2')
+			console.info('page 2')
 			var data = {
 				'myNum': Math.floor(Math.random() * 20)
 			}
