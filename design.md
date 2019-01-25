@@ -109,3 +109,17 @@ Planning a consistent and similar design is an important aspect of a designer's 
     * Liquid / Solid
 
 ## Animation & Interaction: 
+
+
+
+
+## Links
+
+- [Resilient web design](https://resilientwebdesign.com/introduction)
+- [Design 'pop'](https://medium.com/@erikdkennedy/7-rules-for-creating-gorgeous-ui-part-2-430de537ba96)
+- [My Device size](https://www.mydevice.io)
+
+
+- [Webmaster](https://www.google.com/webmasters); w/ real time SEO help
+
+- [MOZ SEO](https://moz.com/link-explorer?utm_source=facebook&utm_medium=paid&utm_campaign=mp_links_18)
