@@ -123,3 +123,7 @@ Planning a consistent and similar design is an important aspect of a designer's 
 - [Webmaster](https://www.google.com/webmasters); w/ real time SEO help
 
 - [MOZ SEO](https://moz.com/link-explorer?utm_source=facebook&utm_medium=paid&utm_campaign=mp_links_18)
+
+
+https://medium.com/@service/the-best-ui-ux-design-books-resources-for-designers-updated-979b5898db93
+
