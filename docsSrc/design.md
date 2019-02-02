@@ -127,3 +127,4 @@ Planning a consistent and similar design is an important aspect of a designer's 
 
 https://medium.com/@service/the-best-ui-ux-design-books-resources-for-designers-updated-979b5898db93
 
+https://www.quora.com/What-is-the-worst-user-interface-you-know-What-makes-it-so-bad
