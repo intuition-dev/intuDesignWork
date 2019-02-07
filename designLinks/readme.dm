@@ -1,5 +1,11 @@
 
-https://squoosh.app/editor
+
+https://css-tricks.com/absolute-positioning-inside-relative-positioning/
+
+
+https://codepen.io/eehayman/pen/qdGZJr
+
+
 
 Kurosawa
 
