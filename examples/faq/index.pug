@@ -12,7 +12,10 @@ body
          p.tags tags, help, searching
  
    script.
-      $('#faqs').simpleFAQ()
+      $('#faqs').simpleFAQ({
+         slideSpeed: 100
+         }
+      )
 
    link(rel='stylesheet', href='/src/jquery.simpleFAQ.css')
 
