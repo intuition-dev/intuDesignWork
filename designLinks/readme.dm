@@ -22,6 +22,16 @@ https://www.uxpin.com/studio/blog/web-layout-best-practices-12-timeless-ui-patte
 https://alistapart.com/article/personality-in-design
 
 
+
+
+- Game https://cantunsee.space
+( it mentioned here 
+https://beautifulpixels.com/web/cant-unsee-design-game-skills )
+
+
+Speed: https://news.ycombinator.com/item?id=19122727
+
+
 Other links:
 
 https://medium.muz.li/8-best-web-design-portfolio-examples-for-learning-in-2018-5e1f9b22aaa7
