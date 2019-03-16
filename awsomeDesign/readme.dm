@@ -65,3 +65,17 @@ Nat1: https://www.murraytweetindex.ie
 
 Nat2: http://up.csail.mit.edu/science-of-cooking/
 
+
+
+More:
+
+https://www.linkedin.com/learning/design-the-web-graphics-and-css-pseudo-elements
+
+https://www.interaction-design.org/literature/article/10-great-sites-for-ui-design-patterns?fbclid=IwAR2DvPPmN6Rn0riZb6VDJ87EJHRy4SjlvRDKvTVfTNeBwmVjHVDoPlQ9emA
+
+https://vgpena.github.io/using-css-grid-the-right-way/
+
+
+https://www.interaction-design.org/literature/article/the-building-blocks-of-visual-design?nam_source=https%3A%2F%2Fnotamagazine.xyz
+
+https://www.creativebloq.com/features/6-top-ux-testing-tools-to-try
