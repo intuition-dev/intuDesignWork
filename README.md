@@ -11,3 +11,11 @@ Default Theme is Spectre. Two version are made, one with NavBar js (in navjBar f
 Also made is gridform and navbar. You should learn now to use Prepros.io to make your own version.
 
 But there are many FE FWs, you'll end up learning a few. Even then, most intricate things, like navigation, ends up custom. You should know how to solve a problem, such as nav, in at least FE FW.
+
+http://github.com/thednp/navbar.js
+
+http://github.com/vmitsaras/js-offcanvas
+
+(
+   http://github.com/SubZane/flyPanels
+)
