@@ -115,16 +115,16 @@ Planning a consistent and similar design is an important aspect of a designer's 
 
 ## Links
 
-- [Resilient web design](https://resilientwebdesign.com/introduction)
-- [Design 'pop'](https://medium.com/@erikdkennedy/7-rules-for-creating-gorgeous-ui-part-2-430de537ba96)
-- [My Device size](https://www.mydevice.io)
+- [Resilient web design](http://resilientwebdesign.com/introduction)
+- [Design 'pop'](http://medium.com/@erikdkennedy/7-rules-for-creating-gorgeous-ui-part-2-430de537ba96)
+- [My Device size](http://www.mydevice.io)
 
 
-- [Webmaster](https://www.google.com/webmasters); w/ real time SEO help
+- [Webmaster](http://www.google.com/webmasters); w/ real time SEO help
 
-- [MOZ SEO](https://moz.com/link-explorer?utm_source=facebook&utm_medium=paid&utm_campaign=mp_links_18)
+- [MOZ SEO](http://moz.com/link-explorer?utm_source=facebook&utm_medium=paid&utm_campaign=mp_links_18)
 
 
-https://medium.com/@service/the-best-ui-ux-design-books-resources-for-designers-updated-979b5898db93
+http://medium.com/@service/the-best-ui-ux-design-books-resources-for-designers-updated-979b5898db93
 
-https://www.quora.com/What-is-the-worst-user-interface-you-know-What-makes-it-so-bad
+http://www.quora.com/What-is-the-worst-user-interface-you-know-What-makes-it-so-bad

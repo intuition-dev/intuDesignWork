@@ -1,7 +1,7 @@
 doctype html
 html
    head
-      //<script src="https://console.re/connector.js" data-channel="MY_NAME" id="consolerescript"></script>
+      //<script src="http://console.re/connector.js" data-channel="MY_NAME" id="consolerescript"></script>
       script.
          ROOT = '#{ROOT}' //- sets global pug and .js from dat.yaml
          console.info('root','#{ROOT}')
@@ -49,6 +49,6 @@ html
 
 
       link(href= ROOT + 'assets/css/bulma.css', onload='cssLoaded()', rel='stylesheet')
-      link(href='https://fonts.googleapis.com/css?family=Open+Sans', rel='stylesheet')
+      link(href='//fonts.googleapis.com/css?family=Open+Sans', rel='stylesheet')
       link(href= ROOT + 'assets/css/main.css', rel='stylesheet')
 

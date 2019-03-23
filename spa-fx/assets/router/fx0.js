@@ -31,7 +31,7 @@ loadjs.ready(['style', 'pfx'], function () {
 	})//onNav
 })//ready
 
-loadjs(['https://cdn.jsdelivr.net/npm/zingtouch@1.0.6/dist/zingtouch.js'
-	, 'https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/components/transition.min.js'
-	, 'https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/components/transition.css'
+loadjs(['//cdn.jsdelivr.net/npm/zingtouch@1.0.6/dist/zingtouch.js'
+	, '//cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/components/transition.min.js'
+	, '//cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/components/transition.css'
 ], 'pfx')
