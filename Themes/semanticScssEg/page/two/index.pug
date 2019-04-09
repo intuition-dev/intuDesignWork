@@ -10,16 +10,3 @@ block main
 	p
 	#here
 	include part2
-
-	script.
-		loadjs('pinc_d.js', 'binding')
-
-		loadjs.ready(['site','binding'], function () {
-			console.info('page 2')
-			var data = {
-				'myNum': Math.floor(Math.random() * 20)
-			}
-
-			// this is pug client side/dynamic binding. check RIOTjs example as well
-			$('#here').html(pincDBind(data))
-		})
