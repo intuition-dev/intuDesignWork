@@ -1,7 +1,6 @@
 doctype html
 html
    head
-      //<script src="http://console.re/connector.js" data-channel="MY_NAME" id="consolerescript"></script>
       script.
          ROOT = '#{ROOT}' //- sets global pug and .js from dat.yaml
          console.info('root','#{ROOT}')
@@ -11,7 +10,9 @@ html
       meta(name='viewport', content='width=device-width, initial-scale=1')
       title mbake.org
       link(rel='shortcut icon', href= ROOT + 'assets/favicon.png', type='image/x-icon')
+
       script(src='//cdn.jsdelivr.net/npm/loadjs@3.5.4/dist/loadjs.js')
+      
       script(src='//cdn.jsdelivr.net/npm/riot@3.13.2/riot.min.js')
       script(src='//cdn.jsdelivr.net/npm/johnnydepp@0.1.0/dist/depp.min.js')
 

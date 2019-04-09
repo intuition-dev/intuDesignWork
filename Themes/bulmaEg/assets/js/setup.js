@@ -3,7 +3,7 @@ $(document).ready(function() {
     // are we running in native app or in a browser?
     window.isphone = false
     if (document.URL.indexOf("http://") === -1
-        && document.URL.indexOf("https://") === -1) {
+        && document.URL.indexOf("//") === -1) {
         window.isphone = true
     }
 
@@ -16,12 +16,9 @@ $(document).ready(function() {
 })
 
 loadjs([
-    'https://cdn.jsdelivr.net/npm/signals@1.0.0/dist/signals.min.js'
-    ,
-
-
-    , 'https://cdn.jsdelivr.net/npm/js-offcanvas@1.2.8/dist/_js/js-offcanvas.pkgd.js'
-    , 'https://cdn.jsdelivr.net/npm/js-offcanvas@1.2.8/dist/_css/prefixed/js-offcanvas.css'
+    '//cdn.jsdelivr.net/npm/signals@1.0.0/dist/signals.min.js'
+    , '//cdn.jsdelivr.net/npm/js-offcanvas@1.2.8/dist/_js/js-offcanvas.pkgd.js'
+    , '//cdn.jsdelivr.net/npm/js-offcanvas@1.2.8/dist/_css/prefixed/js-offcanvas.css'
     , ROOT + 'assets/css/gridforms/gridforms.css'
     , ROOT + 'assets/js/lorem.js'
 ], 'cssJs')
@@ -51,7 +48,8 @@ function setupUserSzSc() {
 setInterval(function() {
     if (_scSz) {
         _scSz = false
-        userSzSc()
+
+        //userSzSc()
     }
 }, 150)
 
