@@ -68,10 +68,24 @@ loadjs.ready(['style'], function() {// 'show' page, ex: unhide
     })
     $('.delayShowing').removeClass('delayShowing') // show
 
-    loadjs('//unpkg.com/spa-ts-router@4.15.16/spa-router.min.js')
+    loadjs('//unpkg.com/spa-ts-router@4.15.16/spa-router.min.js', 'spa-router')
 
     console.info('style done', Date.now() - _start)
 })//ready
+loadjs.ready(['spa-router'], function() {
+    //- SPA Ex:
+    SPArouter.init(onNavigate);
+    function onNavigate (evt) {
+       if (evt.detail.type == SPArouter.NavSTART) { //start
+          //$('#router').fadeTo(100,.2);
+       }
+       else if (evt.detail.type == SPArouter.NavDONE) {
+          $(SPArouter.zone).html(evt.detail.newContent);
+          //$('#router').fadeTo(100,1);
+          window.scrollTo(0, 0);
+       }
+    }
+})
 
 // util: /////////////////////////////////////////////////////////////////////
 function getUrlVars() {
@@ -100,4 +114,3 @@ function inView(el) { // is element in viewport
         rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
     )
 }
-
