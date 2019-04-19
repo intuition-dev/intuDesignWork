@@ -6,6 +6,7 @@
          top: 10;
          width: 200%;
          height: 80;
+         position: absolute;
       }
    </style>
 
