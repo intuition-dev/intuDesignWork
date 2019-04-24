@@ -28,3 +28,5 @@ In any case reduce wide
 
 The foundation is framework|Spectre
 A module should be a screen/page; or component/riot; extending Spectre|FW
+
+Important: we are not writing a FW. We are tarying to leverage a FW.
