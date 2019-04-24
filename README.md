@@ -28,5 +28,6 @@ In any case reduce wide
 
 The foundation is framework|Spectre
 A module should be a screen/page; or component/riot; extending Spectre|FW
+Call the file: _pages.scss and _comps.scss
 
 Important: we are not writing a FW. We are tarying to leverage a FW.
