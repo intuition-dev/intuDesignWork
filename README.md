@@ -15,3 +15,16 @@ http://github.com/vmitsaras/js-offcanvas
 (
    http://github.com/SubZane/flyPanels
 )
+
+
+## Leveraging FW:
+
+Architecture that that best leverages CSS framework Spectre
+Leverage mixin and extends
+Leverage MCSS or even .single-class
+- http://css-tricks.com/methods-organize-css
+But avoid wide Atomic, AMCSS,  SMACSS
+In any case reduce wide
+
+The foundation is framework|Spectre
+A module should be a screen/page; or component/riot; extending Spectre|FW
