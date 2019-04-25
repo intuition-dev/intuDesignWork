@@ -1,5 +1,5 @@
 
-- load images early. 2x for retina
+- load images early and progressive. 2x for retina
 - load fonts last
 - http://gtmetrix.com
 - in head load layout and nav so no jumping
