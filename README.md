@@ -12,10 +12,6 @@ http://github.com/thednp/navbar.js
 
 http://github.com/vmitsaras/js-offcanvas
 
-(
-   http://github.com/SubZane/flyPanels
-)
-
 
 ## Leveraging FW:
 
