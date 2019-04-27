@@ -126,10 +126,6 @@ video.video-responsive::before{content:none;}
 .empty .empty-icon{margin-bottom:0.8rem;}
 .empty .empty-title,.empty .empty-subtitle{margin:0.4rem auto;}
 .empty .empty-action{margin-top:0.8rem;}
-.panel{border:0.05rem solid #dadee4;-webkit-border-radius:0.1rem;-moz-border-radius:0.1rem;border-radius:0.1rem;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;}
-.panel .panel-header,.panel .panel-footer{-webkit-box-flex:0;-webkit-flex:0 0 auto;-moz-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;padding:0.8rem;}
-.panel .panel-nav{-webkit-box-flex:0;-webkit-flex:0 0 auto;-moz-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;}
-.panel .panel-body{-webkit-box-flex:1;-webkit-flex:1 1 auto;-moz-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;overflow-y:auto;padding:0 0.8rem;}
 .popover{display:inline-block;position:relative;}
 .popover .popover-container{left:50%;opacity:0;padding:0.4rem;position:absolute;top:0;-webkit-transform:translate(-50%,-50%) scale(0);-moz-transform:translate(-50%,-50%) scale(0);-ms-transform:translate(-50%,-50%) scale(0);-o-transform:translate(-50%,-50%) scale(0);transform:translate(-50%,-50%) scale(0);-webkit-transition:-webkit-transform .2s;transition:-webkit-transform .2s;-o-transition:-o-transform .2s;-moz-transition:transform .2s,-moz-transform .2s;transition:transform .2s;transition:transform .2s,-webkit-transform .2s,-moz-transform .2s,-o-transform .2s;width:320px;z-index:300;}
 .popover *:focus + .popover-container,.popover:hover .popover-container{display:block;opacity:1;-webkit-transform:translate(-50%,-100%) scale(1);-moz-transform:translate(-50%,-100%) scale(1);-ms-transform:translate(-50%,-100%) scale(1);-o-transform:translate(-50%,-100%) scale(1);transform:translate(-50%,-100%) scale(1);}
@@ -337,4 +333,4 @@ a.text-error:visited{color:#ff6003;}
 .text-large{font-size:1.2em;}
 .text-ellipsis{overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;white-space:nowrap;}
 .text-clip{overflow:hidden;-o-text-overflow:clip;text-overflow:clip;white-space:nowrap;}
-.text-break{-webkit-hyphens:auto;-moz-hyphens:auto;-ms-hyphens:auto;hyphens:auto;word-break:break-word;word-wrap:break-word;} /* mB v5.04.36 on 2019-04-27T20:06:24.933Z */
+.text-break{-webkit-hyphens:auto;-moz-hyphens:auto;-ms-hyphens:auto;hyphens:auto;word-break:break-word;word-wrap:break-word;} /* mB v5.04.36 on 2019-04-27T20:58:38.758Z */

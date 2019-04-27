@@ -1,9 +1,18 @@
 //  this is for header
 @import "variables";
-
 @import "mixins";
+
 @import "normalize";
+
 @import "base";
 @import "layout";
+@import "panels";
 
+// utils
+@import "utilities/display";
+@import "utilities/divider";
+@import "utilities/loading";
+@import "utilities/position";
+@import "utilities/text";
 
+@import "animations";
