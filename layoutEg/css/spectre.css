@@ -70,18 +70,6 @@ code{-webkit-border-radius:0.1rem;-moz-border-radius:0.1rem;border-radius:0.1rem
 .code{-webkit-border-radius:0.1rem;-moz-border-radius:0.1rem;border-radius:0.1rem;color:#3b4351;position:relative;}
 .code::before{color:#bcc3ce;content:attr(data-lang);font-size:0.7rem;position:absolute;right:0.4rem;top:0.1rem;}
 .code code{background:#f7f8f9;color:inherit;display:block;line-height:1.5;overflow-x:auto;padding:1rem;width:100%;}
-.img-responsive{display:block;height:auto;max-width:100%;}
-.img-fit-cover{-o-object-fit:cover;object-fit:cover;}
-.img-fit-contain{-o-object-fit:contain;object-fit:contain;}
-.video-responsive{display:block;overflow:hidden;padding:0;position:relative;width:100%;}
-.video-responsive::before{content:"";display:block;padding-bottom:56.25%;}
-.video-responsive iframe,.video-responsive object,.video-responsive embed{border:0;bottom:0;height:100%;left:0;position:absolute;right:0;top:0;width:100%;}
-video.video-responsive{height:auto;max-width:100%;}
-video.video-responsive::before{content:none;}
-.video-responsive-4-3::before{padding-bottom:75%;}
-.video-responsive-1-1::before{padding-bottom:100%;}
-.figure{margin:0 0 0.4rem 0;}
-.figure .figure-caption{color:#66758c;margin-top:0.4rem;}
 .avatar{font-size:0.8rem;height:1.6rem;width:1.6rem;background:#5755d9;-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;color:rgba(255,255,255,0.85);display:inline-block;font-weight:300;line-height:1.25;margin:0;position:relative;vertical-align:middle;}
 .avatar.avatar-xs{font-size:0.4rem;height:0.8rem;width:0.8rem;}
 .avatar.avatar-sm{font-size:0.6rem;height:1.2rem;width:1.2rem;}
@@ -333,4 +321,4 @@ a.text-error:visited{color:#ff6003;}
 .text-large{font-size:1.2em;}
 .text-ellipsis{overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;white-space:nowrap;}
 .text-clip{overflow:hidden;-o-text-overflow:clip;text-overflow:clip;white-space:nowrap;}
-.text-break{-webkit-hyphens:auto;-moz-hyphens:auto;-ms-hyphens:auto;hyphens:auto;word-break:break-word;word-wrap:break-word;} /* mB v5.04.36 on 2019-04-27T20:58:38.758Z */
+.text-break{-webkit-hyphens:auto;-moz-hyphens:auto;-ms-hyphens:auto;hyphens:auto;word-break:break-word;word-wrap:break-word;} /* mB v5.04.36 on 2019-04-27T21:07:00.941Z */
