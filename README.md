@@ -35,35 +35,30 @@ All environment-influencing things like margins should not be a part of your css
 5. Before going to step 6 try to meet your goals by extending mixins of your library.
 6. Write your own CSS for pages you need it onto. If you find yourself duplicating code for some UI-components probably you should have unified class for it in a separate file.
 
-### SCSS project structure:
+### SASS project structure:
 ```
-styleguide
+assets
 |
-|_____components.html // here is your css-components usage examples
-|
-|______framework-extend
-|      |
-|      |_____variables.scss   
-|      |
-|      |_____components-mixins
-|            |
-|            |_____button.scss  
-|            |
-|            |_____card.scss
-|            |
-|            |_____...
-|            
-|
-|
-|______custom-code
-       |
-       |_____components-custom
-       |     |
-       |     |_____button.scss
-       |     |
-       |     |_____...
-       |
-       |_____pages
-             |
-             |_____home-page.scss
+|_____sass
+      |
+      |
+      |_____style.sass
+      |
+      |_____variables.sass // custom fw variables
+      |
+      |_____button.sass // extending fw button
+      |
+      |_____... // some other fw extends
+      |
+      |_____custom_code
+            |
+            |_____custom_layout.sass
+            |
+            |_____button.sass // custom button
+            |
+            |_____pages
+                  |
+                  |_____home_page.sass
+                  |
+                  |_____login_page.sass
 ```
