@@ -1,33 +1,28 @@
 
+## FE FWs
 
-# FE FWs
+Default Theme is Spectre. Two version are made, one with NavBar js (in navjBar folder, used in webSite and linkCMS examples), and one with OffScreen js.
 
-Default Theme is Spectre. Two version are made, one with NavBar js (in navjBar folder, used in webSite and linkCMS examples), and one with OffScreen js (simple and default, use in 4 examples, both are 3rd party Open Source libraries.
-
-Also made is gridform and navbar.
+Default for forms is gridforms.
 
 But there are many FE FWs, you'll end up learning a few. Even then, most intricate things, like navigation, ends up custom. You should know how to solve a problem, such as nav, in at least FE FW.
 
-http://github.com/thednp/navbar.js
 
-http://github.com/vmitsaras/js-offcanvas
+# Leveraging FW:
 
+## Architecture that that best leverages a Front End (CSS) Framework:
 
-## Leveraging FW:
-
-Architecture that that best leverages CSS framework Spectre
 Leverage mixin and extends
 Leverage MCSS or even .single-class
 - http://css-tricks.com/methods-organize-css
 But avoid wide Atomic, AMCSS,  SMACSS
-In any case reduce wide
+In any case reduce wide specs.
 
-The foundation is framework|Spectre
-A module should be a screen/page; or component/riot; extending Spectre|FW
 
-All environment-influencing things like margins should not be a part of your css-component classes so it's easier to reuse them later on.
+?? All environment-influencing things like margins should not be a part of your css-component classes so it's easier to reuse them later on.
 
-## Recomended workflow:
+
+## Recommended workflow:
 1. Get an understanding of what UI-components you'll mainly use. Forms, buttons, menus, etc. 
 2. Get an understanding of what layout you'd like your project to have. 
 3. Build a basic CSS-components library with just pure FW so you'll be seeing your future elements. 
@@ -42,23 +37,19 @@ assets
 |_____sass
       |
       |
-      |_____style.sass
-      |
-      |_____variables.sass // custom fw variables
-      |
-      |_____button.sass // extending fw button
-      |
-      |_____... // some other fw extends
-      |
+      |_____fw_copy
+            |
+            |_____... *.scss 
+
       |_____custom_code
             |
-            |_____custom_layout.sass
+            |_____layout.sass
             |
-            |_____button.sass // custom button
+            |_____controls.sass // custom button
+            
+      |_____pages_screens
             |
-            |_____pages
-                  |
-                  |_____home_page.sass
-                  |
-                  |_____login_page.sass
+            |_____home_page.sass
+            |
+            |_____login_page.sass
 ```
