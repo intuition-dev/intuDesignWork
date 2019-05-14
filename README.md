@@ -8,7 +8,27 @@ Default for forms is gridforms.
 But there are many FE FWs, you'll end up learning a few. Even then, most intricate things, like navigation, ends up custom. You should know how to solve a problem, such as nav, in at least FE FW.
 
 
-# Leveraging FW:
+# Leveraging FW Goals:
+
+It is tiering to write your own CSS.
+
+- Minimal DIY
+- Minimal code that does not extend FW
+- Clear 'sections' indicating the page that is is for
+- In the page, list BLOCKs
+- Blocks could/should be reusable, extend
+- Narrow. Use fewer classes. Leverage SASS to create the formula. Separate style out of markup. Minimize typing in DOM
+- If not IE11 leverage calc() 
+- SASS for our code, scss for 3rd party code.
+
+- Top is layout of BLOCKS
+- Full has blocks themselves. So once top is done in HEAD, no jumping
+
+## IMPORTANT: Images:
+- Image for the page is stored in that folder.
+- CSS for the image, eg: background is stored in that page or markup. (to avoid bit-rot)
+- Else in assets if needed 2X. 
+- Components should be designed to be external on CDN - and FW agnostic: A FW should not style inside the component. Use YIELD if needed.
 
 ## Architecture that that best leverages a Front End (CSS) Framework:
 
