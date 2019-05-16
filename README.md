@@ -33,6 +33,7 @@ Clear 'sections' indicating the page that is is for. eg:
 - CSS for the image, eg: background is stored in that page or markup. (to avoid bit-rot)
 - Else in assets if needed 2X. 
 - Components should be designed to be external on CDN - and (CSS) FW agnostic: A FW should not style inside the component. Use YIELD if needed.
+- Same with loader.js or such. Page specific is in the page folder. More than one or site wise is assets.
 
 ## Effects and animation:
 - Avoid @keyframes or animation in CSS/SASS. Instead use GSAP or other .js libs
