@@ -34,6 +34,9 @@ Clear 'sections' indicating the page that is is for. eg:
 - Else in assets if needed 2X. 
 - Components should be designed to be external on CDN - and (CSS) FW agnostic: A FW should not style inside the component. Use YIELD if needed.
 
+## Effects and animation:
+- Avoid @keyframes or animation in CSS/SASS. Instead use GSAP or other .js libs
+
 
 ## Recommended workflow:
 0. Mock up with CSS from CDN
