@@ -36,15 +36,17 @@ Clear 'sections' indicating the page that is is for. eg:
 - Same with loader.js or such. Page specific is in the page folder. More than one or site wise is assets.
 
 ## Effects and animation:
-- Avoid @keyframes or animation in CSS/SASS. Instead use GSAP or other .js libs
+Avoid @keyframes or animation in CSS/SASS. Instead use GSAP or other .js libs
 
 
 ## Recommended workflow:
 0. Mock up with CSS from CDN
 1. Create a style page with local css of basic controls(button)
-2. Make 2 SASS files, top in head is for layout of Blocks - no jumping
-3. Bottom is for controls(buttons), fonts, etc.
+2. Make 2 SASS files, top in head is for layout of Blocks - no jumping. Check by not loading bottom.
+3. Bottom is for controls(buttons), fonts, etc. 
 
+# IE 11
+If IE11, test w/ Browserstack.
 
 ## Architecture that that best leverages a Front End (CSS) Framework:
 
