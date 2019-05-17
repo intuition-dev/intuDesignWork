@@ -13,7 +13,7 @@ You should know CSS basics, like when/how to use absolute in a relative.
 
 It is tiring to write your own CSS.
 
-- SASS is code/programming. 
+- SASS is code/programming
 - Minimal DIY
 - Minimal code that does not extend FW
 - In the page, list BLOCKs
@@ -29,6 +29,7 @@ Clear 'sections' indicating the page that is is for. eg:
 .bl_blockTwo{}
 .c_logo{}
 
+- Maintainable by others
 - Blocks could/should be reusable, extend
 - Narrow. Use fewer classes. Leverage SASS to create the formula. Program in SASS. Separate style out of markup. Minimize typing in DOM
 - If not IE11 leverage, else you  have to check in ie11 (Browserstack) calc() 
