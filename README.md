@@ -46,6 +46,7 @@ Clear 'sections' indicating the page that is is for. eg:
 - Else in assets if needed 2X. 
 - Components should be designed to be external on CDN - and (CSS) FW agnostic: A FW should not style inside the component. Use YIELD if needed.
 - Same with loader.js or such. Page specific is in the page folder. More than one or site wise is assets.
+- For SVG use object - http://svgtutorial.com/adding-svg-to-your-template-code
 
 ## Effects and animation:
 Avoid @keyframes or animation in CSS/SASS. Instead use GSAP or other .js libs
