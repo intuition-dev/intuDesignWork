@@ -11,7 +11,7 @@ You should know CSS basics, like when/how to use absolute in a relative.
 
 # Leveraging FW Goals:
 
-It is tiring to write your own CSS.
+Minimal custom CSS. It is tiring to write your own CSS.
 
 - SASS is code/programming
 - Minimal DIY
@@ -39,6 +39,14 @@ Clear 'sections' indicating the page that is is for. eg:
 - Page layout can leverage FW grid or ignore it.  2 layouts: page layout and block layout.(bl and pl)
 - Can we call it elements? (not components, since components is RIOT)
 - Favor padding over margins. 
+
+## IMPORTANT: NO FONT FACE # IN TOP CSS
+
+topCss is layout to prevent jumping.
+
+fullCss is loaded last, after fonts.
+
+By not having font name before font is loaded it prevents FOUT.
 
 ## IMPORTANT: Images:
 - Image for the page is stored in that folder.
