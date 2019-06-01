@@ -36,3 +36,5 @@ This requires creativity. Is there a block in your page or screen that you can s
 You can look for these opportunities if you slow down the network speed in browser's development tools - and watch the 'waterfall' 
 shown there. If you find that, before you trigger your 'end' (fonts and full style) you are doing very good.
 Likely you want to rearrange the waterfall so you achieve the optimal perception of a fast loading UX. The perception is affeced by seeing things on the screen. After the page is done, you can still keep loading other things like effect|interactions. A user would take 1200ms just to click something: after they can see it.
+
+### Note that loading all at once (Naive) is the fastest. But, by managing loading: you can show something to the user faster.
