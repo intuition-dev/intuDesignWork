@@ -28,7 +28,7 @@ knowing how it works, a web page is not a magazine page.
 Also, maybe some block should be blurred or maybe a block .delayShowing till load is done for a nicer UX. Using .delayShowing for entire page is 
 not what you want to do to a user of your app. You want to 'animate' in the page blocks. Use .blue and .delayShowing sparingly in limited ways.
 
-DOM ready event is used for DOM manipulation, not UI related to loading.
+DOM ready event is used for DOM manipulation, not UI related to loading. You want to show things before the DOM, while it renders. Just make it nice.
 
 ## Advanced lazy/eager
 
