@@ -37,8 +37,15 @@ Clear 'sections' indicating the page that is is for. eg:
 - Average developer, so non Designers can read it.
 - All environment-influencing things like margins should not be a part of your css-component classes so it's easier to reuse them later on. Layout should be in BLOCK(BEM) layout
 - Page layout can leverage FW grid or ignore it.  2 layouts: page layout and block layout.(bl and pl)
-- Can we call it elements? (not components, since components is RIOT)
-- Favor padding over margins. 
+- Favor padding over margins.
+- anything starts with .js-name not for styling, but for using in javascript
+- To style the page: .pl-name (page layout)
+- to style block/component: .bl-name
+- to style element within the block: .bl-name__elementName
+- to extend block styling: .bl-name--redColor
+- Location Independence: Not to style things based on where they are , but based on what they are!
+- Selector Performance: how quickly a browser can match the selectors your write in CSS up with the nodes it finds in the DOM. The longer a selector is (i.e. the more component parts) the slower it is:
+	body.home div.header ul { } -- …is a far less efficient selector than:.primary-nav { }
 
 ## IMPORTANT: NO FONT FACE # IN TOP CSS
 
