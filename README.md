@@ -39,6 +39,7 @@ Clear 'sections' indicating the page that is is for. eg:
 - Page layout can leverage FW grid or ignore it.  2 layouts: page layout and block layout.(bl and pl)
 - Favor padding over margins.
 - anything starts with .js-name not for styling, but for using in javascript
+- Put styles for pages into file pages.sass
 - To style the page: .pl-name (page layout)
 - to style block/component: .bl-name
 - to style element within the block: .bl-name__elementName
