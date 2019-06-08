@@ -1,3 +1,3 @@
-mbakeX -c ../spectre/spectre.scss
-mbakeX -c ../spectre/spectreTop.scss
-mbakeX -c navJBar.scss
+mbake-x -c ../spectre/spectre.scss
+mbake-x -c ../spectre/spectreTop.scss
+mbake-x -c navJBar.scss
