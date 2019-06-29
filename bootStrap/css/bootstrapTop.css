@@ -426,4 +426,4 @@ template{display:none;}
 @keyframes spinner-grow{0%{transform:scale(0);}
  50%{opacity:1;}}
 .spinner-grow{display:inline-block;width:2rem;height:2rem;vertical-align:text-bottom;background-color:currentColor;border-radius:50%;opacity:0;-webkit-animation:spinner-grow .75s linear infinite;animation:spinner-grow .75s linear infinite;}
-.spinner-grow-sm{width:1rem;height:1rem;} /* mB v6.07.07 on 2019-06-29T02:03:21.064Z */
+.spinner-grow-sm{width:1rem;height:1rem;} /* mB v6.07.07 on 2019-06-29T02:48:38.455Z */

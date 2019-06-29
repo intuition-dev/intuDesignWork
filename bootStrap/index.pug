@@ -5,6 +5,7 @@ html
       link(rel='stylesheet', href='./css/bootstrapTop.css')
 
    body
+      script(src='load.js', defer='true')
 
    .container
    .row
@@ -15,11 +16,4 @@ html
       .col-sm
          | One of three columns
       
-      script.
-         depp.define({'style':'css/bootstrap.css'})
-         depp.require(['bs', 'FontsLoaded'], function() {
-            console.log('xxx1')
-            depp.require('style')
 
-         }) 
- 
