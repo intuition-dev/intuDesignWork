@@ -1,4 +1,4 @@
-:root{--blue:#007bff;--indigo:#6610f2;--purple:#6f42c1;--pink:#e83e8c;--red:#dc3545;--orange:#fd7e14;--yellow:#ffc107;--green:#28a745;--teal:#20c997;--cyan:#17a2b8;--white:#fff;--gray:#6c757d;--gray-dark:#343a40;--primary:#007bff;--secondary:#6c757d;--success:#28a745;--info:#17a2b8;--warning:#ffc107;--danger:#dc3545;--light:#f8f9fa;--dark:#343a40;--breakpoint-xs:0;--breakpoint-sm:576px;--breakpoint-md:768px;--breakpoint-lg:992px;--breakpoint-xl:1200px;--font-family-sans-serif:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--font-family-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;}
+:root{--blue:#007bff;--indigo:#6610f2;--purple:#6f42c1;--pink:#e83e8c;--red:#dc3545;--orange:#fd7e14;--yellow:#ffc107;--green:#28a745;--teal:#20c997;--cyan:#17a2b8;--white:#fff;--gray:#6c757d;--gray-dark:#343a40;--primary:#007bff;--secondary:#6c757d;--success:#28a745;--info:#17a2b8;--warning:#ffc107;--danger:#dc3545;--light:#f8f9fa;--dark:#343a40;--breakpoint-xs:0;--breakpoint-sm:576px;--breakpoint-md:768px;--breakpoint-lg:992px;--breakpoint-xl:1200px;--font-family-sans-serif:Open Sans;--font-family-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;}
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{margin-bottom:0.5rem;font-weight:500;line-height:1.2;}
 h1,.h1{font-size:2.5rem;}
 h2,.h2{font-size:2rem;}
@@ -393,7 +393,7 @@ a.close.disabled{pointer-events:none;}
 .toast.hide{display:none;}
 .toast-header{display:flex;align-items:center;padding:0.25rem 0.75rem;color:#6c757d;background-color:rgba(255,255,255,0.85);background-clip:padding-box;border-bottom:1px solid rgba(0,0,0,0.05);}
 .toast-body{padding:0.75rem;}
-.tooltip{position:absolute;z-index:1070;display:block;margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-style:normal;font-weight:400;line-height:1.5;text-align:left;text-align:start;text-decoration:none;text-shadow:none;text-transform:none;letter-spacing:normal;word-break:normal;word-spacing:normal;white-space:normal;line-break:auto;font-size:0.875rem;word-wrap:break-word;opacity:0;}
+.tooltip{position:absolute;z-index:1070;display:block;margin:0;font-family:"Open Sans";font-style:normal;font-weight:400;line-height:1.5;text-align:left;text-align:start;text-decoration:none;text-shadow:none;text-transform:none;letter-spacing:normal;word-break:normal;word-spacing:normal;white-space:normal;line-break:auto;font-size:0.875rem;word-wrap:break-word;opacity:0;}
 .tooltip.show{opacity:0.9;}
 .tooltip .arrow{position:absolute;display:block;width:0.8rem;height:0.4rem;}
 .tooltip .arrow::before{position:absolute;content:"";border-color:transparent;border-style:solid;}
@@ -410,6 +410,29 @@ a.close.disabled{pointer-events:none;}
 .bs-tooltip-left .arrow,.bs-tooltip-auto[x-placement^="left"] .arrow{right:0;width:0.4rem;height:0.8rem;}
 .bs-tooltip-left .arrow::before,.bs-tooltip-auto[x-placement^="left"] .arrow::before{left:0;border-width:0.4rem 0 0.4rem 0.4rem;border-left-color:#000;}
 .tooltip-inner{max-width:200px;padding:0.25rem 0.5rem;color:#fff;text-align:center;background-color:#000;border-radius:0.25rem;}
+.popover{position:absolute;top:0;left:0;z-index:1060;display:block;max-width:276px;font-family:"Open Sans";font-style:normal;font-weight:400;line-height:1.5;text-align:left;text-align:start;text-decoration:none;text-shadow:none;text-transform:none;letter-spacing:normal;word-break:normal;word-spacing:normal;white-space:normal;line-break:auto;font-size:0.875rem;word-wrap:break-word;background-color:#fff;background-clip:padding-box;border:1px solid rgba(0,0,0,0.2);border-radius:0.3rem;}
+.popover .arrow{position:absolute;display:block;width:1rem;height:0.5rem;margin:0 0.3rem;}
+.popover .arrow::before,.popover .arrow::after{position:absolute;display:block;content:"";border-color:transparent;border-style:solid;}
+.bs-popover-top,.bs-popover-auto[x-placement^="top"]{margin-bottom:0.5rem;}
+.bs-popover-top > .arrow,.bs-popover-auto[x-placement^="top"] > .arrow{bottom:calc((0.5rem + 1px) * -1);}
+.bs-popover-top > .arrow::before,.bs-popover-auto[x-placement^="top"] > .arrow::before{bottom:0;border-width:0.5rem 0.5rem 0;border-top-color:rgba(0,0,0,0.25);}
+.bs-popover-top > .arrow::after,.bs-popover-auto[x-placement^="top"] > .arrow::after{bottom:1px;border-width:0.5rem 0.5rem 0;border-top-color:#fff;}
+.bs-popover-right,.bs-popover-auto[x-placement^="right"]{margin-left:0.5rem;}
+.bs-popover-right > .arrow,.bs-popover-auto[x-placement^="right"] > .arrow{left:calc((0.5rem + 1px) * -1);width:0.5rem;height:1rem;margin:0.3rem 0;}
+.bs-popover-right > .arrow::before,.bs-popover-auto[x-placement^="right"] > .arrow::before{left:0;border-width:0.5rem 0.5rem 0.5rem 0;border-right-color:rgba(0,0,0,0.25);}
+.bs-popover-right > .arrow::after,.bs-popover-auto[x-placement^="right"] > .arrow::after{left:1px;border-width:0.5rem 0.5rem 0.5rem 0;border-right-color:#fff;}
+.bs-popover-bottom,.bs-popover-auto[x-placement^="bottom"]{margin-top:0.5rem;}
+.bs-popover-bottom > .arrow,.bs-popover-auto[x-placement^="bottom"] > .arrow{top:calc((0.5rem + 1px) * -1);}
+.bs-popover-bottom > .arrow::before,.bs-popover-auto[x-placement^="bottom"] > .arrow::before{top:0;border-width:0 0.5rem 0.5rem 0.5rem;border-bottom-color:rgba(0,0,0,0.25);}
+.bs-popover-bottom > .arrow::after,.bs-popover-auto[x-placement^="bottom"] > .arrow::after{top:1px;border-width:0 0.5rem 0.5rem 0.5rem;border-bottom-color:#fff;}
+.bs-popover-bottom .popover-header::before,.bs-popover-auto[x-placement^="bottom"] .popover-header::before{position:absolute;top:0;left:50%;display:block;width:1rem;margin-left:-0.5rem;content:"";border-bottom:1px solid #f7f7f7;}
+.bs-popover-left,.bs-popover-auto[x-placement^="left"]{margin-right:0.5rem;}
+.bs-popover-left > .arrow,.bs-popover-auto[x-placement^="left"] > .arrow{right:calc((0.5rem + 1px) * -1);width:0.5rem;height:1rem;margin:0.3rem 0;}
+.bs-popover-left > .arrow::before,.bs-popover-auto[x-placement^="left"] > .arrow::before{right:0;border-width:0.5rem 0 0.5rem 0.5rem;border-left-color:rgba(0,0,0,0.25);}
+.bs-popover-left > .arrow::after,.bs-popover-auto[x-placement^="left"] > .arrow::after{right:1px;border-width:0.5rem 0 0.5rem 0.5rem;border-left-color:#fff;}
+.popover-header{padding:0.5rem 0.75rem;margin-bottom:0;font-size:1rem;background-color:#f7f7f7;border-bottom:1px solid #ebebeb;border-top-left-radius:calc(0.3rem - 1px);border-top-right-radius:calc(0.3rem - 1px);}
+.popover-header:empty{display:none;}
+.popover-body{padding:0.5rem 0.75rem;color:#212529;}
 .align-baseline{vertical-align:baseline !important;}
 .align-top{vertical-align:top !important;}
 .align-middle{vertical-align:middle !important;}
@@ -1248,4 +1271,4 @@ a.text-dark:hover,a.text-dark:focus{color:#121416 !important;}
 .text-break{word-break:break-word !important;overflow-wrap:break-word !important;}
 .text-reset{color:inherit !important;}
 .visible{visibility:visible !important;}
-.invisible{visibility:hidden !important;} /* mB v6.06.29 on 2019-06-24T01:11:01.186Z */
+.invisible{visibility:hidden !important;} /* mB v6.07.07 on 2019-06-29T02:03:21.056Z */
