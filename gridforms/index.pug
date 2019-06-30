@@ -1,8 +1,13 @@
 head
-   meta(name='viewport', content='width=device-width, initial-scale=1')
-   link(href= 'gridform.css', rel='stylesheet')
+   include headFrag
+   link(href= '/css/gridforms.css', rel='stylesheet')
 body
-    form.grid-form
+   style.
+      .grid-form > fieldset > legend {
+         margin: 0;
+      }
+
+   form.grid-form#f1
       fieldset
         legend Form Section
         div(data-row-span='2')
