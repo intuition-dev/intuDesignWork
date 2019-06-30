@@ -1,4 +1,10 @@
 
+### Nat
+
+- https://www.youtube.com/watch?v=l-S2Y3SF3mM
+- https://www.youtube.com/watch?v=a5KYlHNKQB8&t=4s
+
+
 
 http://css-tricks.com/absolute-positioning-inside-relative-positioning/
 
