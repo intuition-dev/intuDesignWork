@@ -17,4 +17,7 @@ body
           div(data-field-span='1')
             label Field 2
             input(type='text')
-
+   script.
+      depp.require(['FontsLoaded', 'bsDefaultStyle'], function() {
+         console.log('styles', Date.now() - _start)
+      }) 
