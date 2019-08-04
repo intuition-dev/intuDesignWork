@@ -1,11 +1,33 @@
 head
-    include headFrag
-    
-    link(rel='stylesheet', href='navBar/css/navbar.css')
-    script(src='navBar/navBar.js')
+   meta(name='viewport', content='width=device-width, initial-scale=1')
 
-    link(rel='stylesheet', href='site.css')
+   link(href= 'spectreTop.css', rel='stylesheet')
+   link(href= 'spectre.css', rel='stylesheet')
+
+   script(src='//cdn.jsdelivr.net/npm/jquery@3.4.0/dist/jquery.slim.min.js')
 
 body
+   link(href='//fonts.googleapis.com/css?family=Open+Sans', rel='stylesheet')
 
-    p oh hi
+   style.
+      .pageBack {
+         background-attachment: scroll;
+         min-height: 45vh;
+         background-position: center center;
+         background-repeat: no-repeat;
+         background-size: cover;
+      }
+
+      .pageBack.delayShowing {
+         background-image: url(img.jpg);
+      }
+
+   include navJbar
+
+   .pageBack.delayShowing
+
+      br
+      .padL.white oh hi 1
+
+   br
+   .padL oh hi 2
