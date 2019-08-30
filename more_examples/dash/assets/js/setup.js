@@ -20,9 +20,7 @@ onDeppLoaded()
 function onDeppLoaded() {
    depp.define({
       'pre': [
-         '/assets/css/gridform.css',
-         '/assets/3rd/jquery.disableAutoFill.js',
-         '/assets/3rd/collections.js'
+         '/assets/css/gridform.css'
       ],
       'css': [
          '/assets/css/spectre.css'
