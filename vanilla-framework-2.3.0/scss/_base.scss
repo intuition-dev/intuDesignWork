@@ -5,7 +5,9 @@
 @import 'base_box-sizing';
 @import 'base_button';
 @import 'base_code';
-@import 'base_forms';
+
+//@import 'base_forms';
+
 @import 'base_hr';
 @import 'base_links';
 @import 'base_lists';
@@ -24,7 +26,9 @@
   @include vf-b-box-sizing;
   @include vf-b-button;
   @include vf-b-code;
-  @include vf-b-forms;
+
+//  @include vf-b-forms;
+
   @include vf-b-hr;
   @include vf-b-links;
   @include vf-b-lists;

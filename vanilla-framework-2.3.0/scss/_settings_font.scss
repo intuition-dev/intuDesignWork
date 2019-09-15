@@ -1,6 +1,6 @@
 // Global font settings
-$font-base-family: '"Ubuntu", -apple-system, "Segoe UI", "Roboto", "Oxygen", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif' !default;
-$font-monospace: '"Ubuntu Mono", Consolas, Monaco, Courier, monospace' !default;
+$font-base-family: '-apple-system, "Segoe UI", "Roboto", "Oxygen", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif' !default;
+$font-monospace: 'Consolas, Monaco, Courier, monospace' !default;
 $font-heading-family: $font-base-family !default;
 $font-import: 'http://fonts.gstatic.com/s/ubuntu/v9/' !default;
 $font-allow-cyrillic-greek-latin: false !default;
@@ -12,3 +12,4 @@ $base-font-sizes: (
   large: $font-size-largescreen
 ) !default;
 $font-weight-bold: 400 !default;
+

@@ -7,13 +7,15 @@
 @import 'patterns_breadcrumbs';
 @import 'patterns_buttons';
 @import 'patterns_card';
-@import 'patterns_code-copyable';
+//@import 'patterns_code-copyable';
 @import 'patterns_code-numbered';
 @import 'patterns_contextual-menu';
 @import 'patterns_divider';
-@import 'patterns_form-help-text';
-@import 'patterns_form-validation';
-@import 'patterns_forms';
+
+//@import 'patterns_form-help-text';
+//@import 'patterns_form-validation';
+//@import 'patterns_forms';
+
 @import 'patterns_grid';
 @import 'patterns_heading-icon';
 @import 'patterns_headings';
@@ -22,7 +24,9 @@
 @import 'patterns_inline-images';
 @import 'patterns_label';
 @import 'patterns_links';
-@import 'patterns_list-tree';
+
+//@import 'patterns_list-tree';
+
 @import 'patterns_lists';
 @import 'patterns_matrix';
 @import 'patterns_media-object';
@@ -36,12 +40,16 @@
 @import 'patterns_search-box';
 @import 'patterns_slider';
 @import 'patterns_strip';
-@import 'patterns_switch';
+
+//@import 'patterns_switch';
+
 @import 'patterns_table-expanding';
 @import 'patterns_table-of-contents';
 @import 'patterns_table-mobile-card';
 @import 'patterns_table-sortable';
-@import 'patterns_tabs';
+
+//@import 'patterns_tabs';
+
 @import 'patterns_tooltips';
 
 // Utilities
@@ -55,6 +63,7 @@
 @import 'utilities_hide';
 @import 'utilities_image-position';
 @import 'utilities_layout';
+
 @import 'utilities_margin-collapse';
 @import 'utilities_off-screen';
 @import 'utilities_padding-collapse';
@@ -72,13 +81,15 @@
   @include vf-p-breadcrumbs;
   @include vf-p-buttons;
   @include vf-p-card;
-  @include vf-p-code-copyable;
+//  @include vf-p-code-copyable;
   @include vf-p-code-numbered;
   @include vf-p-contextual-menu;
   @include vf-p-divider;
-  @include vf-p-form-help-text;
-  @include vf-p-form-validation;
-  @include vf-p-forms;
+
+  //@include vf-p-form-help-text;
+  //@include vf-p-form-validation;
+  //@include vf-p-forms;
+
   @include vf-p-grid-modifications;
   @include vf-p-grid;
   @include vf-p-heading-icon;
@@ -88,11 +99,15 @@
   @include vf-p-inline-images;
   @include vf-p-label;
   @include vf-p-links;
-  @include vf-p-list-tree;
+
+  //@include vf-p-list-tree;
+
   @include vf-p-lists;
   @include vf-p-matrix;
   @include vf-p-media-object;
-  @include vf-p-modal;
+  
+  //@include vf-p-modal;
+
   @include vf-p-muted-heading;
   @include vf-p-navigation;
   @include vf-p-subnav;
@@ -102,12 +117,15 @@
   @include vf-p-search-box;
   @include vf-p-slider;
   @include vf-p-strip;
-  @include vf-p-switch;
+//  @include vf-p-switch;
+  
   @include vf-p-table-expanding;
   @include vf-p-table-of-contents;
   @include vf-p-table-mobile-card;
   @include vf-p-table-sortable;
-  @include vf-p-tabs;
+  
+  //@include vf-p-tabs;
+
   @include vf-p-tooltips;
   // Utilities
   @include vf-u-align;
