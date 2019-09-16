@@ -2,9 +2,18 @@ head
     include headFrag
 
 body
-    link(rel='stylesheet', href='/css/VDS.css')
+    link(rel='stylesheet', href='/css/min.css')
+    script(src='/ui-loader.js')
 
     p oh hi
+    h1 yes dear
+    h2 ok now
+    h3 so long
+    h4 bla bla
+    h5 what
+    h6 can you hear me now
 
-    script. 
+    script.
+        console.log('oh hi')
         toolBeltDefault()
+        loadFonts(['Poppins:200, 300,300i,400,500'])

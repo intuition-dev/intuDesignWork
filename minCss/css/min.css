@@ -65,4 +65,12 @@ input[type='text'],textarea{-webkit-appearance:none;width:13em;}
 .table th,.table td{padding:.5em;text-align:left;}
 .table tbody > *:nth-child(2n-1){background:#ccc;}
 .msg{background:#def;border-left:5px solid #59d;padding:1.5em;}
-pre,code{font-size:13px;font-family:monospace,monospace;line-height:1.1em;background:#d1dffa;padding-left:5px;padding-bottom:1em;} /* mB v6.08.28 on 2019-09-10T14:10:27.917Z */
+pre,code{font-size:13px;font-family:monospace,monospace;line-height:1.1em;background:#d1dffa;padding-left:5px;padding-bottom:1em;}
+*{-webkit-font-kerning:normal;font-kerning:normal;}
+*,body,h4,p{line-height:calc((11px + 1vh) * 1.2);font-size:calc(calc((11px + 1vh) * 1.2) * .82);margin-bottom:0;}
+h1{line-height:calc(calc((11px + 1vh) * 1.2) * 3);font-size:calc(calc((11px + 1vh) * 1.2) 3 * .82);margin-bottom:calc((11px + 1vh) * 1.2);}
+h2{line-height:calc(calc((11px + 1vh) * 1.2) * 2);font-size:calc(calc((11px + 1vh) * 1.2) 2 * .82);margin-bottom:calc((11px + 1vh) * 1.2);}
+h3{line-height:calc(calc((11px + 1vh) * 1.2) * 2);font-size:calc(calc((11px + 1vh) * 1.2) * 1.5 * .82);margin-bottom:calc((11px + 1vh) * 1.2);}
+h5{line-height:calc((11px + 1vh) * 1.2);font-size:calc();}
+h6{line-height:calc((11px + 1vh) * 1.2);font-size:calc(calc((11px + 1vh) * 1.2) * .65 * .82);}
+body{margin-left:5px;} /* mB v6.09.16 on 2019-09-16T17:42:58.111Z */

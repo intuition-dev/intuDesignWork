@@ -1,7 +1,4 @@
-
-// margin to be line height
 // modular VR
-
 // https://www.codementor.io/ricardozea/100-responsive-typography-system-using-a-modular-scale-s5rhft58g
 // https://scotch.io/tutorials/aesthetic-sass-3-typography-and-vertical-rhythm
 
@@ -10,36 +7,48 @@
 
 // Poppins:200, 300,300i,400,500
 
-// font goal is ~15
-$baseVR: calc((11px + 1vw) * 1.2)
+// font goal is ~15px * line margin
+$baseVR: calc((11px + 1vh) * 1.2)
 
 // normal 
-*, body, h4, p {
+*, body, h4, p 
     line-height: $baseVR
+    font-size: calc(#{$baseVR} * .82 )
     margin-bottom: 0;
-}
 
-// huge
-h1 3
-    line-height: $baseVR
-    margin-bottom: 0;
-    margin-bottom: 
+// large
+h1 // 3
+    line-height: calc(#{$baseVR} * 3)
+    font-size: calc(#{$baseVR} 3 * .82 )
+    margin-bottom: $baseVR
 
-h2 2
+h2 // 2
+    line-height: calc(#{$baseVR} * 2)
+    font-size: calc(#{$baseVR} 2 * .82 )
+    margin-bottom: $baseVR
 
-h3 1.5
+
+h3 // 2, 1.5
+    line-height: calc(#{$baseVR} * 2)
+    font-size: calc(#{$baseVR} * 1.5 * .82 )
+    margin-bottom: $baseVR
 
 // see normal
 
 //smaller 
-
-// .8 12
+// 1 .8 
 h5  
+    line-height: $baseVR
+    font-size: calc({$baseVR} * .8 * .82 )
 
-//.65 10
+//1 .65 
 h6 
+    line-height: $baseVR
+    font-size: calc(#{$baseVR} * .65 * .82 )
 
 
 // other
-
 //button
+
+body
+    margin-left: 5px
