@@ -7,49 +7,57 @@
     margin: 0;
     padding: 0;
 
-//loadFonts(['Open+Sans:300,300i,400,400i', 'PT+Serif:400,400i,700i'])
+//loadFonts(['Open+Sans:300,300i,400,400i', 'PT+Serif:400,700i'])
 
 // font goal is ~15px * line margin
-$baseVR: calc((13px + .3vh) * 2)
-$fontSz: .6
+$baseVR: calc((14px + .2vh) * 1.5)
 
 // normal 
 *, body, h5, p 
     line-height: $baseVR
-    font-size:   calc(#{$baseVR} * #{$fontSz} )
+    font-size:   calc(#{$baseVR} * .65)
     margin-bottom: 0;
-    font-family: 'Open Sans'
+    font-family: 'Open Sans', sans-serif
     font-weight: 300;
 
-// large
+// large /////////////////////
 h1 // 4
-    line-height: calc(#{$baseVR} * 6)
-    font-size:   calc(#{$baseVR} * 6 * #{$fontSz} )
+    line-height: calc(#{$baseVR} * 5)
+    font-size:   calc(#{$baseVR} * 5 * .9 )
     margin-bottom: $baseVR
+    font-family: 'PT Serif', serif
+    font-weight: 700;
+    font-style: italic
 
 h2 // 3
     line-height: calc(#{$baseVR} * 3)
-    font-size:   calc(#{$baseVR} * 3 * #{$fontSz} )
+    font-size:   calc(#{$baseVR} * 3 )
     margin-bottom: $baseVR
+    font-family: 'PT Serif', serif
+    font-weight: 400;
 
 h3 // 2
     line-height: calc(#{$baseVR} * 2)
-    font-size:   calc(#{$baseVR} * 2 * #{$fontSz} )
+    font-size:   calc(#{$baseVR} * 2 )
     margin-bottom: $baseVR
-
+    font-family: 'PT Serif', serif
+    font-weight: 400;
 
 h4 // 2, 1.5
     line-height: calc(#{$baseVR} * 2)
-    font-size:   calc(#{$baseVR} * 1.5 * #{$fontSz} )
+    font-size:   calc(#{$baseVR} * 1.25 )
     margin-bottom: $baseVR
+    font-weight: 400;
+    font-style: italic
 
 // see normal
 
 //smaller 
-//1 .65 
+//1 .68
 h6 
     line-height: $baseVR
-    font-size: calc(#{$baseVR} * .72 * #{$fontSz} )
+    font-size: calc(#{$baseVR} * .68 * .7)
+    font-style: italic
 
 
 // other
