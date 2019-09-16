@@ -1,50 +1,55 @@
-// modular VR
+// modular() VR
 // https://www.codementor.io/ricardozea/100-responsive-typography-system-using-a-modular-scale-s5rhft58g
 // https://scotch.io/tutorials/aesthetic-sass-3-typography-and-vertical-rhythm
 
 * 
     font-kerning: normal; // enables kerning
+    margin: 0;
+    padding: 0;
 
-// Poppins:200, 300,300i,400,500
+//loadFonts(['Open+Sans:300,300i,400,400i', 'PT+Serif:400,400i,700i'])
 
 // font goal is ~15px * line margin
-$baseVR: calc((11px + 1vh) * 1.2)
+$baseVR: calc((13px + .3vh) * 2)
+$fontSz: .6
 
 // normal 
-*, body, h4, p 
+*, body, h5, p 
     line-height: $baseVR
-    font-size: calc(#{$baseVR} * .82 )
+    font-size:   calc(#{$baseVR} * #{$fontSz} )
     margin-bottom: 0;
+    font-family: 'Open Sans'
+    font-weight: 300;
 
 // large
-h1 // 3
+h1 // 4
+    line-height: calc(#{$baseVR} * 6)
+    font-size:   calc(#{$baseVR} * 6 * #{$fontSz} )
+    margin-bottom: $baseVR
+
+h2 // 3
     line-height: calc(#{$baseVR} * 3)
-    font-size: calc(#{$baseVR} 3 * .82 )
+    font-size:   calc(#{$baseVR} * 3 * #{$fontSz} )
     margin-bottom: $baseVR
 
-h2 // 2
+h3 // 2
     line-height: calc(#{$baseVR} * 2)
-    font-size: calc(#{$baseVR} 2 * .82 )
+    font-size:   calc(#{$baseVR} * 2 * #{$fontSz} )
     margin-bottom: $baseVR
 
 
-h3 // 2, 1.5
+h4 // 2, 1.5
     line-height: calc(#{$baseVR} * 2)
-    font-size: calc(#{$baseVR} * 1.5 * .82 )
+    font-size:   calc(#{$baseVR} * 1.5 * #{$fontSz} )
     margin-bottom: $baseVR
 
 // see normal
 
 //smaller 
-// 1 .8 
-h5  
-    line-height: $baseVR
-    font-size: calc({$baseVR} * .8 * .82 )
-
 //1 .65 
 h6 
     line-height: $baseVR
-    font-size: calc(#{$baseVR} * .65 * .82 )
+    font-size: calc(#{$baseVR} * .72 * #{$fontSz} )
 
 
 // other
