@@ -1,0 +1,32 @@
+<!doctype html>
+html
+   head
+      include headFrag
+      link(rel='stylesheet', href='/css/bootstrapTop.css')
+
+   body
+
+      .container
+         .row
+            .col-sm
+               | One of three columns
+            .col-sm
+               | One of three columns
+            .col-sm
+               | One of three columns
+         
+
+      .container
+         hr
+         a(href='')
+            p oh hi
+
+      script.
+         toolBeltDefault() 
+
+         depp.require('FontsLoaded', function() {
+            console.log('fo')
+            depp.require('bsDefaultStyle', function() {
+               console.log('bo2')
+            })
+         })
