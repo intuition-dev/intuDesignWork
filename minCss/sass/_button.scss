@@ -1,18 +1,3 @@
-//-------------------------------------------------------------------
-// Button Colors
-//-------------------------------------------------------------------
-
-$a--bg:           #0ae;
-$a--hover:        #09d;
-$a--active:       #08b;
-
-$b--bg:           #3c5;
-$b--hover:        #2b4;
-$b--active:       #2a4;
-
-$c--bg:           #d33;
-$c--hover:        #c22;
-$c--active:       #b22;
 
 //-------------------------------------------------------------------
 // Mixin to set btn background for inactive, active & hover states
@@ -39,7 +24,8 @@ $c--active:       #b22;
 // Button Styles & Classes
 //-------------------------------------------------------------------
 
-// calc(#{$baseVR} * .78 );
+// font-size: calc(#{$baseVR} * .78 );
+// font-size: calc(#{$baseVR} * .65);
 
 // Set Generic <button> and .btn styling.
 .btn {

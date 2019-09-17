@@ -1,7 +1,12 @@
 @if $import-navbar == true {
+
+
 //-------------------------------------------------------------------
 //  Navigation Bar
 //-------------------------------------------------------------------
+
+// font-size: calc(#{$baseVR} * .78 );
+// font-size: calc(#{$baseVR} * .65);
 
 // CSS reused in multiple selectors
 %nav-global {

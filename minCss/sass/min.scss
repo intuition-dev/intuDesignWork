@@ -1,5 +1,5 @@
 
-@import '../minireset';
+@import '../normalize';
 
 // font goal is ~15px * line height
 $baseVR: calc((14px + .2vmin ) * 1.4);
@@ -11,6 +11,8 @@ $baseVR: calc((14px + .2vmin ) * 1.4);
     font-kerning: normal; // enables kerning
 }
 
+// font-size: calc(#{$baseVR} * .78 );
+// font-size: calc(#{$baseVR} * .65);
 
 // ------------------------------------------------------------------
 //  Core Styles of Min
@@ -21,14 +23,14 @@ $baseVR: calc((14px + .2vmin ) * 1.4);
 // ------------------------------------------------------------------
 //  Customize Optional Components
 
-$import-buttons:                          true !default;
-$import-forms:                            true !default;
-$import-navbar:                           true !default;
-$import-tables:                           true !default;
-$import-messages:                         true !default;
-$import-icons:                            false !default;
-$import-grid:                             true !default;
-$import-messages:                         true !default;
+$import-buttons:            true !default;
+$import-forms:              true !default;
+$import-navbar:             true !default;
+$import-tables:             true !default;
+$import-messages:           true !default;
+$import-icons:              false !default;
+$import-grid:               true !default;
+$import-messages:           true !default;
 
 // ------------------------------------------------------------------
 //  Import Components based on above customization
@@ -45,14 +47,13 @@ $import-messages:                         true !default;
 
 @import '../gridforms';
 
-//  ////////////////
 pre, code {
     font-family: monospace, monospace !important; 
     background: hsl(220, 80%, 90%); 
     padding-left: 5px;
 }
 
-
+//  ////////////////
 .CodeMirror, .CodeMirror * {
     font-family: monospace, monospace; 
 }
