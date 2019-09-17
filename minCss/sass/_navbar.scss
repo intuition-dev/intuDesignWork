@@ -14,6 +14,7 @@
   color: $c-white;
 }
 
+// ///////////////
 .nav {
   @extend %nav-global;
 
@@ -38,6 +39,7 @@
     &:hover {
       @extend %nav-global;
     }
+
   }
 
   .pagename {
@@ -57,18 +59,17 @@
   display: none;
   float: right;
   font-size: $baseVR;
-  margin-top: - calc(#{$baseVR} * .5 )
+  margin-top: -calc(#{$baseVR} * .5 )
 }
 
-
 //.nav for small screens
-@media(max-width:500px) {
+@media(max-width:800px) {
 
   .pagename {
     margin-top: -11px;
   }
 
-  .btn.btn-sm.btn-close {
+  .btn.btn-close {
     display: block;
   }
 
@@ -83,7 +84,7 @@
       // max-height: 500px;
     }
 
-    & div:before {
+    & div:before { //bars
       background: $c-black;
       border-top: 3px solid;
       border-bottom: 10px double;
