@@ -20,7 +20,7 @@ body,textarea,input{background:0;border-radius:0;margin:0;}
 .btn{background:#999;border:0;color:#fff;cursor:pointer;display:inline-block;border-radius:.3em;height:calc(calc((14px + .2vmin ) * 1.4) * 2);line-height:calc(calc((14px + .2vmin ) * 1.4) * 2);padding:0 1.5em;text-align:center;margin:0 .2em;}
 .btn:hover{background:#888;}
 .btn:active,.btn:focus{background:#777;}
-.btn-sm{height:calc((14px + .2vmin ) * 1.4);line-height:calc((14px + .2vmin ) * 1.4);padding:0 .7em;margin:0 .5em;}
+.btn-sm{height:calc((14px + .2vmin ) * 1.4);line-height:calc((14px + .2vmin ) * 1.4);padding:0 .7em;margin:0 .1em;}
 .btn-a{background:#0ae;}
 .btn-a:hover{background:#09d;}
 .btn-a:active,.btn-a:focus{background:#08b;}
@@ -65,7 +65,6 @@ input[type='text'],textarea{-webkit-appearance:none;width:13em;}
 .table th,.table td{padding:.5em;text-align:left;}
 .table tbody > *:nth-child(2n-1){background:#ccc;}
 .msg{background:#def;border-left:5px solid #59d;padding:1.5em;}
-pre,code{font-family:monospace,monospace;background:#d1dffa;padding-left:5px;}
 *,body,h5,p{line-height:calc((14px + .2vmin ) * 1.4);font-size:calc(calc((14px + .2vmin ) * 1.4) * .65);margin-bottom:0;font-family:'Open Sans',sans-serif;font-weight:300;}
 p,.kern{letter-spacing:0.05em;}
 h1{line-height:calc(calc((14px + .2vmin ) * 1.4) * 3);font-size:calc(calc((14px + .2vmin ) * 1.4) * 3 * .9);margin-bottom:calc((14px + .2vmin ) * 1.4);font-family:'PT Serif',serif;font-weight:700;font-style:italic;}
@@ -76,8 +75,8 @@ h6{line-height:calc((14px + .2vmin ) * 1.4);font-size:calc(calc((14px + .2vmin )
 .grid-form *,.grid-form *:before,.grid-form *:after{box-sizing:border-box;}
 .grid-form input[type="text"],.grid-form input[type="email"],.grid-form input[type="number"],.grid-form input[type="password"],.grid-form input[type="search"],.grid-form input[type="tel"],.grid-form input[type="url"],.grid-form input[type="color"],.grid-form input[type="date"],.grid-form input[type="datetime"],.grid-form input[type="datetime-local"],.grid-form input[type="month"],.grid-form input[type="time"],.grid-form input[type="week"],.grid-form textarea,.grid-form select{font-size:calc(calc((14px + .2vmin ) * 1.4) * .78);padding:0;margin:0;width:100%;}
 .grid-form input[type="text"],.grid-form input[type="email"],.grid-form input[type="number"],.grid-form input[type="password"],.grid-form input[type="search"],.grid-form input[type="tel"],.grid-form input[type="url"],.grid-form input[type="color"],.grid-form input[type="date"],.grid-form input[type="datetime"],.grid-form input[type="datetime-local"],.grid-form input[type="month"],.grid-form input[type="time"],.grid-form input[type="week"],.grid-form textarea{border:0;background:transparent;}
-.grid-form input[type="text"]::-webkit-input-placeholder,.grid-form input[type="email"]::-webkit-input-placeholder,.grid-form input[type="number"]::-webkit-input-placeholder,.grid-form input[type="password"]::-webkit-input-placeholder,.grid-form input[type="search"]::-webkit-input-placeholder,.grid-form input[type="tel"]::-webkit-input-placeholder,.grid-form input[type="url"]::-webkit-input-placeholder,.grid-form input[type="color"]::-webkit-input-placeholder,.grid-form input[type="date"]::-webkit-input-placeholder,.grid-form input[type="datetime"]::-webkit-input-placeholder,.grid-form input[type="datetime-local"]::-webkit-input-placeholder,.grid-form input[type="month"]::-webkit-input-placeholder,.grid-form input[type="time"]::-webkit-input-placeholder,.grid-form input[type="week"]::-webkit-input-placeholder,.grid-form textarea::-webkit-input-placeholder{font-weight:100;color:#595959;}
-.grid-form input[type="text"]:-moz-placeholder,.grid-form input[type="email"]:-moz-placeholder,.grid-form input[type="number"]:-moz-placeholder,.grid-form input[type="password"]:-moz-placeholder,.grid-form input[type="search"]:-moz-placeholder,.grid-form input[type="tel"]:-moz-placeholder,.grid-form input[type="url"]:-moz-placeholder,.grid-form input[type="color"]:-moz-placeholder,.grid-form input[type="date"]:-moz-placeholder,.grid-form input[type="datetime"]:-moz-placeholder,.grid-form input[type="datetime-local"]:-moz-placeholder,.grid-form input[type="month"]:-moz-placeholder,.grid-form input[type="time"]:-moz-placeholder,.grid-form input[type="week"]:-moz-placeholder,.grid-form textarea:-moz-placeholder{font-weight:100;color:#595959;}
+.grid-form input[type="text"]::-webkit-input-placeholder,.grid-form input[type="email"]::-webkit-input-placeholder,.grid-form input[type="number"]::-webkit-input-placeholder,.grid-form input[type="password"]::-webkit-input-placeholder,.grid-form input[type="search"]::-webkit-input-placeholder,.grid-form input[type="tel"]::-webkit-input-placeholder,.grid-form input[type="url"]::-webkit-input-placeholder,.grid-form input[type="color"]::-webkit-input-placeholder,.grid-form input[type="date"]::-webkit-input-placeholder,.grid-form input[type="datetime"]::-webkit-input-placeholder,.grid-form input[type="datetime-local"]::-webkit-input-placeholder,.grid-form input[type="month"]::-webkit-input-placeholder,.grid-form input[type="time"]::-webkit-input-placeholder,.grid-form input[type="week"]::-webkit-input-placeholder,.grid-form textarea::-webkit-input-placeholder{font-weight:300;color:#595959;}
+.grid-form input[type="text"]:-moz-placeholder,.grid-form input[type="email"]:-moz-placeholder,.grid-form input[type="number"]:-moz-placeholder,.grid-form input[type="password"]:-moz-placeholder,.grid-form input[type="search"]:-moz-placeholder,.grid-form input[type="tel"]:-moz-placeholder,.grid-form input[type="url"]:-moz-placeholder,.grid-form input[type="color"]:-moz-placeholder,.grid-form input[type="date"]:-moz-placeholder,.grid-form input[type="datetime"]:-moz-placeholder,.grid-form input[type="datetime-local"]:-moz-placeholder,.grid-form input[type="month"]:-moz-placeholder,.grid-form input[type="time"]:-moz-placeholder,.grid-form input[type="week"]:-moz-placeholder,.grid-form textarea:-moz-placeholder{font-weight:300;color:#595959;}
 .grid-form input[type="text"]:focus,.grid-form input[type="email"]:focus,.grid-form input[type="number"]:focus,.grid-form input[type="password"]:focus,.grid-form input[type="search"]:focus,.grid-form input[type="tel"]:focus,.grid-form input[type="url"]:focus,.grid-form input[type="color"]:focus,.grid-form input[type="date"]:focus,.grid-form input[type="datetime"]:focus,.grid-form input[type="datetime-local"]:focus,.grid-form input[type="month"]:focus,.grid-form input[type="time"]:focus,.grid-form input[type="week"]:focus,.grid-form textarea:focus{outline:none;}
 .grid-form fieldset{border:none;padding:0;margin:0;}
 .grid-form fieldset legend{border:none;border-bottom:4px solid #404040;color:#404040;font-size:calc(calc((14px + .2vmin ) * 1.4) * .78);font-weight:bold;padding-bottom:5px;position:static;width:100%;}
@@ -87,7 +86,7 @@ h6{line-height:calc((14px + .2vmin ) * 1.4);font-size:calc(calc((14px + .2vmin )
 .grid-form [data-row-span]:before,.grid-form [data-row-span]:after{content:"";display:table;}
 .grid-form [data-row-span]:after{clear:both;}
 @media only screen and (min-width:0) and (max-width:700px){.grid-form [data-row-span]{border-bottom:none;}}
-.grid-form [data-row-span] [data-field-span]{padding:0.5em;float:left;}
+.grid-form [data-row-span] [data-field-span]{padding:0.4em;float:left;}
 @media only screen and (min-width:0) and (max-width:700px){.grid-form [data-row-span] [data-field-span]{border-bottom:1px solid #333;width:100% !important;}}
 @media only screen and (min-width:700px){.grid-form [data-row-span] [data-field-span]{border-right:1px solid #333;display:block;}}
 .grid-form [data-row-span] [data-field-span] label:first-child{margin-top:0;text-transform:uppercase;letter-spacing:1px;font-size:calc(calc((14px + .2vmin ) * 1.4) * .65);color:#333;display:block;margin-bottom:4px;}
@@ -173,4 +172,6 @@ h6{line-height:calc((14px + .2vmin ) * 1.4);font-size:calc(calc((14px + .2vmin )
 .grid-form [data-row-span="12"] > [data-field-span="9"]{width:75%;}
 .grid-form [data-row-span="12"] > [data-field-span="10"]{width:83.33333%;}
 .grid-form [data-row-span="12"] > [data-field-span="11"]{width:91.66667%;}
-.grid-form [data-row-span="12"] > [data-field-span="12"]{width:100%;} /* mB v6.09.16 on 2019-09-17T01:25:20.112Z */
+.grid-form [data-row-span="12"] > [data-field-span="12"]{width:100%;}
+pre,code{font-family:monospace,monospace !important;background:#d1dffa;padding-left:5px;}
+.CodeMirror,.CodeMirror *{font-family:monospace,monospace;} /* mB v6.09.16 on 2019-09-17T02:33:16.289Z */

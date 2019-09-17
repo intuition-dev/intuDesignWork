@@ -21,12 +21,12 @@
 //  THE SOFTWARE.
 //
 
-
+// loadFonts(['Open+Sans:300,300i,400', 'PT+Serif:400,400i,700i'])
 //$baseVR: calc((14px + .2vmin ) * 1.4);
 
 $font-size-large:   calc(#{$baseVR} * .78 );
 $label-font-size:   calc(#{$baseVR} * .65);
-$field-padding:     .5em;
+$field-padding:     .4em;
 
 
 =_placeholder
@@ -73,7 +73,7 @@ $field-padding:     .5em;
         border: 0
         background: transparent
         +_placeholder
-            font-weight: 100
+            font-weight: 300
             color: lighten($label-color, 15%)
         &:focus
             outline: none
@@ -132,8 +132,6 @@ $field-padding:     .5em;
                 background: $field-focus-color
                 label
                     color: darken($label-color, 5%)
-            
-                
 
 
     // Create row spans for n columns in the grid

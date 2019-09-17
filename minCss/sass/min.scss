@@ -41,13 +41,18 @@ $import-messages:                         true !default;
         'table',
         'messages';
 
+@import '../mvr';
+
+@import '../gridforms';
+
 //  ////////////////
 pre, code {
-    font-family: monospace, monospace;
+    font-family: monospace, monospace !important; 
     background: hsl(220, 80%, 90%); 
     padding-left: 5px;
 }
 
-@import '../mvr';
 
-@import '../gridforms';
+.CodeMirror, .CodeMirror * {
+    font-family: monospace, monospace; 
+}
