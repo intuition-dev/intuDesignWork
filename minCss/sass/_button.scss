@@ -42,7 +42,6 @@ $c--active:       #b22;
 // calc(#{$baseVR} * .78 );
 
 // Set Generic <button> and .btn styling.
-// use .btn on any element to give it the styling of a button
 .btn {
   @extend %txt-large;
   @extend %no-underline;
@@ -60,7 +59,6 @@ $c--active:       #b22;
   margin:  0 .2em;
 }
 
-
 // Add this class to a <button> or element with a .btn class
 // to create a smaller sized button.
 .btn-sm {
@@ -70,7 +68,6 @@ $c--active:       #b22;
   padding: 0 .7em;
   margin:  0 .5em;
 }
-
 
 // Set colors for your buttons, see the button mixin at the top of this
 // file to see how the hex colors are allocated
@@ -86,7 +83,5 @@ $c--active:       #b22;
   @include btn-style($c--bg, $c--hover, $c--active);
 }
 
-
-//-------------------------------------------------------------------
 // End @if
 }

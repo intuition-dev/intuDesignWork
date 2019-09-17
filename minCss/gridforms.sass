@@ -21,6 +21,14 @@
 //  THE SOFTWARE.
 //
 
+
+//$baseVR: calc((14px + .2vmin ) * 1.4);
+
+$font-size-large:   calc(#{$baseVR} * .78 );
+$label-font-size:   calc(#{$baseVR} * .65);
+$field-padding:     .5em;
+
+
 =_placeholder
     &::-webkit-input-placeholder
         @content
@@ -45,7 +53,7 @@
         clear: both
 
 
-=grid-form($max-columns: 12, $font-size-large: 18px, $legend-color: lighten(#333, 5%), $field-padding: 8px, $label-font-size: 10px, $grid-border-color: #333, $label-color: #333, $field-focus-color: darken(#FFFDED, 5%))
+=grid-form($max-columns: 12,  $legend-color: lighten(#333, 5%), $grid-border-color: #333, $label-color: #333, $field-focus-color: darken(#FFFDED, 5%))
 
     // Sacrifice compatibility with IE7 and below to use the border-box model
     *, *:before, *:after

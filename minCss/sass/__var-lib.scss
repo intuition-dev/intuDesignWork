@@ -4,12 +4,7 @@
 // The purpose of the variable library is to have a centralized
 // location for various reusable values for the Min Framework.
 //
-// Instead of hunting through the different Sass files to update
-// values, simply change the variable in question to update all
-// instances of that value.
-//
 //-------------------------------------------------------------------
-
 
 // Dark Colors
 $c-black:         #000 !default;
@@ -29,3 +24,17 @@ $c-white:         #fff !default;
 
 // Inputs
 $c-focus:         #5ab !default;
+
+// shared large text size
+%txt-large {
+    line-height: $baseVR;
+    font-size:   calc(#{$baseVR} * .78 );
+    font-weight: 400;
+}
+
+// shared smaller text size
+%shared-font-size {
+    line-height: $baseVR;
+    font-size: calc(#{$baseVR} * .65);
+    font-weight: 300;
+}
