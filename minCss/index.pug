@@ -4,6 +4,13 @@ head
 
 body
     script(src='/ui-loader.js')
+    nav.nav( tabindex="-1", onclick="this.focus()" )
+        .container
+            a.pagename.current(href="#") Min
+            a(href="#") One
+            a(href="#") Two
+            a(href="#") Three
+            button.btn.btn-sm.btn-close ×
 
     p  is simply dummy text ith the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
     h1 1 Why do we develop software?

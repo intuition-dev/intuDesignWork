@@ -10,7 +10,7 @@
 
 // CSS reused in multiple selectors
 %nav-global {
-  background: $c-off-black;
+  background: $c-black;
   color: $c-white;
 }
 
@@ -58,11 +58,12 @@
   display: none;
   float: right;
   font-size: $baseVR;
+  font-weight: 400;
   margin-top: calc(#{$baseVR} * -1.5 )
 }
 
 //.nav for small screens
-@media(max-width:800px) {
+@media(max-width:600px) {
 
   .pagename {
     margin-top: -11px;
