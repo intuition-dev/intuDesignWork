@@ -55,9 +55,9 @@ $c--active:       #b22;
   border-radius: .3em; // rounded corners
   height:  calc(#{$baseVR} * 2 );
   line-height: calc(#{$baseVR} * 2 );
-  padding: 0 2em;
+  padding: 0 1.5em;
   text-align: center; 
-  margin:  0 .3em;
+  margin:  0 .2em;
 }
 
 
@@ -67,8 +67,8 @@ $c--active:       #b22;
   @extend %shared-font-size;
   height: $baseVR;
   line-height: $baseVR;
-  padding: 0 .8em;
-  margin:  0 .1em;
+  padding: 0 .7em;
+  margin:  0 .5em;
 }
 
 
