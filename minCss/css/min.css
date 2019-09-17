@@ -33,8 +33,8 @@ summary{display:list-item;}
 template{display:none;}
 [hidden]{display:none;}
 *,html,body{line-height:calc((14px + .2vmin ) * 1.4);vertical-align:baseline;font-smooth:antialiased;-webkit-font-kerning:normal;font-kerning:normal;}
-.btn{line-height:calc((14px + .2vmin ) * 1.4);font-size:calc(calc((14px + .2vmin ) * 1.4) * .78);font-weight:400;}
-.btn-sm,input,textarea,.addon,.nav a{line-height:calc((14px + .2vmin ) * 1.4);font-size:calc(calc((14px + .2vmin ) * 1.4) * .65);font-weight:300;}
+.btn,.nav a{line-height:calc((14px + .2vmin ) * 1.4);font-size:calc(calc((14px + .2vmin ) * 1.4) * .78);font-weight:400;}
+.btn-sm,input,textarea,.addon{line-height:calc((14px + .2vmin ) * 1.4);font-size:calc(calc((14px + .2vmin ) * 1.4) * .65);font-weight:300;}
 body,textarea,input{background:0;border-radius:0;margin:0;}
 *{outline:0;}
 .smooth{transition:all .2s;}
@@ -76,9 +76,9 @@ input:focus,textarea:focus{border-color:#5ab;}
 input[type='text'],textarea{-webkit-appearance:none;width:13em;}
 .addon{box-shadow:0 0 0 1px #ccc;padding:8px 12px;}
 .nav,.nav a:hover,.nav .current{background:#000;color:#fff;}
-.nav{height:24px;padding:11px 0 15px;}
-.nav a{color:#aaa;padding-right:1em;position:relative;top:-1px;}
-.nav .pagename{font-size:22px;top:1px;}
+.nav{height:calc((14px + .2vmin ) * 1.4);padding:calc(calc((14px + .2vmin ) * 1.4) * .5) 0 15px;}
+.nav a{color:#eee;padding-right:1em;position:relative;top:-1px;}
+.nav .pagename{font-size:calc((14px + .2vmin ) * 1.4);top:1px;}
 .btn.btn-close{background:#000;display:none;float:right;font-size:25px;margin-top:-54px;}
 @media (max-width:500px){.btn.btn-close{display:block;}
  .nav{overflow:hidden;}
@@ -197,5 +197,5 @@ h6{line-height:calc((14px + .2vmin ) * 1.4);font-size:calc(calc((14px + .2vmin )
 .grid-form [data-row-span="12"] > [data-field-span="10"]{width:83.33333%;}
 .grid-form [data-row-span="12"] > [data-field-span="11"]{width:91.66667%;}
 .grid-form [data-row-span="12"] > [data-field-span="12"]{width:100%;}
-pre,code{font-family:monospace,monospace !important;background:#d1dffa;padding-left:5px;}
-.CodeMirror,.CodeMirror *{font-family:monospace,monospace;} /* mB v6.09.16 on 2019-09-17T16:10:49.890Z */
+pre,code{font-family:monospace,monospace;background:#d1dffa;padding-left:5px;}
+.CodeMirror,.CodeMirror *{font-family:monospace,monospace;} /* mB v6.09.16 on 2019-09-17T16:28:45.832Z */

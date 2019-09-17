@@ -14,11 +14,10 @@
   color: $c-white;
 }
 
-
 .nav {
   @extend %nav-global;
-  height: 24px;
-  padding: 11px 0 15px;
+  height: $baseVR;
+  padding: calc(#{$baseVR} * .5 ) 0 15px;
 
    // TODO: migrate to ems
    // (currently we don't use them because of iOS compatibility problems
@@ -28,9 +27,9 @@
   // max-height: 1.5em;
 
   a {
-    @extend %shared-font-size;
+    @extend %txt-large;
     @extend %no-underline;
-    color: $c-grey-dark;
+    color: $c-grey-light;
     padding-right: 1em;
     position: relative;
     top: -1px;
@@ -41,7 +40,7 @@
   }
 
   .pagename {
-    font-size: 22px;
+    font-size: $baseVR;
     top: 1px;
   }
 

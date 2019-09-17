@@ -22,12 +22,10 @@ input, textarea {
   }
 }
 
-
 input[type='text'], textarea {
   -webkit-appearance: none; // make iOS inputs pretty
   width: 13em;
 }
-
 
 .addon {
   @extend %shared-font-size;
