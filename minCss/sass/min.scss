@@ -9,6 +9,24 @@
     font-smooth: antialiased;
 }
 
+// font goal is ~15px * line height
+$baseVR: calc((14px + .2vmin ) * 1.4);
+
+// shared large text size
+%txt-large {
+    line-height: $baseVR;
+    font-size:   calc(#{$baseVR} * .78 );
+    font-weight: 400;
+}
+
+// shared smaller text size
+%shared-font-size {
+    line-height: $baseVR;
+    font-size: calc(#{$baseVR} * .65);
+    font-weight: 300;
+}
+
+
 // ------------------------------------------------------------------
 //  Core Styles of Min
 // ------------------------------------------------------------------
@@ -40,7 +58,7 @@ $import-grid:                             true !default;
 
 $import-messages:                         true !default;
 
-$import-ie-hacks:                         false !default;
+
 
 
 // ------------------------------------------------------------------
@@ -53,8 +71,7 @@ $import-ie-hacks:                         false !default;
         'forms',
         'navbar',
         'table',
-        'messages',
-        'iehacks';
+        'messages';
 
 //  ////////////////
 pre, code {
