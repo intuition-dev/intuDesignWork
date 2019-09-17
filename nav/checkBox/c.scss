@@ -1,0 +1,86 @@
+// Essential Styles
+#sub-nav {
+  position: absolute;
+  top: -100px;
+}
+
+#sub-navigation {
+  display: none;
+}
+
+#sub-nav:checked ~ #sub-navigation {
+  display: block;
+}
+
+.sub-nav-toggle span:after {
+  content: "\2630";
+}
+
+// Aesthetic styles
+body {
+  line-height: 14px;
+  -webkit-font-smoothing: antialiased;
+  padding: 0;
+  margin: 0;
+}
+
+.sub-nav-toggle {
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  user-select: none;
+  min-width: 48px;
+  text-align: center;
+}
+
+.sub-nav-toggle, .nav-item {
+  padding: 14px 16px;
+  display: inline-block;
+  float: left; // F*cking hate white space
+  color: white;
+  text-decoration: none;
+  box-sizing: border-box;
+  &:hover {
+    background: darken(teal, 5%);
+  }
+  &:active {
+    background: darken(teal, 10%);    
+  }
+}
+
+#sub-nav:checked ~ #navigation-links label {
+  background: darken(teal, 5%);
+  span:after {
+    content: "\2715";
+  }
+}
+
+.header-nav {
+  max-width: 25%;
+  min-width: 270px;
+  margin: 40vh auto;
+  background: teal;
+  min-height: 42px;
+}
+
+#sub-navigation {
+  clear: both;
+  .nav-item {
+    background: darken(teal, 5%);
+    display: block;
+    width: 100%;
+    text-align: center;
+    &:hover {
+       background: darken(teal, 10%);
+    }
+    &:active {
+      background: darken(teal, 15%);    
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header-nav {
+    max-width: 90%;
+  }
+}
+

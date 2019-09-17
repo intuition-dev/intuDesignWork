@@ -39,7 +39,6 @@
     &:hover {
       @extend %nav-global;
     }
-
   }
 
   .pagename {
@@ -59,7 +58,7 @@
   display: none;
   float: right;
   font-size: $baseVR;
-  margin-top: -calc(#{$baseVR} * .5 )
+  margin-top: calc(#{$baseVR} * -1.5 )
 }
 
 //.nav for small screens
@@ -73,7 +72,7 @@
     display: block;
   }
 
-  .nav {
+  .nav { // small screen
     overflow: hidden;
     // transition: max-height .5s ease-in-out, height .5s ease-in-out;
 
