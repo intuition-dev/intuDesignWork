@@ -75,17 +75,17 @@ input,textarea{border:1px solid #ccc;padding:8px;}
 input:focus,textarea:focus{border-color:#5ab;}
 input[type='text'],textarea{-webkit-appearance:none;width:13em;}
 .addon{box-shadow:0 0 0 1px #ccc;padding:8px 12px;}
-.nav,.nav a:hover,.nav .current{background:#000;color:#fff;}
+.nav,.nav a:hover,.nav .current{background:#999;color:#fff;}
 .nav{height:calc((14px + .2vmin ) * 1.4);padding:calc(calc((14px + .2vmin ) * 1.4) * .5) 0 15px;}
 .nav a{color:#eee;padding-right:1em;position:relative;top:-1px;}
-.nav .pagename{font-size:calc((14px + .2vmin ) * 1.4);top:1px;}
-.btn.btn-close{background:#000;display:none;float:right;font-size:25px;margin-top:-54px;}
-@media (max-width:500px){.btn.btn-close{display:block;}
+.nav .pagename{font-size:calc(calc((14px + .2vmin ) * 1.4) * 1.1);color:#fff;font-weight:300;top:1px;}
+.btn.btn-close{background:#000;display:none;float:right;font-size:calc((14px + .2vmin ) * 1.4);margin-top:-calc(calc((14px + .2vmin ) * 1.4) * .5);}
+@media (max-width:500px){.pagename{margin-top:-11px;}
+ .btn.btn-sm.btn-close{display:block;}
  .nav{overflow:hidden;}
  .nav:focus{height:auto;}
  .nav div:before{background:#000;border-top:3px solid;border-bottom:10px double;content:'';float:right;height:4px;position:relative;right:3px;top:14px;width:20px;}
- .nav a{display:block;padding:.5em 0;width:50%;}
- .pagename{margin-top:-11px;}}
+ .nav a{display:block;padding:.5em 0;width:50%;}}
 .table th,.table td{padding:.5em;text-align:left;}
 .table tbody > *:nth-child(2n-1){background:#ccc;}
 .msg{background:#def;border-left:5px solid #59d;padding:1.5em;}
@@ -198,4 +198,4 @@ h6{line-height:calc((14px + .2vmin ) * 1.4);font-size:calc(calc((14px + .2vmin )
 .grid-form [data-row-span="12"] > [data-field-span="11"]{width:91.66667%;}
 .grid-form [data-row-span="12"] > [data-field-span="12"]{width:100%;}
 pre,code{font-family:monospace,monospace;background:#d1dffa;padding-left:5px;}
-.CodeMirror,.CodeMirror *{font-family:monospace,monospace;} /* mB v6.09.16 on 2019-09-17T16:28:45.832Z */
+.CodeMirror,.CodeMirror *{font-family:monospace,monospace;} /* mB v6.09.16 on 2019-09-17T16:49:45.337Z */

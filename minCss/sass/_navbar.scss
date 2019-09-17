@@ -10,12 +10,13 @@
 
 // CSS reused in multiple selectors
 %nav-global {
-  background: $c-black;
+  background: $c-off-black;
   color: $c-white;
 }
 
 .nav {
   @extend %nav-global;
+
   height: $baseVR;
   padding: calc(#{$baseVR} * .5 ) 0 15px;
 
@@ -40,7 +41,9 @@
   }
 
   .pagename {
-    font-size: $baseVR;
+    font-size: calc(#{$baseVR} * 1.1 );
+    color: $c-white;
+    font-weight: 300;
     top: 1px;
   }
 
@@ -53,15 +56,19 @@
   background: $c-black;
   display: none;
   float: right;
-  font-size: 25px;
-  margin-top: -54px;
+  font-size: $baseVR;
+  margin-top: - calc(#{$baseVR} * .5 )
 }
 
 
-
-// Update styling of .nav for small screens
+//.nav for small screens
 @media(max-width:500px) {
-  .btn.btn-close {
+
+  .pagename {
+    margin-top: -11px;
+  }
+
+  .btn.btn-sm.btn-close {
     display: block;
   }
 
@@ -94,12 +101,10 @@
       padding: .5em 0;
       width: 50%;
     }
-  }
 
-  .pagename {
-    margin-top: -11px;
-  }
-}
+  }// nav
+
+} // media
 
 //-------------------------------------------------------------------
 // End @if
