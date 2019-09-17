@@ -39,6 +39,7 @@ $c--active:       #b22;
 // Button Styles & Classes
 //-------------------------------------------------------------------
 
+// calc(#{$baseVR} * .78 );
 
 // Set Generic <button> and .btn styling.
 // use .btn on any element to give it the styling of a button
@@ -47,20 +48,27 @@ $c--active:       #b22;
   @extend %no-underline;
   @include btn-style;
   border: 0;
-  border-radius: 4px; // rounded corners
   color: $c-white;
   cursor: pointer;
   display: inline-block; // Enables non-inline-block elements like <a>s to be buttons
-  padding: 12px 30px 14px;
-  margin: .2em .3em .2em 0;
+
+  border-radius: .3em; // rounded corners
+  height:  calc(#{$baseVR} * 2 );
+  line-height: calc(#{$baseVR} * 2 );
+  padding: 0 2em;
+  text-align: center; 
+  margin:  0 .3em;
 }
+
 
 // Add this class to a <button> or element with a .btn class
 // to create a smaller sized button.
 .btn-sm {
   @extend %shared-font-size;
-  border-radius: 3px; /* rounded corners */
-  padding: 10px 15px 11px;
+  height: $baseVR;
+  line-height: $baseVR;
+  padding: 0 .8em;
+  margin:  0 .1em;
 }
 
 

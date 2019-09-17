@@ -1,16 +1,18 @@
 
 @import '../minireset';
 
-
-*, html, body {
-    font-kerning: normal; // enables kerning
-    margin: 0;
-    padding: 0;
-    font-smooth: antialiased;
-}
-
 // font goal is ~15px * line height
 $baseVR: calc((14px + .2vmin ) * 1.4);
+
+
+*, html, body {
+    line-height: $baseVR;
+    margin: 0;
+    padding: 0;
+    vertical-align:baseline;
+    font-smooth: antialiased;
+    font-kerning: normal; // enables kerning
+}
 
 // shared large text size
 %txt-large {
