@@ -1,4 +1,4 @@
-basedir: ../blog/
+basedir: ../../assets
 
-prefix: /blog/
+prefix: /posts/
 
