@@ -1,2 +1,2 @@
-mbake-x -c ../spectre/spectre.scss
-mbake-x -c ../spectre/spectreTop.scss
+mbakex -c ../spectre/spectre.scss
+mbakex -c ../spectre/spectreTop.scss
