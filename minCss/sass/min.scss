@@ -6,7 +6,9 @@ $baseVR: calc((14px + .2vmin ) * 1.4);
 
 *, html, body {
     line-height: $baseVR;
-    vertical-align:baseline;
+    vertical-align: top;
+    margin-top: 0;
+    margin-bottom: 0;
     font-smooth: antialiased;
     font-kerning: normal; // enables kerning
 }

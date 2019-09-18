@@ -4,24 +4,28 @@
 // https://iamvdo.me/en/blog/css-font-metrics-line-height-and-vertical-align
 
 // loadFonts(['Open+Sans:300,300i,400', 'PT+Serif:400,700i'])
-
+p, h1, h2, h3, h4, h5, h6
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: calc(#{$baseVR} * .25)
 
 // normal 
 *, body, h5, p 
     line-height: $baseVR
     font-size:   calc(#{$baseVR} * .65)
-    margin-bottom: 0;
     font-family: 'Open Sans', sans-serif
     font-weight: 300;
+    border-style: none
 
-p, .kern 
+p, h5 .kern 
     letter-spacing: 0.05em;
+    padding-bottom: calc(#{$baseVR} * .5)
+
 
 // large /////////////////////
 h1 
     line-height: calc(#{$baseVR} * 3)
     font-size:   calc(#{$baseVR} * 3 * .9 )
-    margin-bottom: $baseVR
     font-family: 'PT Serif', serif
     font-weight: 700;
     font-style: italic
@@ -29,18 +33,15 @@ h1
 h2 
     line-height: calc(#{$baseVR} * 2)
     font-size:   calc(#{$baseVR} * 2 * .7 )
-    margin-bottom: $baseVR
     font-family: 'PT Serif', serif
     font-weight: 400;
 
 h3 
-    line-height: $baseVR
     font-size:   calc(#{$baseVR} * 1 * .93 )
     font-family: 'PT Serif', serif
     font-weight: 400;
 
 h4 
-    line-height: $baseVR
     font-size:   calc(#{$baseVR} * .78 )
     font-weight: 400;
 
@@ -48,7 +49,6 @@ h4
 
 //smaller 
 h6 
-    line-height: $baseVR
     font-size: calc(#{$baseVR} * .52)
     font-kerning: none; 
     font-style: italic
