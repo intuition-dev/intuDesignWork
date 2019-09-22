@@ -1,6 +1,6 @@
+## 1.0.1
+- Moved B.S. to Examples
+- Added split and img/vid
+
 ### 
 - Moved BS to ToolBelt so it can be released
-- Theme now called GDS
-
-### 5.7.7
-- Removed Bulma, MUI, and Sematic. Moved BootStrap. Mini stayed.
