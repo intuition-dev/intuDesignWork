@@ -49,6 +49,9 @@ $import-messages:           true !default;
 
 @import '../gridforms';
 
+@import '../split';
+@import '../med';
+
 pre, code {
     font-family: monospace, monospace; 
     background: hsl(220, 80%, 90%); 

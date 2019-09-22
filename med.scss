@@ -1,0 +1,28 @@
+
+// IMG
+
+.mainImg {
+    width: 100%;
+    height: 55%;
+
+    object-fit: cover;
+    object-position: center  20%;
+    
+    font-family: 'object-fit: cover; object-position: center 20%;';    
+}   
+    
+// VID
+
+.video_container {
+    display: flex;
+    
+    height: calc(100% - 10px);
+    width:  calc(100% - 20px);
+}
+
+.vid {
+    overflow: hidden;
+    flex: 1;
+    
+    object-fit: contain;
+}
