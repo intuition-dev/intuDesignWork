@@ -1,8 +1,17 @@
 
-@import '../normalize';
 
 // font goal is ~15px * line height
 $baseVR: calc((14px + .2vmin ) * 1.4);
+
+
+@import '../normalize';
+
+* { margin: 0; padding: 0; }
+
+html, body { 
+    height: 100%; 
+    width: 100%; 
+}
 
 *, html, body {
     line-height: $baseVR;
