@@ -43,9 +43,7 @@ $import-icons:              false !default;
 $import-grid:               true !default;
 $import-messages:           true !default;
 
-// ------------------------------------------------------------------
-//  Import Components based on above customization
-// ------------------------------------------------------------------
+
 @import 'button',
         'grid',
         'icons',
@@ -53,6 +51,8 @@ $import-messages:           true !default;
         'navbar',
         'table',
         'messages';
+
+// /////////////////////////////////////
 
 @import '../mvr';
 
