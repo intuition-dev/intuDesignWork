@@ -25,6 +25,9 @@ $c--active:       #b22;
   pointer-events: none;
 }
 
+.btn {
+  width: 7em;
+}
 
 //-------------------------------------------------------------------
 // Mixin to set btn background for inactive, active & hover states
