@@ -12,17 +12,3 @@
 }   
     
 // VID
-
-.video_container {
-    display: flex;
-    
-    height: calc(100% - 10px);
-    width:  calc(100% - 40px);
-}
-
-.vid {
-    overflow: hidden;
-    flex: 1;
-    
-    object-fit: contain;
-}
