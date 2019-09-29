@@ -138,6 +138,15 @@ A full example of UI-loading and data-loading including syncing the two source c
 
 <i>ps: If you have a webpack application that you are considering improving, you can reach out to me at www.MetaBake.NET</i>. 
 
+
+## Summary
+
+Load what you need for data, then do the data fetch.
+Then load what you need for DOM first paint
+Then improve UI, like fonts.
+Then UX, like click or touch commands
+
+
 ## Code Questions?
 - http://forum.mbake.org
 
