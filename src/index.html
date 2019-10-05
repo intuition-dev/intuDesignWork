@@ -9,7 +9,7 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
   <script src="https://cdn.jsdelivr.net/npm/johnnydepp@0.1.0/dist/depp.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/intuition-dev/toolBelt@v1.9.16/toolBelt/toolBelt.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/intuition-dev/toolBelt@v1.10.4/src/toolBelt.min.js"></script>
   <style>
     html { touch-action: manipulation; }
     .delayShowing { opacity: 0; }
@@ -19,6 +19,11 @@
 </head>
 <body>
   <script src="/ui-loader.js"></script>
+  <nav class="nav" tabindex="-1" onclick="this.focus()">
+    <div class="container"><a class="pagename current" href="#">Min</a><a href="#">One</a><a href="#">Two</a><a href="#">Three</a>
+      <button class="btn btn-sm btn-close">×</button>
+    </div>
+  </nav>
   <p> is simply dummy text ith the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
   <h1>1 Why do we develop software?</h1>
   <h1>1 ok now is simply dummy text of the printing and typesetting industry.</h1>
@@ -66,7 +71,7 @@
   <script>
     console.log('oh hi')
     toolBeltDefault()
-    loadFonts(['Open+Sans:300,300i,400', 'PT+Serif:400,400i,700i'])
+    loadFonts(['Open+Sans:300,300i,400', 'PT+Serif:400,700i', 'Marmelad'])
     
     depp.require('codemirror', function(){
         console.log('co')
@@ -85,4 +90,4 @@
     
     })
   </script>
-<!-- mB v6.09.16 on 2019-09-17T02:19:46.436Z --></body>
+<!-- mB v6.09.30 on 2019-10-05T14:57:49.852Z --></body>
