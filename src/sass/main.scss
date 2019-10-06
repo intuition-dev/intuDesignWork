@@ -55,15 +55,13 @@ $import-messages:           true !default;
 
 @import '../mvr';
 
-@import '../gridforms';
+@import '../med';
+@import '../split';
+@import '../pagination';
 
+@import '../gridforms';
 @import '../vanilla-dataTables';
 
-
-@import '../split';
-@import '../med';
-
-@import '../pagination';
 
 
 //  ////////////////
