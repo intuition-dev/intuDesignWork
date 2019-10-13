@@ -1,5 +1,5 @@
 
-declare var DeventBus: any // from toolBelt, is persistent
+declare var DeventBus: any // from mbToolBelt, is persistent
 declare var depp: any
 
 interface iViewModel{
