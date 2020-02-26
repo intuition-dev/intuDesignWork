@@ -1,7 +1,7 @@
 
 ## FE FWs
 
-Default Theme is Spectre. Two examples are made, one with NavBar js (in navjBar folder, used in webSite and linkCMS examples), and one with OffScreen js.
+Default Theme is mini css. Two examples are made, one with NavBar js (in navjBar folder, used in webSite and linkCMS examples), and one with OffScreen js.
 
 Default for forms is gridforms.
 
