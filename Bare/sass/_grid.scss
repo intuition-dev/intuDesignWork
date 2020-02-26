@@ -1,4 +1,5 @@
-@import (reference) "_variables";
+@import "_variables";
+;
 
 /*	grid
 ----------------------------------------------------------------------*/
@@ -18,10 +19,10 @@ grid {
 
 // columns
 	
-@columns: 12;
+$columns: 12;
 	
-.width(@x) {
-	width: 100% / @columns * @x;
+@mixin width($x) {
+	width: 100% / $columns * $x;
 }
 
 // eg: <div col="6"></div>
@@ -63,14 +64,14 @@ grid {
 
 [col] {
 	display: inline-block;
-	font-size: @fs-m;
+	font-size: $fs-m;
 	padding: 1rem;
 	vertical-align: top;
 		
-	// columns go to 100% on @mobile width unless it has the .fx class
+	// columns go to 100% on $mobile width unless it has the .fx class
 	// eg: <div class="fx" col="six"></div>
 	
-	@media (max-width: @mobile) {
+	@media (max-width: $mobile) {
 		&:not([fx]) { width: 100% }
 	}
 }

@@ -3,7 +3,7 @@
 
 
 html {
-	font-family: @sans-serif;
+	font-family: $sans-serif;
 	font-size: 10px;
 	box-sizing: border-box;
 	-webkit-text-size-adjust: 100%;
@@ -17,13 +17,13 @@ html {
 :focus { outline: 0 }
 
 body {
-	color: @black;
+	color: $black;
 	margin: 0;
-	font-size: @fs-m;
+	font-size: $fs-m;
 	line-height: 1.8;
 	font-weight: 300;
 	
-	@media (max-width: @mobile) {
+	@media (max-width: $mobile) {
 		overflow-x: hidden;
 	}
 }
@@ -45,6 +45,6 @@ h1, h2, h3, h4, h5, h6 {
 img { border: 0 }
 
 ::selection {
-	background-color: @primary;
-	color: @primary--;
+	background-color: $primary;
+	color: $primary--;
 }

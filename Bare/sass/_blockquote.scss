@@ -1,11 +1,12 @@
-@import (reference) "_variables";
+@import "_variables";
+;
 
 /*	blockquote
 ----------------------------------------------------------------------*/
 
 
-blockquote@{n}, blockquote@{x} {
+blockquote#{$n}, blockquote#{$x} {
 	margin: 2rem 0;
 	padding: 1rem 2rem;
-	border-left: 4px solid @primary;
+	border-left: 4px solid $primary;
 }

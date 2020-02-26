@@ -1,20 +1,21 @@
-@import (reference) "_variables";
+@import "_variables";
+;
 
 /*	footer
 ----------------------------------------------------------------------*/
 
 
 footer {
-	color: @primary--;
+	color: $primary--;
 	width: 100%;
-	max-width: @width;
+	max-width: $width;
 	margin: auto;
 	padding: 2rem;
 	overflow: visible;
 	
 	&:before {
 		content: "";
-		background: @primary;
+		background: $primary;
 		width: 102vw;
 		height: 100%;
 		position: absolute;

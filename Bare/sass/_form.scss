@@ -1,4 +1,5 @@
-@import (reference) "_variables";
+@import "_variables";
+;
 
 /*	inputs
 ----------------------------------------------------------------------*/
@@ -10,19 +11,19 @@ button {
 	
 	// normal button styling
 	
-	&@{n}, &@{x} {
+	&#{$n}, &#{$x} {
 		cursor: pointer;
-		color: @primary;
+		color: $primary;
 		display: inline-block;
 		padding: 1.4rem 2rem;
 		background: #fff;
-		border: 1px solid @primary;
+		border: 1px solid $primary;
 		border-radius: 2px;
 		box-shadow: 0 0 0 rgba(0,0,0,0);
 		text-transform: uppercase;
 		text-decoration: none;
 		text-align: center;
-		font-size: @fs-s;
+		font-size: $fs-s;
 		font-weight: 700;
 		line-height: 1rem;
 		margin: 0 1rem 1rem 0;
@@ -30,65 +31,65 @@ button {
 		
 		&:not(:disabled):hover, &:not(:disabled):focus {
 			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-			background: @grey-ultralight;
+			background: $grey-ultralight;
 		}
 	}
 	
 	// primary button styling
 	
 	&.primary {
-		border-color: darken(@primary, 6%);
-		background: @primary;
-		color: @primary--;
+		border-color: darken($primary, 6%);
+		background: $primary;
+		color: $primary--;
 		font-weight: 700;
 		
-		&:not(:disabled):hover, &:not(:disabled):focus { background: darken(@primary, 6%)	}
+		&:not(:disabled):hover, &:not(:disabled):focus { background: darken($primary, 6%)	}
 	}
 	
 	&.m-full {
-		@media (max-width: @mobile) { width: 100% }
+		@media (max-width: $mobile) { width: 100% }
 	}
 	
 	// disabled button styling
 	
 	&:disabled,
 	&.disabled {
-		border-color: @grey-light;
-		background: @grey-light;
-		color: @grey-mid;
+		border-color: $grey-light;
+		background: $grey-light;
+		color: $grey-mid;
 		cursor: default;
 	}
 }
 
 	// labels
 
-label@{n}, label@{x} {
+label#{$n}, label#{$x} {
 	display: inline-block;
 	width: 100%;
 	text-transform: uppercase;
-	font-size: @fs-s;
+	font-size: $fs-s;
 	font-weight: 400;
 	margin-top: 1rem;
 	
 	&:first-child { margin-top: 0 }
 }
 
-.mx-input() {
+@mixin mx-input() {
 	display: inline-block;
 	background: transparent;
 	width: 100%;
 	padding: 0.5rem 0 1rem;
 	margin-bottom: 2rem;
 	border: none;
-	border-bottom: 1px solid @grey-light;
-	font-size: @fs-m;
+	border-bottom: 1px solid $grey-light;
+	font-size: $fs-m;
 	font-weight: 300;
 	border-radius: 0;
 	
 	&:focus,
 	&:hover {
-		color: @primary;
-		border-color: @primary;
+		color: $primary;
+		border-color: $primary;
 		outline: 0;
 	}
 }
@@ -96,14 +97,14 @@ label@{n}, label@{x} {
 	// text fields
 
 input:not([type=radio]):not([type=checkbox]):not([type=button]) {
-	&@{n}, &@{x} { .mx-input }
+	&#{$n}, &#{$x} { .mx-input }
 }
 
-textarea@{n}, textarea@{x} {
-	.mx-input;
+textarea#{$n}, textarea#{$x} {
+	@include mx-input;
 	
 	min-height: 8rem;
-	border-right: 1px solid @grey-light;
+	border-right: 1px solid $grey-light;
 	padding-right: 2rem;
 	border-bottom-right-radius: 0.5rem;
 }
@@ -111,16 +112,16 @@ textarea@{n}, textarea@{x} {
 
 	// select
 
-select@{n}, select@{x} {
+select#{$n}, select#{$x} {
 	padding: 0.5rem 3rem 0.5rem 1rem;
 	display: block;
 	width: 100%;
-	border: 1px solid @grey-light;
+	border: 1px solid $grey-light;
 	background: #fff data-uri('../icons/chevron-down.svg') no-repeat right 1rem center;
 	background-size: 2rem;
 	border-radius: 2px;
 	height: 4rem;
-	font-size: @fs-m;
+	font-size: $fs-m;
 	font-weight: 300;
 	text-indent: 0.5rem;
 	margin: 0.5rem 0 2rem;
@@ -129,7 +130,7 @@ select@{n}, select@{x} {
 	
 	&:focus,
 	&:hover {
-		border-color: @primary;
+		border-color: $primary;
 		outline: 0;
 	}
 }
@@ -140,7 +141,7 @@ select@{n}, select@{x} {
 input {
 	&[type=radio],
 	&[type=checkbox] {
-		&@{n}, &@{x} {
+		&#{$n}, &#{$x} {
 			z-index: 2;
 			opacity: 0;
 			margin-right: -2rem;
@@ -160,7 +161,7 @@ input {
 					display: inline-block;
 					width: 2rem;
 					height: 2rem;
-					border: 1px solid @grey-mid;
+					border: 1px solid $grey-mid;
 					background: #fff;
 					vertical-align: middle;
 					margin-right: 1rem;
@@ -186,9 +187,9 @@ input {
 	// radio
 	// eg: <input type="radio" name="radio" id="radio-1"> <label for="radio-1">Select me</label>
 	
-	&[type=radio]@{n}, &[type=radio]@{x} {
+	&[type=radio]#{$n}, &[type=radio]#{$x} {
 		+ label {
-			font-size: @fs-m;
+			font-size: $fs-m;
 			font-weight: 200;
 			
 			&:before { border-radius: 100% }
@@ -196,15 +197,15 @@ input {
 		
 		&:checked + label {
 			&:before {
-				background: @primary;
-				border-color: @primary;
+				background: $primary;
+				border-color: $primary;
 			}
 			
 			&:after {
 				opacity: 1;
 				visibility: visible;
-				background: @primary;
-				border: 1px solid @primary--;
+				background: $primary;
+				border: 1px solid $primary--;
 				border-radius: 100%;
 				transform: scale(1);
 				top: 0.5rem;
@@ -216,9 +217,9 @@ input {
 	// checkbox
 	// eg: <input type="checkbox" id="checkbox-1"> <label for="checkbox-1">Check me</label>
 	
-	&[type=checkbox]@{n}, &[type=checkbox]@{x} {
+	&[type=checkbox]#{$n}, &[type=checkbox]#{$x} {
 		+ label {
-			font-size: @fs-m;
+			font-size: $fs-m;
 			font-weight: 200;
 			
 			&:before { border-radius: 2px }
@@ -233,8 +234,8 @@ input {
 		&:checked {
 			+ label {
 				&:before {
-					background: @primary;
-					border-color: @primary;
+					background: $primary;
+					border-color: $primary;
 				}
 				
 				&:after {

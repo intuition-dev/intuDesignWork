@@ -1,11 +1,12 @@
-@import (reference) "_variables";
+@import "_variables";
+;
 
 /*	lists
 ----------------------------------------------------------------------*/
 
 
 ul, ol {
-	&@{n}, &@{x} {
+	&#{$n}, &#{$x} {
 		padding-left: 2rem;
 		margin: 0 0 2rem;
 		
@@ -13,13 +14,13 @@ ul, ol {
 	}
 }
 
-ul@{n}, ul@{x} {
+ul#{$n}, ul#{$x} {
 	list-style: disc;
 	
 	ul { list-style: circle }
 }
 
-ol@{n}, ol@{x} {
+ol#{$n}, ol#{$x} {
 	list-style: decimal;
 	
 	ol { list-style: lower-alpha }

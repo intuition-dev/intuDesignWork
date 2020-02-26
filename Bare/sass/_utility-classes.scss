@@ -1,4 +1,5 @@
-@import (reference) "_variables";
+@import "_variables";
+;
 
 /*	utility classes (use with xx)
 ----------------------------------------------------------------------*/
@@ -12,23 +13,23 @@
 
 	// fonts
 
-.serif { font-family: @serif }
-.sans { font-family: @sans-serif }
-.mono { font-family: @monospace }
+.serif { font-family: $serif }
+.sans { font-family: $sans-serif }
+.mono { font-family: $monospace }
 
-.fs(@x) { font-size: @x }
+.fs($x) { font-size: $x }
 
 .fs- {
-	&s { .fs(@fs-s) }
-	&m { .fs(@fs-m) }
-	&l { .fs(@fs-l) }
-	&xl { .fs(@fs-xl) }
+	&s { .fs($fs-s) }
+	&m { .fs($fs-m) }
+	&l { .fs($fs-l) }
+	&xl { .fs($fs-xl) }
 }
 
 	// margins
 	// eg: <div class="mt-0 mb-4"></div>
 
-.mt(@x) { margin-top: @x }
+.mt($x) { margin-top: $x }
 
 .mt- {
 	&0 { .mt(0) }
@@ -37,7 +38,7 @@
 	&8 { .mt(8rem) }
 }
 
-.mb(@x) { margin-bottom: @x }
+.mb($x) { margin-bottom: $x }
 
 .mb- {
 	&0 { .mb(0) }
@@ -49,7 +50,7 @@
 	// paddings
 	// eg: <div class="pt-2 pb-4"></div>
 
-.pt(@x) { padding-top: @x }
+.pt($x) { padding-top: $x }
 
 .pt- {
 	&0 { .pt(0) }
@@ -58,7 +59,7 @@
 	&8 { .pt(8rem) }
 }
 
-.pb(@x) { padding-bottom: @x }
+.pb($x) { padding-bottom: $x }
 
 .pb- {
 	&0 { .pb(0) }
@@ -67,7 +68,7 @@
 	&8 { .pb(8rem) }
 }
 
-.pa(@x) { padding: @x }
+.pa($x) { padding: $x }
 
 .pa- {
 	&0 { .pa(0) }

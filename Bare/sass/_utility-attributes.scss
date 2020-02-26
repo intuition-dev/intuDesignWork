@@ -1,4 +1,5 @@
-@import (reference) "_variables";
+@import "_variables";
+;
 
 /*	utility classes (use with xx)
 ----------------------------------------------------------------------*/
@@ -12,22 +13,22 @@
 
 	// fonts
 
-[serif] { font-family: @serif }
-[sans] { font-family: @sans-serif }
-[mono] { font-family: @monospace }
+[serif] { font-family: $serif }
+[sans] { font-family: $sans-serif }
+[mono] { font-family: $monospace }
 
-.fs(@x) { font-size: @x }
+.fs($x) { font-size: $x }
 
-[fs=xs] { .fs(@fs-xs) }
-[fs=s] { .fs(@fs-s) }
-[fs=m] { .fs(@fs-m) }
-[fs=l] { .fs(@fs-l) }
-[fs=xl] { .fs(@fs-xl) }
+[fs=xs] { .fs($fs-xs) }
+[fs=s] { .fs($fs-s) }
+[fs=m] { .fs($fs-m) }
+[fs=l] { .fs($fs-l) }
+[fs=xl] { .fs($fs-xl) }
 
 	// margin top
 	// eg: <div mt="2"></div>
 
-.mt(@x) { margin-top: @x }
+.mt($x) { margin-top: $x }
 
 [mt=0] { .mt(0) }
 [mt=2] { .mt(2rem) }
@@ -37,7 +38,7 @@
 	// margin bottom
 	// eg: <div mb="2"
 
-.mb(@x) { margin-bottom: @x }
+.mb($x) { margin-bottom: $x }
 
 [mb=0] { .mb(0) }
 [mb=2] { .mb(2rem) }
@@ -47,7 +48,7 @@
 	// padding top
 	// eg: <div pt="2"></div>
 
-.pt(@x) { padding-top: @x }
+.pt($x) { padding-top: $x }
 
 [pt=0] { .pt(0) }
 [pt=2] { .pt(2rem) }
@@ -57,7 +58,7 @@
 	// padding bottom
 	// eg: <div pb="2"></div>
 
-.pb(@x) { padding-bottom: @x }
+.pb($x) { padding-bottom: $x }
 
 [pb=0] { .pb(0) }
 [pb=2] { .pb(2rem) }
@@ -67,7 +68,7 @@
 	// padding all sides
 	// eg: <div pa="2"></div>
 
-.pa(@x) { padding: @x }
+.pa($x) { padding: $x }
 
 [pa=0] { .pa(0) }
 [pa=2] { .pa(2) }

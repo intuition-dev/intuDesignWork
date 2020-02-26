@@ -1,10 +1,11 @@
-@import (reference) "_variables";
+@import "_variables";
+;
 
 /*	table
 ----------------------------------------------------------------------*/
 
 
-table@{n}, table@{x} {
+table#{$n}, table#{$x} {
 	width: 100%;
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -13,13 +14,13 @@ table@{n}, table@{x} {
 	overflow: hidden;
 	
 	th, td {
-		border-bottom: 2px solid @grey-light;
+		border-bottom: 2px solid $grey-light;
 		padding: 1rem;
 	}
 	
 	th {
 		font-weight: 700;
-		color: @grey-ultradark;
+		color: $grey-ultradark;
 		
 		&:before {
 			content: "";
@@ -29,7 +30,7 @@ table@{n}, table@{x} {
 			display: block;
 			top: 0;
 			left: 0;
-			background: @grey-ultralight;
+			background: $grey-ultralight;
 			z-index: -1;
 			opacity: 0;
 			visibility: hidden;
@@ -43,5 +44,5 @@ table@{n}, table@{x} {
 	
 	td { border-bottom-width: 1px }
 	
-	tbody tr:hover { background: @grey-ultralight }
+	tbody tr:hover { background: $grey-ultralight }
 }
