@@ -1,0 +1,80 @@
+/**
+  Global PaperCSS Config
+*/
+
+// Imports
+@import url('https://fonts.googleapis.com/css?family=Neucha|Patrick+Hand+SC');
+
+// Set theme colors
+$primary: #41403e !default;
+$secondary: #0071de !default;
+
+$success: #86a361 !default;
+$warning: #ddcd45 !default;
+$danger: #a7342d !default;
+$muted: #868e96 !default;
+
+$primary-light: lighten($primary, 50%) !default;
+$secondary-light: lighten($secondary, 50%) !default;
+$success-light: lighten($success, 30%) !default;
+$warning-light: lighten($warning, 30%) !default;
+$danger-light: lighten($danger, 45%) !default;
+$muted-light: lighten($muted, 35%) !default;
+
+$white-dark: rgba(#000, 0.03) !default;
+$light-dark: rgba(#000, 0.7) !default;
+$white: rgba(#fff, 1) !default;
+$main-background: rgba(#fff, 1) !default;
+
+$primary-text: #fff !default;
+$secondary-text: $primary !default;
+$success-text: $primary !default;
+$warning-text: $primary !default;
+$danger-text: $primary !default;
+$muted-text: $primary !default;
+
+$shadow-color-regular: hsla(0, 0, 0%, 0.2) !default;
+$shadow-color-hover: hsla(0, 0, 0%, 0.3) !default;
+
+
+// Map to set your color names
+/* stylelint-disable */
+$colors: (primary, $primary, $primary-light, $primary-text),
+         (secondary, $secondary, $secondary-light, $secondary-text),
+         (success, $success, $success-light, $success-text),
+         (warning, $warning, $warning-light, $warning-text),
+         (danger, $danger, $danger-light, $danger-text),
+         (muted, $muted, $muted-light, $muted-text);
+/* stylelint-enable */
+
+/**
+  This Loop will generate the various .text- and .background- classes
+  based on the $colors map above.
+*/
+@each $colorName, $color, $color-light in $colors {
+  .text-#{$colorName} {
+    color: $color;
+  }
+
+  .background-#{$colorName} {
+    background-color: $color-light;
+  }
+}
+
+// Font settings
+$global-font-size: 20px !default;
+$header-font: 'Patrick Hand SC' !default;
+$body-font: 'Neucha' !default;
+$font-color: $primary !default;
+
+// Responsive breakpoints
+$large-screen: 1200px !default;
+$medium-screen: 992px !default;
+$small-screen: 768px !default;
+$xsmall-screen: 480px !default;
+
+// Sizes for shadows
+$shadow-small: 10px 19px 17px -13px $shadow-color-regular !default;
+$shadow-regular: 15px 28px 25px -18px $shadow-color-regular !default;
+$shadow-large: 20px 38px 34px -26px $shadow-color-regular !default;
+$shadow-hover: 2px 8px 8px -5px $shadow-color-hover !default;
