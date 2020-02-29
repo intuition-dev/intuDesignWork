@@ -1,0 +1,47 @@
+extends /layouts/layout
+
+block main
+
+   .container
+      .row
+         .col-md-12
+               div.text-center
+                  h3.mb-0 Examples 
+               .l-showcase
+                  each val in showcase
+                     .l-showcase--item
+                        a(href=val.link, target="_blank")
+                           .l-showcase--item--img(style="background-image:url("+val.img+")")
+                        .l-showcase--item--header
+                           .l-showcase--item--title=val.title
+                           if val.command.length
+                              .l-showcase--item--command.tooltip(data-tooltip="click to copy", data-copy=val.command)=val.command
+                        .l-showcase--item--desc=val.desc
+
+   script.
+      // copy text to clipboard
+      depp.require('jquery', Run)
+
+      function Run(){
+         $('[data-copy]').off('click').on('click', function (ev) {
+            var current = $(ev.currentTarget);
+            var text = $(current).data('copy');
+            
+            const el = document.createElement('textarea');
+            el.value = text;
+            el.setAttribute('readonly', '');
+            el.style.position = 'absolute';
+            el.style.left = '-9999px';
+            document.body.appendChild(el);
+            el.select();
+            document.execCommand('copy');
+            document.body.removeChild(el);
+            
+            $(current).attr('data-tooltip', 'copied!');
+         }).mouseout(function(ev) {
+            var current = $(ev.currentTarget);
+            setTimeout(function(){
+               $(current).attr('data-tooltip', 'click to copy!');
+            }, 300)
+         });
+      }

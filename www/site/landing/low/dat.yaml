@@ -1,0 +1,11 @@
+basedir: '../../'
+
+pretty: true
+
+title: Open source low-code tool for professional developers based on JAMstack, w/ Pug
+
+description: INTUITION.DEV is the futuristic open source bundler for pro developers with 10-fold productivity via automation, low-code, cross-platform, static-generator, and a built-in WebAdmin editor, leveraging JAMstack, w/ Pug and facilitating app maintenance by end-users.
+#sitemap
+# options: https://github.com/ekalinin/sitemap.js
+priority: 0.9
+changefreq: monthly

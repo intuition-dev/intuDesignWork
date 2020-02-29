@@ -1,0 +1,46 @@
+card-comp
+    .cards-container 
+        .columns
+            virtual(each='{item, index in this.items}')
+                .column.col-4.col-md-6.col-.col-sm-12
+                    .card
+                        .card-image
+                            a(href='{item.url}')
+                                img.img-responsive(src='{item.image}{item.postImg}')
+                        .card-header
+                            .card-title.h5 { item.title }
+                            //.card-subtitle.text-gray 
+                                i.far.fa-clock 
+                                |  { date }
+                        .card-body.four-line-text(style="-webkit-box-orient: vertical") { item.content_text }
+                        .card-footer
+                            button.btn.btn-primary { item.tags }
+
+    script.
+        console.info('oh hi tag');
+        this.on('*', function(evt) {
+                console.info('riot', evt);
+        });
+        this.items = [];
+        thiz = this;
+
+        render(data) {
+            if(!data ) {
+                thiz.items = [];
+                thiz.update();
+                return;
+            }
+            // clone
+            let cloned = JSON.parse(JSON.stringify(data));
+            thiz.items = cloned;
+            
+            let sz = thiz.items.length;
+            for(i = 0; i < sz; i++) {
+                var item = thiz.items[i];
+
+                item.image = ROOT + 'posts/' + item.url + '/';
+                item.url = '/posts/' + item.url;
+                item.tags = item.tags;
+            }
+            thiz.update();
+        }

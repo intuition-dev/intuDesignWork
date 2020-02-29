@@ -1,0 +1,112 @@
+extends /layouts/layout
+
+block head2
+    script.
+        console.log('img truck1')
+        depp.require('load-image', function(){
+          loadImage('truck1.2K.min.jpg')  
+        })
+
+
+block main
+
+    div
+        .jumbotron.hero-image
+            .container
+                .row.align-items-center
+                    .col-md-12.text-center
+                        h1 What will the future of professional development look like?
+                        h2#brand
+                            include:metaMD /text/motto.md
+        p
+        br
+        .container
+            .col-md-12
+                h5
+                    include:metaMD  /text/approach.md
+                p
+                br
+                p
+                hr
+                p
+ 
+        div
+            .container
+                .row.px-0.align-items-center.text-center
+                    .col-md-12
+                        h2 What if users could maintain and build future versions?
+                        p Version 1.0 spec is followed by next version - majority of effort is after 1.0 release!
+                        img(data-src="iterative.png").rounded.mt-3.img-fluid.lazyload
+
+                .col-md-12
+                    include:metaMD  /text/easy.md
+                    p
+                    br
+                    p
+            hr
+            .bg-light
+                .container
+                    .row.align-items-center
+                        .col-md-1
+                        .col-md-10
+                            h2.text-center What makes INTUITION.DEV different?
+                            br
+                            include:metaMD /text/difference.md
+                            a.font-weight-light.btn.btn-primary(href="/pg/features").mt-3 Features...
+                            p
+                            br
+                            p
+
+                    .jumbotron.p-3.p-md-5.text-white.rounded.bg-dark
+                        .col-md-10.px-0
+                            h1.display-5.font-italic No matter what app we build, you need SEO. Static is not optional.
+                            p.lead.my-3 SEO helps to boost your revenue by increasing the number of leads and by increasing sales.
+                            p.mb-0
+                                a.text-white.font-weight-bold(href='https://INTUITION-dev.github.io/INTUDocs/#/SEO', target='_blank').btn.btn-primary Continue reading...
+
+                    .row.mb-2
+                            .col-md-6
+                                .card.mb-3
+                                    .row.no-gutters
+                                        .col-md-8
+                                            .card-body
+                                                h4.card-title
+                                                    a.text-dark(href='https://INTUITION-dev.github.io/INTUDocs/#/CRUD', target='_blank') Basic CRUD application
+                                                p.card-text.mb-auto Building  a simple CRUD application, and leverage built in user authentication.
+                                                a.btn.btn-primary(href='https://INTUITION-dev.github.io/INTUDocs/#/CRUD', target='_blank').mt-3 Read More
+                                        .col-md-4.col-xs-12
+                                            img.card-img-right(data-src='books.jpg' ).img-fluid.mx-auto.d-block.lazyload
+                            .col-md-6
+                                .card.mb-3
+                                    .row.no-gutters
+                                        .col-md-8
+                                            .card-body
+                                                h4.card-title Mobile App
+                                                p.card-text Use exactly the same code for Web App, IOS and Andorid
+                                                a.btn.btn-primary(href='https://INTUITION-dev.github.io/INTUDocs/#/mobile', target='_blank').mt-3 Read More
+                                        .col-md-4.col-xs-12
+                                            img(data-src='phone.jpg').img-fluid.mx-auto.d-block.lazyload
+  
+
+    style.
+        .hero-image {
+            text-shadow: .5px .5px 0px #000;
+        }
+     
+        .hero-image {
+            background-image: url(truck1.2K.min.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom center;
+
+            padding: 12rem 2rem;
+
+            margin: 0;
+
+            color: white;
+            border-radius: 0;
+        }
+       
+    
+
+

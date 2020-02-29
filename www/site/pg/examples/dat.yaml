@@ -1,0 +1,66 @@
+basedir: ../../
+
+pretty: true
+title: INTUITION.DEV is open source and extensible low-code productivity bundler for front-end developers
+image: >-
+  slide-3.jpg
+content_text: INTUITION.DEV is the open source extensible low-code productivity bundler for programmers.
+keywords: low-code, building, software
+
+showcase: [{
+  title: 'Basic website',
+  command: 'mbake -w',
+  desc: 'Basic website to let your quickly setup your first project',
+  link: 'https://github.com/INTUITION.DEV/mbake/tree/master/examples/website',
+  img: 'website.jpg'
+},
+{
+  title: 'Basic blog',
+  command: 'mbake -b',
+  desc: 'Quick setup of the blog, in conjunction with the Web-admin will let you build E-commerce/CMS site in a minutes ',
+  link: 'https://github.com/INTUITION.DEV/mbake/tree/master/examples/CMS',
+  img: 'blog_1.jpg'
+},
+{
+  title: Basic CRUD app,
+  command: 'mbake -u',
+  desc: 'Basic CRUD show your the ViewModel paradigm that mbake trying to accomplish, how to be dynamic but UI first oriented',
+  link: 'https://github.com/INTUITION.DEV/mbake/tree/master/CRUD',
+  img: 'crud.jpg'
+},
+{
+  title: Web-Admin,
+  command: mbakeX -m,
+  desc: 'Web-admin is meant for non-programmers, manage your blog or other CMS online just by installing the web-admin. In conjuction with our blog, you will have ready fully functional Blog/CMS/E-Commerce in few minutes of setup',
+  link: 'https://github.com/INTUITION.DEV/mbakeWebAdmin',
+  img: 'editor.jpg'
+},
+{
+  title: Starter dash Web App ,
+  command: mbakeX -d,
+  desc: 'Basic dashboard starter with chartjs, c3 and nvd3 samples',
+  link: 'https://github.com/INTUITION.DEV/metaCake/tree/master/dash',
+  img: 'charts.jpg'
+},
+{
+  title: Slides markdown ,
+  command: mbakeX -k,
+  desc: 'Animated page with markdown',
+  link: 'https://github.com/INTUITION.DEV/mbake/tree/master/examples/slidesEx',
+  img: 'slides.jpg'
+},
+{
+  title: Electron app ,
+  command: mbakeX -e,
+  desc: 'Use electron with mbake to build cross platform web application',
+  link: 'https://github.com/INTUITION.DEV/mbakeMobile/tree/master/elect',
+  img: 'Elect1.png'
+},
+{
+  title: Hybrid phonegap app,
+  command: mbakeX -o,
+  desc: 'Reuse existing web development skills to quickly make hybrid applications built with pug, scss and JavaScript',
+  link: 'https://github.com/INTUITION.DEV/mbakeMobile/tree/master/PGap',
+  img: 'phonegap.jpg'
+}
+]

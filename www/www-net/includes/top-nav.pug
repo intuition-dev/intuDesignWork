@@ -1,0 +1,17 @@
+mixin top-nav(header_class="")
+   header.navbar(class=header_class)
+      .container.grid-xl.header-inner.d-flex
+         button.nav-collapse
+            #nav-icon
+               span
+               span
+               span
+               span
+         div.navbar-section
+            a.navbar-brand(href='/landing/main/') MetaBake
+         div.navbar-section(data-js="movile-nav")
+            a(href='/screen/overview/') Overview
+            a(href='/screen/services/') Our Services
+            a(href='/screen/aboutUs/') About Us
+            a(href='http://blog.INTUITION.DEV', target="_blank").norouter Blog
+            a(href='/screen/contact/') Contact Us

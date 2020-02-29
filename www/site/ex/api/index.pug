@@ -1,0 +1,21 @@
+head
+   include headFrag
+body
+   script.
+      depp.require('jquery',function(){
+      console.log('jq')
+
+      $.getJSON('https://ipinfo.io/json', function(res){
+         console.log(1, res.country)
+         console.log(1, res.postal)
+         console.log(1, res.org)
+         console.log(1, res.hostname)
+
+         var qs = 'https://api.weatherbit.io/v2.0/forecast/hourly?key=87e1e8f997bd4355b6eed2a44028622b&hours=1&postal_code='+res.postal+'&country='+res.country
+         $.getJSON(qs, function(resI){
+            console.log(resI.city_name)
+            console.log(resI.data[0].weather.description)
+         })//inner
+      })//outer
+
+      })//req

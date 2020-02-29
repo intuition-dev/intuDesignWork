@@ -1,0 +1,51 @@
+
+.container
+   .row
+      .col-md-12
+
+         #commento
+
+         script.
+
+            depp.define({
+               'commento': ['https://cdn.commento.io/js/commento.js']
+            })
+            depp.require(['commentoPre'], function() {
+               setTimeout(function(){
+                  depp.require('commento')
+                  console.log('com')
+               },3*1000)
+            })
+
+
+.bg-dark
+   .container.mt-3
+      div.py-5
+         .row
+            .col-md-6
+               a.h5(href="/").text-white INTUITION.DEV
+               div.text-white.star-it
+                  include:metaMD /text/song.md
+            .col-md-6.text-right
+               div.text-white.star-it
+                  include:metaMD /text/star.md
+
+
+   .bg-very-dark
+      .p-2.d-flex.justify-content-between.text-secondary
+         .copyright.font-weight-light &#169; 2019 
+            span.d-inline-block.pl-1 INTUITION.DEV
+         
+   
+   
+style.
+   .bg-very-dark {
+      background: #2a2f33;
+   }
+   .star-it,
+   .star-it a {
+      color: white;
+      display: block;
+      font-size: 14px;
+      margin-top: 6px;
+   }

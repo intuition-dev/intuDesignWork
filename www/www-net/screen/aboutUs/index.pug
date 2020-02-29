@@ -1,0 +1,60 @@
+extends /layout/layout
+//- App Shell
+
+block main
+   section.align-items-center.d-flex.l-intro-hero
+      .container.grid-xl.p-relative
+         .columns
+            .column.col-10.col-xs-12.text-center.col-mx-auto
+               h2.c-question 
+                  span CMS
+                  span E-Commerce
+                  span Web
+                  span Mobile App
+               h3 We help you to build it
+                  span.c-10x 10x
+                  span quicker
+                  span.c-10x 10x
+                  span cheaper
+      div.arrow-down.bounce(id="features")
+         include /assets/img/svg/down-arrow.svg
+
+   section.l-features(data-id="features")
+      .container.grid-xl
+         .columns(data-delighter).from-left
+            .column.col-12
+               h3.text-center Our Vision
+            .column.col-5.col-xs-12.svg-element
+               include /assets/img/svg/undraw_social_thinking_7ule.svg
+            include:metaMD vision.md
+            
+            .column.col-5.col-xs-12.svg-element
+               include /assets/img/svg/undraw_speed_test_wxl0.svg
+
+   section.call-to-action
+      .container.grid-xl.p-relative
+         .columns
+            .column.col-10.col-xs-12.col-mx-auto.text-center
+               div.call-to-action--tex Having project in mind?
+               a(href="/screen/contact").btn.btn-primary.d-inline-block.call-to-action--button Contact Us
+   section.dark
+      .container.grid-xl
+         .columns
+            .column.col-12
+               h3.text-center Careers
+            .column.col-6.col-sm-12.text-center.col-mx-auto
+               p We always want to hear from talented people. Send your portfolio to 
+                  a(href="mailto:uptimevic@gmail.com?subject=MetaBake.net careers").norouter uptimevic@gmail.com
+               
+   script.
+      depp.require(['style'], function() {
+         //calling delighters manually, because of the router
+         Delighters.init()
+         
+        $('#features').click(function(){
+            $('html, body').animate({
+               scrollTop: $( $(this).data('id', 'features') ).offset().top + 60
+            }, 300);
+            return false;
+         });
+      });

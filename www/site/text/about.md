@@ -1,0 +1,6 @@
+Computing power has increased about 20 percent each year for the past ten to 15 years, with fewer and fewer humans required. It has also been ten to 15 years since the last technology jump—and the resulting major tech disruption caused by the transition to new and more advanced tech. We must ask this difficult question: like truck drivers and retail workers, can AI-type tech such as automatic generation be used to replace programmers?
+
+Welcome to the tech next disruption. So, what can you as a software developer do about it? 
+
+If your organization is starting to explore low code and other modern approaches, take a look at my project INTUITION.DEV, a fully open source bundler/builder, currently with only two maintainers. Unlike other low-code tools, this one is aimed at professional developers and uses a standard language: Pug. We started first with a static code generator and then added a WebAdmin that lets you edit - and then keep adding features. 
+[Medium Article](https://medium.com/@uptimevic/how-software-developers-can-survive-the-coming-tech-crash-796dd8dc5a7e) We hope to make open source low code approach popular with professional developers.

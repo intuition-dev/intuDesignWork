@@ -1,0 +1,21 @@
+extends /layout/layout
+//- App Shell
+
+block main
+   section.aboutHero
+      h2.aboutHero__text Quality software quicker and cheaper
+
+   section.howWeSeeIt
+      .container.grid-xl
+         h2.text-center Our Focus
+            div.sub-header 
+               include:metaMD focus.md
+
+         .columns
+            include:metaMD our-approach.md
+                     
+   section.howWeSeeIt.white-background
+      .container.grid-xl
+         h2.text-center Front-End First
+         .columns
+            include:metaMD frontend-first.md

@@ -1,0 +1,685 @@
+html
+   scroll-behavior: smooth
+
+body,
+html
+   height: 100vh
+   width: 100vw
+   background: transparent
+   font-weight: 300
+
+body
+   position: relative
+
+h1,
+h2,
+h3,
+h4
+   font-weight: 600
+   line-height: 1.6
+
+.router
+   height: 100vh
+
+.will-change
+   will-change: transform
+   transform: translateZ(0)
+
+.disabled
+   &.btn
+      background: rgba($primary-color, 0.3)
+
+#routerFx
+   position: absolute
+   top: 0
+   overflow: hidden
+   z-index: 2
+   will-change: transform
+
+#router
+   will-change: transform
+
+#firstSl
+   will-change: transform
+
+#cloneSl
+   will-change: transform
+
+.delighter
+   &.from-right
+      transition: all 0.5s ease-out
+      transform: translateX(200%)
+      opacity: 0
+
+      &.started
+         transform: none
+         opacity: 1
+
+   &.from-left
+      transition: all 0.5s ease-out
+      transform: translateX(-100%)
+      opacity: 0
+
+      &.started
+         transform: none
+         opacity: 1
+
+   &.from-top
+      transition: all 0.5s ease-out
+      transform: translateY(-100%)
+      opacity: 0
+
+      &.started
+         transform: none
+         opacity: 1
+
+   &.from-bottom
+      transition: all 0.5s ease-out
+      transform: translateY(100%)
+      opacity: 0
+
+      &.started
+         transform: none
+         opacity: 1
+
+.l-wrapper
+   width: 100%
+   height: 100vh
+
+   & section
+      box-sizing: border-box
+      width: 100%
+      padding: 100px 0
+
+      & h2
+         font-size: 40px
+         font-weight: 600
+         position: relative
+         z-index: 2
+         line-height: 64px
+
+      & .background-image-wrapper
+         width: 100vw
+         height: calc(100vh + 200px)
+         position: absolute
+         top: 0
+         left: 0
+         z-index: 0
+
+      & .background-image
+         background-color: transparent
+         background-repeat: no-repeat
+         background-position: 50% 50%
+         background-size: cover
+         width: 100vw
+         height: calc(100vh + 200px)
+
+      & p
+         color: $dark-color
+         font-size: 0.95rem
+         position: relative
+
+      &.call-to-action
+         background: url("../img/intro_7.jpg")
+         background-size: cover
+         background-position: 0 40%
+         background-repeat: no-repeat
+         background-attachment: fixed
+
+         //for paralax effect
+         color: white
+         font-size: 2.5rem
+         padding: 5rem 0
+         font-weight: 400
+
+         &:before
+            //  background: rgba(0, 0, 0, .3);
+            z-index: 0
+
+      //About Page
+      &.aboutHero
+         // height: 100vh;
+         min-height: 350px
+         position: relative
+         text-align: center
+         background: rgb(56, 48, 66)
+         background: $primary-color
+         padding: 100px 20px 20px
+
+         &:before
+            content: ""
+            position: absolute
+            width: 100%
+            height: 100%
+            opacity: 0.15
+            background-image: url("../img/svg/world.svg")
+            background-size: cover
+            background-position: center
+            z-index: 0
+            left: 0
+            top: 0
+
+         & .aboutHero__text
+            font-weight: 300
+            color: #fff
+            margin-bottom: 0
+
+            //   font-weight: 400;
+            left: 50%
+            line-height: 1.5
+            max-width: 100%
+            padding: 0 30px
+            position: absolute
+            top: calc(50% - 0px)
+            transform: translate(-50%, -50%)
+
+            // width: 760px;
+
+         &.services
+            & .aboutHero__text
+               font-size: 28px
+
+         @media (max-width: 768px)
+            min-height: 250px
+            padding: 60px 0 40px
+
+            & .aboutHero__text
+               width: 100%
+
+   @media (max-width: 768px)
+      & section
+         padding: 40px 0
+
+         h2
+            font-size: 24px
+
+//landing page layout
+.l-wrapper-split
+   width: 100vw
+   height: 100vh
+   display: flex
+   text-align: center
+   position: relative
+   flex-direction: column
+
+   & h1,
+   & h3,
+   & p
+      line-height: 1.9
+
+   & h1
+      font-size: 36px
+      font-weight: 600
+      margin-bottom: 1rem
+
+   & h3
+      font-size: 20px
+      font-weight: 600
+      margin-bottom: 0
+
+   & p
+      font-size: 0.8rem
+      margin-bottom: 3rem
+
+   & .left,
+   & .right
+      height: 100%
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-basis: 50%
+      position: relative
+
+      & > div
+         width: 80%
+
+   & .left
+      background: #ffffff
+      z-index: 2
+      background: url("../img/intro_5.jpeg")
+      background-size: cover
+      background-position: 50% 0
+      width: 100%
+      height: 100%
+
+   & .right
+      z-index: 2
+      background: #f4f4f4
+
+   & .bottom-quote
+      color: white
+      position: absolute
+      bottom: 24px
+      left: 24px
+      text-align: left
+      font-style: italic
+      padding: 8px
+      font-weight: 100
+      font-size: 0.6rem
+
+      & .who
+         font-size: 0.6rem
+
+   @media (min-width: 768px)
+      flex-direction: row
+
+   @media (max-width: 768px)
+      & h1
+         font-size: 7vw
+
+      & .bottom-quote
+         font-size: 1rem
+         font-weight: 600
+
+.btn-enter
+   position: absolute
+   left: calc(50% - 43px)
+   top: calc(50% - 15px)
+   z-index: 4
+
+   @media (min-width: 768px)
+      top: 50%
+
+header
+   position: absolute
+   top: 0
+   left: 0
+   height: 60px
+   z-index: 10
+   width: 100%
+   background: $primary-color
+
+   &.dark
+      background: black
+
+   .l-nav
+      display: flex
+
+   .header-inner
+      & a
+         color: white
+         display: inline-block
+         font-weight: 300
+         margin: 0 24px 0 0
+         position: relative
+
+         &:last-child
+            margin-right: 0
+
+         &:hover
+            text-decoration: none
+
+            &:after
+               width: 100%
+
+         &:focus
+            text-decoration: none
+            outline: none
+            box-shadow: none
+
+         &:after
+            content: ""
+            height: 1px
+            position: absolute
+            background: white
+            left: 0
+            bottom: -4px
+            width: 0
+            transition: width 0.15s linear
+
+         &.active
+            text-decoration: none
+
+            &:after
+               width: 100%
+
+      & .mobile
+         position: absolute
+         display: none
+         flex-flow: column
+         right: 0
+         top: 60px
+         width: 100%
+         background: #33a3fb
+         opacity: 0
+         transform: scaleY(0)
+         transition: transform 0.15s linear, opacity 0.15s linear
+         transform-origin: 0% 0%
+         text-align: right
+         transform-style: preserve-3d
+
+         & a
+            margin: 0
+            padding: 1rem 16px
+            display: block
+            width: 100%
+
+            &:after
+               content: none
+
+            &:hover
+               background: $primary-color-light
+
+         &.open
+            display: flex
+            transform: scaleY(1)
+            opacity: 1
+
+      .nav-collapse
+         display: none
+         position: absolute
+         right: 15px
+         top: 20px
+         background: transparent
+         box-shadow: none
+         border: none
+         outline: none
+
+         @media (max-width: 899px)
+            display: block
+
+      #nav-icon
+         width: 30px
+         height: 30px
+         position: relative
+         margin: 0
+         transform: rotate(0deg)
+         transition: 0.5s ease-in-out
+         cursor: pointer
+
+      #nav-icon span
+         display: block
+         position: absolute
+         height: 2px
+         width: 100%
+         background: #fff
+         border-radius: 9px
+         opacity: 1
+         left: 0
+         transform: rotate(0deg)
+         transition: 0.25s ease-in-out
+
+      #nav-icon span:nth-child(1)
+         top: 0px
+
+      #nav-icon span:nth-child(2), #nav-icon span:nth-child(3)
+         top: 8px
+
+      #nav-icon span:nth-child(4)
+         top: 16px
+
+      #nav-icon.open span:nth-child(1)
+         top: 18px
+         width: 0%
+         left: 50%
+
+      #nav-icon.open span:nth-child(2)
+         transform: rotate(45deg)
+
+      #nav-icon.open span:nth-child(3)
+         transform: rotate(-45deg)
+
+      #nav-icon.open span:nth-child(4)
+         top: 18px
+         width: 0%
+         left: 50%
+
+@keyframes introAnim
+   0%
+      background-position: 60% 0%
+
+   50%
+      background-position: 41% 75%
+
+   100%
+      background-position: 41% 75%
+
+@keyframes bounce
+   0%,
+   100%
+      transform: translateY(0)
+
+   50%
+      transform: translateY(-5px)
+
+.bounce
+   animation-duration: 0.5s
+   animation-fill-mode: both
+   animation-timing-function: linear
+   animation-iteration-count: infinite
+   animation-name: bounce
+   animation-name: bounce
+
+.l-intro-hero
+   background-size: cover
+   background-position: center
+   width: 100%
+   height: 100%
+   font-size: 16px
+   background: linear-gradient(135deg, #ABDCFF 10%, #0396FF 90%, #fff 90%)
+   color: white
+
+   h2, h3
+      font-size: 1rem
+      line-height: 1.8
+
+   & h3
+      word-break: break-word
+
+      & span
+         display: inline-block
+
+      & .c-10x
+         font-size: 1.4rem
+         padding: 0 8px
+         background: #ffffff00
+         color: #1d70b0
+         margin: 0 10px
+         font-weight: 600
+
+   &:before
+      content: ""
+      position: absolute
+      width: 100%
+      height: 100%
+      opacity: 0.15
+      background-image: url("../img/svg/world.svg")
+      background-size: cover
+      background-position: center
+      z-index: 0
+
+   & .c-question
+      font-size: 1rem
+      line-height: 1.6
+
+      & span:not(:last-child)
+         position: relative
+         padding-right: 8px
+         display: inline
+
+   & .arrow-down
+      position: absolute
+      bottom: 12px
+      left: 50%
+      cursor: pointer
+
+      & svg
+         width: 24px
+         height: 24px
+         fill: white
+         transition: transform 0.15s linear
+
+      &:hover
+         & svg
+            transform: scale(1.2)
+
+   @media (min-width: 768px)
+      h3
+         font-size: 1.6em
+
+         & .c-10x
+            font-size: 1.8rem
+
+      & .c-question
+         font-size: 1.8em
+
+         & span:not(:last-child)
+            display: inline
+            padding-right: 24px
+
+            &:after
+               content: ""
+               width: 8px
+               height: 8px
+               border-radius: 4px
+               background: white
+               position: absolute
+               top: 50%
+               right: 8px
+
+section
+   &.dark
+      color: white
+      background: #222121
+
+      & p
+         color: white
+
+   &.coral
+      background: coral
+      color: white
+
+   &.light
+      color: black
+
+   &.l-features
+      .svg-element
+         padding: 2rem
+
+         & svg
+            width: 80%
+            height: auto
+
+      & h3
+         margin-bottom: 2rem
+
+      & .l-features--item
+         padding: 24px
+         align-self: center
+
+/* Footer
+
+footer
+   background: $primary-color
+   background: #000
+   padding: 2rem 0
+   color: white
+
+.sub-header
+   font-weight: 300
+   font-size: 0.8rem
+   max-width: 800px
+   margin: auto
+   color: $gray-color-dark
+
+   @media (max-width: 768px)
+      margin-top: 16px
+
+@keyframes boxShadowAnim
+   0%
+      box-shadow: 0 0 0px 9 rgba(91, 195, 238, 0.3)
+
+   50%
+      box-shadow: 0 0 0px 3px rgba(91, 195, 238, 0.3)
+
+   100%
+      box-shadow: 0 0 0px 9 rgba(91, 195, 238, 0.3)
+
+section.howWeSeeIt
+   $borderColorTop: repeating-linear-gradient(to top, #9f9f9f 0, #9f9f9f 4px, #fcfcfc 4px, #fcfcfc 8px)
+   $borderColorLeft: repeating-linear-gradient(to right, #9f9f9f 0, #9f9f9f 4px, #fcfcfc 4px, #fcfcfc 8px)
+   $circleColor: #5bc3ee
+
+   overflow: hidden
+   position: relative
+   background: #fcfcfc
+
+   & h2
+      margin-bottom: 24px
+      line-height: 1.5
+
+   & .howWeSeeIt--item
+      padding: 1rem 0
+      position: relative
+      z-index: 1
+
+      & h4
+         position: relative
+         margin: 0
+         padding: 1rem 0
+
+      & ul
+         list-style: none
+         padding: 0
+         margin: 0
+         position: relative
+
+         &:before
+            content: ""
+            height: calc(100% - 2rem)
+            width: 1px
+            background: $borderColorTop
+            position: absolute
+            left: 12px
+            top: 0
+
+         &:after
+            content: ""
+            height: 8px
+            width: 8px
+            background: $circleColor
+            position: absolute
+            left: 9px
+            top: 0
+            border-radius: 8px
+            animation-name: boxShadowAnim
+            animation-duration: 6s
+            animation-delay: 2s
+            animation-iteration-count: infinite
+
+         & li
+            padding: 1rem 56px
+            position: relative
+            font-size: 0.8rem
+            color: $dark-color
+
+            &:before
+               content: ""
+               height: 1px
+               width: 28px
+               background: $borderColorLeft
+               position: absolute
+               left: 12px
+               top: 50%
+
+            &:after
+               content: ""
+               height: 8px
+               width: 8px
+               background: $circleColor
+               position: absolute
+               left: 34px
+               top: calc(50% - 4px)
+               border-radius: 8px
+
+   &.white-background
+      background: white
+
+.wordlwide-share
+   width: 100%
+   position: absolute
+   z-index: 0
+
+   & svg
+      width: 100%
+      fill: #e8e8e873

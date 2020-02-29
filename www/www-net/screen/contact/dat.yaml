@@ -1,0 +1,8 @@
+basedir: ../../
+
+ROOT: '/'
+
+
+pretty: false
+title: 'contact'
+headerClass: 'dark'

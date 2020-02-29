@@ -1,0 +1,17 @@
+basedir: ../../
+ROOT: /
+title: >-
+  Handle multiple development environments with mbake and pug as easy as ride a
+  bike
+date: 'April 8, 2019'
+image: adventure-bicycle-bike-258045.jpg
+summary: >-
+  Setting development environment is always takes time, but it can be quick and
+  easy without the extra hassle with mbake and pug.
+content_text: "Mbake is a tool that helps develop an app as quickly as possible, in conjunction with pug, scss, ts    and livereload it makes setup of the app in seconds, no need for learning the new framework in order \tto build the project. Mbake build with vanilla JS, that makes extending it pretty simple."
+tags: 'pug, mbake, deploy, environment'
+publishDate: 1555632000
+publishOrder: 1
+publish: true
+
+postImg: who.jpg

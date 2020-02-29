@@ -1,0 +1,15 @@
+basedir: ../../
+ROOT: /
+title: Manage your project's dependencies with Johnny Depp
+date: 'May 10, 2019'
+image: storage.png
+summary: Simple intro into depp dependency maneger
+content_text: >-
+  Sometimes it's not a trivial task to manage your project's dependencies, especially if different pages depends on different js files. 
+  It's where dependency managers come in use.
+tags: 'depp, dependency, dependency-manager, intro, setup'
+publishDate: 1555286400
+publishOrder: 1
+publish: true
+
+postImg: who.jpg

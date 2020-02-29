@@ -1,0 +1,7 @@
+$grid-border-color: red;
+@import '3rd/gridforms.sass';
+
+
+.grid-form {
+   @include grid-form($field-padding: 12px, $grid-border-color: #d6d4d4);
+}

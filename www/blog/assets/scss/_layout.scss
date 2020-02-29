@@ -1,0 +1,164 @@
+.container {
+    @media (max-width: 960px) { padding: 0 15px;}
+}
+
+#parallax {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+    background: linear-gradient( rgba(34,147,215, 0.8), rgba(black, 0.8)), url('../img/home-bg.jpg') center center / cover, no-repeat;
+}
+
+.fixed-bg {
+    background-image: url('../img/seo.jpg');
+    background-attachment: fixed;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .sticky-element {
+        padding: 2rem;
+        top: 100px;
+        position: sticky; /* sticky */
+        -webkit-position: sticky;
+        text-shadow: 1px 0px 1px rgba(255, 255, 255, 0.1);
+        &, * {
+            margin: 0;
+            color: #151E24;
+            line-height: 1.5;
+            font-size: 20px;
+        }
+        * {
+            padding: 0;
+        }
+        &.light {
+            &, * {
+                color: #f2f2f2;
+            }
+        }
+    }
+}
+
+.bg-solid {
+    background: $white;
+}
+
+.banner {
+    padding: 2rem 0;
+    h1 {
+        text-align: left;
+        &:after {
+            content: '';
+            display: block;
+            height: 1px;
+            margin: 1rem 0;
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,2885c0+50,ffffff+100 */
+            background: $blue-sky; /* Old browsers */
+            background: -moz-linear-gradient(left, rgba(0,0,0, .3) 0%, rgba($blue-sky, 0) 50%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(left, rgba(0,0,0, .3) 0%,rgba($blue-sky, 0) 50%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to right, rgba(0,0,0, .3) 0%,rgba($blue-sky, 0) 50%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(0,0,0,0)', endColorstr='$blue-sky',GradientType=1 ); /* IE6-9 */
+        }
+    }
+}
+
+//- Pagination
+
+.custom-pagination {
+    margin: 0 auto;
+    padding: 1rem 0 4rem 0;
+    display: table;
+    .paginationjs.paginationjs-theme-blue .paginationjs-pages li {
+        border: 0;
+        border-radius: 0;
+    }
+    .paginationjs.paginationjs-theme-blue .paginationjs-pages li.active>a {
+        background: $blue-sky;
+        color: $white;
+    }
+    .paginationjs.paginationjs-theme-blue .paginationjs-pages li>a {
+        border: 1px solid $blue-sky;
+        border-radius: 0;
+        background: 0;
+        color: $blue-sky;
+        transition: all .3s ease-in-out;
+        &:hover {
+            background: $blue-sky;
+            color: $white;
+        }
+    }
+    .paginationjs:after {
+        display: none;
+    }
+}
+
+//- Footer
+
+footer {
+    color: $waterloo;
+    font-size: 13px;
+    padding: 20px 0;
+    margin: 4rem 0 0 0;
+    position: relative;
+    .brand {
+        text-transform: capitalize;
+        font-size: 38px;
+        letter-spacing: 8px;
+        text-align: center;
+        color: rgba(255,255,255,0.75);
+        display: table;
+        margin: 0 auto 4rem auto;
+        &:hover {
+            color: #fff;
+            background: -webkit-linear-gradient(45deg, $blue-sky, #fff 80%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    .footer-1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    @media (min-width: 1500px) {margin: 50px;}
+    @media (max-width: 600px) {
+        flex-direction: column;
+        text-align: center;
+    }
+    .social-icons a {
+        &, &:active, &:focus, &:visited {
+            svg {
+                fill: rgba($white, .75);
+                color: rgba($white, .75);
+            }
+        }
+        &:hover {
+            svg {
+                fill: rgba($white, 1);
+                color: rgba($white, 1);
+            }
+        }
+    }
+    a {
+        color: $blue-sky;
+        background: -webkit-linear-gradient(45deg, #fff, $blue-sky 80%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        &:hover, &:active, &:focus {
+            color: white;
+            background: -webkit-linear-gradient(45deg, $blue-sky, $blue-sky 80%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    .wide-letters {
+        letter-spacing: 1px;
+        word-spacing: 1px;
+        color: rgba($white, .75);
+    }
+    .wide-letters, .foot-soc {
+        padding: 1rem 0;
+    }
+}

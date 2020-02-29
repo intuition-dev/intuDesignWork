@@ -1,0 +1,136 @@
+extends /layout/layout
+
+block head2
+    script(src=ROOT+ 'home/comps/card-comp.js') 
+
+block header
+    header
+        .header-1
+            .container.grid-xl.header-1__inner
+                a.mr-2.navbar-brand(href='/') 
+                    span
+                    .name-wrap
+                        .slogan high development productivity
+                        h2 Metabake
+                .topbar
+                    //- .email
+                    //-     i.icono-mail
+                    //-     a(href='mailto:metabake@metabake.net') metabake@metabake.net
+                    div
+                        include /layout/social.pug
+
+block main
+    .section-cards.search-wrapper
+        .input-group#srch-form
+            input#srchFld.form-input.input-lg(type='text')
+            button#srchBut.btn.btn-primary.input-group-btn.btn-lg.d-flex
+                i.icono-search
+                
+    card-comp  
+    
+    #pagination-container.custom-pagination
+    
+    script.
+        depp.require(['axios'], function() {
+
+            axios.get('../posts/items.json').then(function(resp) {
+                var posts = resp.data;
+
+                var currentTime = Math.floor(new Date().getTime()/1000.0); 
+                let thiz = this;
+                var sortedItems = resp.data.items.filter(function(e) {
+                        var res = e.publishDate <= currentTime;
+                        return res;
+
+                    }).sort(function(a, b) {
+                    return (a.publishOrder < b.publishOrder) ? -1 : (a.publishOrder > b.publishOrder) ? 1 : 0;
+                });
+            
+                const tag = riot.mount('card-comp')[0]; 
+                
+                depp.require(['cssJs'], function() {
+
+                    const srchOptions = {
+                        shouldSort: true,
+                        threshold: 0.3,
+                        maxPatternLength: 64,
+                        keys: [
+                            "title",
+                            "summary",
+                            "content_text",
+                            "image",
+                            "tags"
+                        ]
+                    }
+
+                    $('#srch-form').disableAutoFill();
+
+                    pgContainer =[];
+                    pgContCount=-1;
+                    setupPg(guessShow(), sortedItems);
+                    fuse = new Fuse(sortedItems, srchOptions);
+
+                    $("#srchBut").click(onSrch);
+                });
+                
+                function setupPg(perPage, posts_) {
+                    console.log('PG');
+                    pgContCount++;
+                    console.log('s', pgContCount);
+                    pgContainer[pgContCount] = $('#pagination-container');
+                    
+                    perPage = 6;
+
+                    pgContainer[pgContCount].pagination({
+                        className: 'paginationjs-theme-blue paginationjs-big',
+                        dataSource: posts_,
+                        locator: 'items',
+                        pageSize: perPage,
+                        autoHidePrevious: true,
+                        autoHideNext: true,
+                        callback: function(data, pagination) {
+                            console.log('data', data)
+                            tag.render(data);
+                        }
+                    })
+
+                }//()
+                
+                function userSzSc() {
+                    //- console.log('resize|scroll');
+                    guessShow();
+                }
+
+                function guessShow() {
+                    var n = ( $(window).width() * $(window).height()  ) / ( 300 * 400) * .9;
+                    n = Math.round( n * .7);
+                    return n;
+                }
+
+                function onSrch() {
+                    var s = $( "#srchFld" ).val()
+                    //- console.log('srch', s);
+                    pgContainer[pgContCount].pagination('disable');
+                    pgContainer[pgContCount].pagination('hide');
+                    pgContainer[pgContCount].pagination('destroy');
+
+                    if(!s || s.length < 1) {
+                        setupPg(guessShow(), posts);
+                        return;
+                    }//fi
+                    
+                    //else we search
+                    var items = fuse.search(s);
+                    if(!items || items.length < 1) {// not found
+                        tag.render();
+                        return;
+                    }//fi
+
+                    var found = {};
+                    found.items = items;
+                    setupPg(guessShow(), found);
+                }//()
+                    
+            });
+            
+        });

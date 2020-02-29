@@ -1,0 +1,18 @@
+block variables
+   -var header_class = ''
+doctype html
+html
+   head
+      script(src='https://1490415816.rsc.cdn77.org/lib/gmetrics.js')
+
+      include /includes/headFrag
+      include /includes/head
+      block head
+   body.delayShowing
+      #router.router
+         include /includes/top-nav
+         +top-nav(header_class)
+         .l-wrapper
+            block main
+            include /includes/footer
+      #routerFx

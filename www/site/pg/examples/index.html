@@ -1,0 +1,205 @@
+
+<head>
+  <script src="https://1490415816.rsc.cdn77.org/lib/gmetrics.js"></script>
+  <script>
+    var _start = Date.now()
+    window.ENV = '0' //- for comps, but it is also in scope for Pug for ENV logic
+    
+  </script>
+  <title>INTUITION.DEV is open source and extensible low-code productivity tool for front-end developers</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <script src="https://cdn.jsdelivr.net/npm/johnnydepp@0.1.0/dist/depp.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/INTUITION-dev/mbToolBelt@v3.12.16/src/toolBelt.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2.4.0/webcomponents-loader.js"></script>
+  <style>
+    html { touch-action: manipulation; }
+    .delayShowing { opacity: 0; }
+    .blur { -webkit-filter:blur(2px);filter:blur(2px); }
+    
+  </style>
+  <script>toolBeltDefault() </script>
+  <link rel="stylesheet" href="/assets/css/bootstrapTop.css"/>
+  <link rel="stylesheet" href="/assets/css/bootstrap.css"/>
+  <link rel="stylesheet" href="/assets/css/custom.css"/>
+</head>
+<body>
+  <script src="/assets/ui-loader.js"></script>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light"><a class="navbar-brand" id="brand" href="/">INTUITION.DEV</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active"><a class="nav-link" href="/">Low-Code</a></li>
+          <li class="nav-item"><a class="nav-link" href="/pg/features/">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="http://intuition-dev.github.io/intuDocs" target="_blank">Docs</a></li>
+          <!-- li.nav-item
+          a.nav-link(href='/pg/examples') Examples
+          
+          
+          -->
+        </ul><a class="navbar-text" href="//github.com/INTUITION-dev" target="_blank">
+          <h2 class="text-dark"><i class="fa fa-github"></i></h2></a>
+      </div>
+    </nav>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="text-center">
+          <h3 class="mb-0">Examples </h3>
+        </div>
+        <div class="l-showcase">
+          <div class="l-showcase--item"><a href="https://github.com/INTUITION.DEV/mbake/tree/master/examples/website" target="_blank">
+              <div class="l-showcase--item--img" style="background-image:url(website.jpg)"></div></a>
+            <div class="l-showcase--item--header">
+              <div class="l-showcase--item--title">Basic website</div>
+              <div class="l-showcase--item--command tooltip" data-tooltip="click to copy" data-copy="mbake -w">mbake -w</div>
+            </div>
+            <div class="l-showcase--item--desc">Basic website to let your quickly setup your first project</div>
+          </div>
+          <div class="l-showcase--item"><a href="https://github.com/INTUITION.DEV/mbake/tree/master/examples/CMS" target="_blank">
+              <div class="l-showcase--item--img" style="background-image:url(blog_1.jpg)"></div></a>
+            <div class="l-showcase--item--header">
+              <div class="l-showcase--item--title">Basic blog</div>
+              <div class="l-showcase--item--command tooltip" data-tooltip="click to copy" data-copy="mbake -b">mbake -b</div>
+            </div>
+            <div class="l-showcase--item--desc">Quick setup of the blog, in conjunction with the Web-admin will let you build E-commerce/CMS site in a minutes </div>
+          </div>
+          <div class="l-showcase--item"><a href="https://github.com/INTUITION.DEV/mbake/tree/master/CRUD" target="_blank">
+              <div class="l-showcase--item--img" style="background-image:url(crud.jpg)"></div></a>
+            <div class="l-showcase--item--header">
+              <div class="l-showcase--item--title">Basic CRUD app</div>
+              <div class="l-showcase--item--command tooltip" data-tooltip="click to copy" data-copy="mbake -u">mbake -u</div>
+            </div>
+            <div class="l-showcase--item--desc">Basic CRUD show your the ViewModel paradigm that mbake trying to accomplish, how to be dynamic but UI first oriented</div>
+          </div>
+          <div class="l-showcase--item"><a href="https://github.com/INTUITION.DEV/mbakeWebAdmin" target="_blank">
+              <div class="l-showcase--item--img" style="background-image:url(editor.jpg)"></div></a>
+            <div class="l-showcase--item--header">
+              <div class="l-showcase--item--title">Web-Admin</div>
+              <div class="l-showcase--item--command tooltip" data-tooltip="click to copy" data-copy="mbakeX -m">mbakeX -m</div>
+            </div>
+            <div class="l-showcase--item--desc">Web-admin is meant for non-programmers, manage your blog or other CMS online just by installing the web-admin. In conjuction with our blog, you will have ready fully functional Blog/CMS/E-Commerce in few minutes of setup</div>
+          </div>
+          <div class="l-showcase--item"><a href="https://github.com/INTUITION.DEV/metaCake/tree/master/dash" target="_blank">
+              <div class="l-showcase--item--img" style="background-image:url(charts.jpg)"></div></a>
+            <div class="l-showcase--item--header">
+              <div class="l-showcase--item--title">Starter dash Web App</div>
+              <div class="l-showcase--item--command tooltip" data-tooltip="click to copy" data-copy="mbakeX -d">mbakeX -d</div>
+            </div>
+            <div class="l-showcase--item--desc">Basic dashboard starter with chartjs, c3 and nvd3 samples</div>
+          </div>
+          <div class="l-showcase--item"><a href="https://github.com/INTUITION.DEV/mbake/tree/master/examples/slidesEx" target="_blank">
+              <div class="l-showcase--item--img" style="background-image:url(slides.jpg)"></div></a>
+            <div class="l-showcase--item--header">
+              <div class="l-showcase--item--title">Slides markdown</div>
+              <div class="l-showcase--item--command tooltip" data-tooltip="click to copy" data-copy="mbakeX -k">mbakeX -k</div>
+            </div>
+            <div class="l-showcase--item--desc">Animated page with markdown</div>
+          </div>
+          <div class="l-showcase--item"><a href="https://github.com/INTUITION.DEV/mbakeMobile/tree/master/elect" target="_blank">
+              <div class="l-showcase--item--img" style="background-image:url(Elect1.png)"></div></a>
+            <div class="l-showcase--item--header">
+              <div class="l-showcase--item--title">Electron app</div>
+              <div class="l-showcase--item--command tooltip" data-tooltip="click to copy" data-copy="mbakeX -e">mbakeX -e</div>
+            </div>
+            <div class="l-showcase--item--desc">Use electron with mbake to build cross platform web application</div>
+          </div>
+          <div class="l-showcase--item"><a href="https://github.com/INTUITION.DEV/mbakeMobile/tree/master/PGap" target="_blank">
+              <div class="l-showcase--item--img" style="background-image:url(phonegap.jpg)"></div></a>
+            <div class="l-showcase--item--header">
+              <div class="l-showcase--item--title">Hybrid phonegap app</div>
+              <div class="l-showcase--item--command tooltip" data-tooltip="click to copy" data-copy="mbakeX -o">mbakeX -o</div>
+            </div>
+            <div class="l-showcase--item--desc">Reuse existing web development skills to quickly make hybrid applications built with pug, scss and JavaScript</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    // copy text to clipboard
+    depp.require('jquery', Run)
+    
+    function Run(){
+       $('[data-copy]').off('click').on('click', function (ev) {
+          var current = $(ev.currentTarget);
+          var text = $(current).data('copy');
+          
+          const el = document.createElement('textarea');
+          el.value = text;
+          el.setAttribute('readonly', '');
+          el.style.position = 'absolute';
+          el.style.left = '-9999px';
+          document.body.appendChild(el);
+          el.select();
+          document.execCommand('copy');
+          document.body.removeChild(el);
+          
+          $(current).attr('data-tooltip', 'copied!');
+       }).mouseout(function(ev) {
+          var current = $(ev.currentTarget);
+          setTimeout(function(){
+             $(current).attr('data-tooltip', 'click to copy!');
+          }, 300)
+       });
+    }
+  </script>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div id="commento"></div>
+        <script>
+          depp.define({
+             'commento': ['https://cdn.commento.io/js/commento.js']
+          })
+          depp.require(['commentoPre'], function() {
+             setTimeout(function(){
+                depp.require('commento')
+                console.log('com')
+             },3*1000)
+          })
+          
+          
+        </script>
+      </div>
+    </div>
+  </div>
+  <div class="bg-dark">
+    <div class="container mt-3">
+      <div class="py-5">
+        <div class="row">
+          <div class="col-md-6"><a class="h5 text-white" href="/">INTUITION.DEV</a>
+            <div class="text-white star-it"><p>Don’t fight low-code—lead low-code. Do it today. It will lead you in the right direction.</p>
+
+            </div>
+          </div>
+          <div class="col-md-6 text-right">
+            <div class="text-white star-it"><p>Please star our main project here
+<a href="https://github.com/INTUITION-dev/INTU">https://github.com/INTUITION-dev/INTU</a></p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-very-dark">
+      <div class="p-2 d-flex justify-content-between text-secondary">
+        <div class="copyright font-weight-light">&#169; 2019 <span class="d-inline-block pl-1">INTUITION.DEV</span></div>
+      </div>
+    </div>
+  </div>
+  <style>
+    .bg-very-dark {
+       background: #2a2f33;
+    }
+    .star-it,
+    .star-it a {
+       color: white;
+       display: block;
+       font-size: 14px;
+       margin-top: 6px;
+    }
+  </style>
+<!-- mB v7.12.3 on 2020-01-01T03:12:09.595Z --></body>

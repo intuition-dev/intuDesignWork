@@ -1,0 +1,1 @@
+INTUITION.DEV is the futuristic open source bundler/builder for pro developers with 10-fold productivity via automation, low-code, cross-platform, static-generator, and a built-in WebAdmin editor, leveraging JAMstack, w/ Pug and facilitating app maintenance by end-users.

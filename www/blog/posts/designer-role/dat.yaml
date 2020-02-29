@@ -1,0 +1,13 @@
+basedir: ../../
+ROOT: /
+title: The Role of Designer
+date: 'June 4, 2019'
+image: chess.png
+summary: Some thought on what's designer for and what it should
+content_text: >-
+  The outlook of a website is its main selling point. If the website looks nice the user would stay and inspect it if it's a mess - a lot would leave without even figuring out why's your product awesome.
+tags: 'design'
+publishDate: 1555286400
+publishOrder: 1
+publish: true
+postImg: chess.jpg

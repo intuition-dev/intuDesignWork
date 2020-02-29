@@ -1,0 +1,61 @@
+doctype html
+html(lang='en')
+    head
+        script(src='https://1490415816.rsc.cdn77.org/lib/gmetrics.js')
+
+        include headFrag
+        
+        script.
+            ROOT = '#{ROOT}' //- sets global pug and .js from dat.yaml
+
+        meta(name='description', content=content_text)
+
+        //- Schema.org markup for Google+
+        meta(itemprop='name', content=title)
+        meta(itemprop='description', content=content_text)
+        meta(itemprop='image', content=image)
+        meta(itemprop='tags', content=tags)
+
+        //- Twitter Card data
+        meta(name='twitter:title', content=title)
+        meta(name='twitter:description', content=content_text)
+        meta(name='twitter:image', content=image)
+        meta(name='twitter:tags', content=tags)
+
+        //- Open Graph data
+        meta(property='og:title', content=title)
+        meta(property='og:image', content=image)
+        meta(property='og:description', content=comment)
+        meta(property='og:tags', content=tags)
+            
+        link(src= ROOT + 'assets/css/spectreTop.css', rel="stylesheet", type="text/css")
+
+        block head2
+
+    body
+        script(src='//cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js')
+        script(src= ROOT + 'assets/js/load.js')
+        include ops
+        
+        #parallax
+        block header
+            header.inner
+                .header-1
+                    .container.grid-xl.header-1__inner
+                        a.mr-2.navbar-brand(href='/') 
+                            span
+                            .name-wrap
+                                .slogan high development productivity
+                                h2 Metabake
+                        .topbar
+                            //- .email
+                            //-     i.icono-mail
+                            //-     a(href='mailto:metabake@metabake.net') metabake@metabake.net
+                            div
+                                include social.pug
+        
+        .bg-solid
+            .container.grid-xl  
+                block main
+            
+        include footer

@@ -1,0 +1,18 @@
+!['Chess](chess.jpg)
+
+## Importance 
+The outlook of a website is its main selling point. If the website looks nice the user would stay and inspect it if it's a mess - a lot would leave without even figuring out why's your product awesome.
+
+And if you are thinking that you would sort out lazy people or people caring about only looks you are wrong: design is the first thing to judge by about how considerate to the user you are, how many efforts/money you are putting in your product in general. It may not always be the truth, but it's how people perceive the criteria they use in the world of overflowing information/products. 
+
+So the role of the designer is critical for selling your product.
+
+## Misunderstanding
+Some developers and marketers may misunderstand design.
+
+The first one sometimes would say that UI should be convenient and will be right, but it's not all it's about. An average developer without an understanding of design should not just add or remove things to UI, make major changes without consulting designer. 
+
+The second one sometimes can come up with something interesting, like "I noticed websites using Roboto sells better, let's use it everywhere. 16 px". I met several marketers who were ignorant to the fact that design is about the whole picture, that some feature in one product or design picture may be perceived as cool in some they are just out of place. 
+
+## CSS
+A web designer should understand css, just because it's a tool their work is going to be implemented with. Just like oil painter could come up with a specific technique for their picture web designer should understand their tool as well to be fully creative with it :)

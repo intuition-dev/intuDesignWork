@@ -1,0 +1,16 @@
+
+script.
+   ROOT = '#{ROOT}' //- sets global pug and .js from dat.yaml
+   console.info('root','#{ROOT}')
+   window.onerror = function (msg, url, lineNo, columnNo, error) {
+      console.info(msg, url, lineNo)
+      return false
+   }
+
+link(rel='shortcut icon', href= ROOT + 'assets/favicon.png', type='image/x-icon')
+
+link(href= ROOT+'assets/css/styleTop.css', rel='stylesheet')
+
+script(src='//unpkg.com/axios@0.19.0-beta.1/dist/axios.min.js')
+
+script(src= ROOT + 'assets/js/loader.js')

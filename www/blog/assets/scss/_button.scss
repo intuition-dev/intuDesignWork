@@ -1,0 +1,190 @@
+@import "../spectre/_buttons.scss";
+.btn {
+	&.btn-link {
+		color: $white;
+		&:hover {
+			border-bottom: 2px solid $white;
+			color: $white;
+		}
+	}
+}
+
+button {
+	@extend .btn;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.icono-mail {
+	border: 1px solid;
+    width: 16px;
+    height: 11px;
+    overflow: hidden;
+	display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    font-style: normal;
+    color: currentColor;
+    text-align: left;
+    text-indent: -9999px;
+    direction: ltr;
+	box-sizing: border-box;
+	transition: all .2s;
+	margin: 0 4px 0 0;
+	&:before {
+		border: 1px solid;
+		position: absolute;
+		width: 13px;
+		height: 15px;
+		-webkit-transform: rotate(50deg) skew(-10deg,-20deg);
+		transform: rotate(50deg) skew(-10deg,-20deg);
+		top: -8px;
+		left: 1px;
+	}
+}
+
+[class*=icono-]:after, [class*=icono-]:before {
+    content: '';
+    pointer-events: none;
+}
+
+//- social
+
+.social-icon {
+	color: $acadia !important;
+	i {
+		text-align: center;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        margin: 0 5px;
+        border-radius: 2px;
+        transition: all .3s ease-in-out;
+    }
+    &:hover i {
+		color: black;
+    }
+}
+
+.social-icons {
+	align-items: flex-end;
+
+	svg, a {
+		flex-shrink: 0;
+	}
+
+    svg {
+        width: 25px;
+        height: 25px;
+        fill: #000;
+		flex-shrink: 0;
+		transition: all .3s ease-in-out;
+    }
+
+    a {
+		margin: 0 .6rem 0 0;
+		display: flex;
+		align-items: flex-end;
+		justify-content: center;
+		line-height: 1;
+		&, &:hover, &:active, &:focus {
+			outline: none;
+			box-shadow: none;
+		}
+        &, &:active, &:focus, &:visited {
+            &, svg {
+                color: #000;
+                fill: #000;
+            }
+		}
+		&:hover {
+			&, svg {
+				color: $black;
+                fill: $black;
+			}
+		}
+
+        &:last-of-type {
+            margin: 0;
+        }
+    }
+}
+
+.scroll-to-top {
+	display: block;
+	position: fixed;
+	right: 15px;
+	bottom: 56px;
+	width: 30px;
+	height: 30px;
+	border: 20px solid transparent;
+	border-bottom-color: $blue-sky;
+	z-index: 20;
+	&:after {
+		content: '';
+		width: 0;
+		height: 0;
+		position: fixed;
+		right: 15px;
+		bottom: 16px;
+		border: 20px solid transparent;
+		border-top-color: rgba($blue-sky, 1);
+	}
+	&, &:hover, &:active, &:focus, &:visited {
+		outline: none;
+		box-shadow: none;
+	}
+	.arrow {
+		position: relative;
+		color: white;
+		top: 3px;
+		right: 14px;
+		z-index: 5;
+	}
+}
+
+.icono-upArrow {
+	width: 10px;
+    height: 2px;
+    margin: 15px 9px;
+    box-shadow: inset 0 0 0 2px;
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+	-webkit-transform: translateY(3px) rotate(-90deg);
+    transform: translateY(3px) rotate(-90deg);
+	display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    font-style: normal;
+    color: currentColor;
+    text-align: left;
+    text-indent: -9999px;
+    direction: ltr;
+	transition: all .2s;
+	&:after, &:before {
+		content: '';
+		pointer-events: none;
+	}
+	&:before {
+		position: absolute;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		transform: translateY(-50%);
+		border-style: solid;
+		border-width: 3.5px 0 3.5px 3.5px;
+		border-color: transparent;
+		border-left-color: inherit;
+		left: 100%;
+		right: auto;
+	}
+}
+
+#srchBut {
+	align-items: center;
+	justify-content: center;
+	i {
+		-webkit-transform: rotate(45deg) scale(.7);
+		transform: rotate(45deg) scale(.7);
+		margin: 0 0 4px 2px;
+	}
+}

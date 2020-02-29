@@ -1,0 +1,28 @@
+extends /layout/layout
+block variables
+
+block main
+
+   section.aboutHero
+      h2.aboutHero__text Contact Us
+   section.full-height
+      .container.grid-xl.p-relative
+         .columns
+            .column.col-6.col-md-12
+               p Find out why we are quick & cheaper.
+               contactus-comp(emailjs_id='user_PFE8rcsDafCMuUvI1Yj11', service_id='gmail', template_id='metabake_net', to_name= 'Vic')
+            .column.col-6.hide-md
+               img(src='./contactus.jpg', width='100%')
+   script.
+      function mountComp(compName) {
+         return new Promise(function (resolve, reject) {
+               depp.require(compName, function () { // load comp
+                  console.log('ENV', window.ENV)
+                  resolve(riot.mount(compName))
+               })
+         })//pro
+      }
+
+      depp.require(['cssJs'], function() { 
+         mountComp('contactus-comp') // also loads comp/
+      })

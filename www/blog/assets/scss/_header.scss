@@ -1,0 +1,126 @@
+header {
+    position: relative;
+    &:after {
+        content: '';
+        display: block;
+        height: 1px;
+        margin: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 9;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,2885c0+50,ffffff+100 */
+        background: $blue-sky; /* Old browsers */
+        background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0, .3) 50%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0, .3) 50%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0, .3) 50%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(0,0,0,0)', endColorstr='$blue-sky',GradientType=1 ); /* IE6-9 */
+    }
+    &.inner {
+        margin: 0 0 5rem 0;
+    }
+    .header-1 {
+        background: #fff;
+        color: #000;
+        padding: 1rem 0;
+    }
+    .header-1__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navbar-brand {
+        color: #000;
+        display: flex;
+        align-items: stretch;
+        justify-content: flex-start;
+        &:visited {
+            color: #000;
+        }
+        h2 {
+            margin: 0;
+            padding: 0;
+            text-transform: capitalize;
+            letter-spacing: 3.5px;
+        }
+        span {
+            background: url(../img/logo.jpg) center center / contain, no-repeat;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            margin: -2px .7rem 0 0;
+            border-radius: 3px;
+            flex-shrink: 0;
+        }
+        .name-wrap {
+            text-align: left;
+            margin: -4px 0;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: stretch;
+            .slogan, h2 {
+                transition: all .5s ease-in-out;
+            }
+        }
+        .slogan {
+            font-size: 10px;
+            font-weight: 200;
+            padding-left: 2px;
+            text-transform: capitalize;
+        }
+    }
+    .topbar {
+        // background: rgba(0,0,0,0.2);
+        padding: 15px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        justify-content: flex-end;
+        .social-icon {
+            color: #000 !important;
+        }
+        a {
+            &, &:hover, &:active, &:focus {
+                color:#000;
+                text-decoration: none;
+            } 
+        }
+        .fa-envelope {
+            margin-right: 7px;
+        }
+        div {
+            margin-left: 1rem;
+        }
+        .email {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            &:hover {
+                i, a {
+                    color: $black;
+                }
+            }
+            i, a {
+                transition: all .3s ease-in-out;
+            }
+            i {
+                flex-shrink: 0;
+            }
+            a {
+                font-weight: 200;
+                font-size: 12px;
+            }
+        }
+    }
+    .btn.btn-link, a {
+        &, &:hover, &:active, &:focus, &:visited {
+            border: 0;
+            text-decoration: none;
+            outline: none;
+            box-shadow: none;
+        }
+    }
+}

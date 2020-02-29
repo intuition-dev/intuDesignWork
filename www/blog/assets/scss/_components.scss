@@ -1,0 +1,134 @@
+//- Cards
+
+$font-size: 16px;
+$line-height: 1.5;
+$lines-to-show: 4;
+
+.four-line-text {
+	display: block; /* Fallback for non-webkit */
+	display: -webkit-box;
+	max-width: 400px;
+	height: $font-size*$line-height*$lines-to-show; /* Fallback for non-webkit */
+	margin: 0 auto;
+	font-size: $font-size;
+	line-height: $line-height;
+	-webkit-line-clamp: $lines-to-show;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding: 0!important;
+	margin: .8rem .8rem 0 .8rem;
+}
+
+.section-cards {
+	display: flex;
+	justify-content: flex-start;
+	margin: 0 0 1rem 0;
+	input, input.input-lg.form-input {
+		&, &:hover, &:active, &:focus {
+			outline: none;
+			box-shadow: none;
+			border-color: #bcc3ce;
+			border-right: 0;
+		}
+	}
+	input, button {
+		border-radius: 50px;
+	}
+	input.input-lg, button.btn-lg {
+		font-size: 14px;
+	}
+	input.input-lg {
+		&:focus {
+			border-color: $blue-sky;
+		}
+	}
+	button.btn-lg {
+		background-color: $mine-shaft;
+		border-color: $mine-shaft;
+		&:hover, &:focus {
+			background-color: $blue-sky;
+			border-color: $blue-sky;
+		}
+	}
+}
+
+.cards-container {
+	.column {
+		padding: .4rem;
+	}
+
+	.card {
+		box-shadow: 0 0.25rem 1rem rgba(48,55,66,.15);
+		border: 0;
+		&:hover {
+			button {
+				color: $blue-sky;
+			}
+		}
+		&-image {
+			a {
+				overflow: hidden;
+				display: block;
+				&:hover {
+					img {
+						transform: scale(1.1);
+					}
+				}
+			}
+			img {
+				height: 36.6vh;
+				max-width: 100%;
+				min-width: 100%;
+				display: block;
+				transition: transform .5s ease-in-out;
+				object-fit: cover;
+				flex-shrink: 0;
+			}
+		}
+		&-title {
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			display: block;
+			max-width: 100%;
+		}
+		button {
+			font-size: 10px;
+			padding: 5px 0;
+			color: $black;
+			margin-bottom: 12px;
+			transition: all .3s linear;
+			&:hover, &:focus {
+				color: $blue-sky;
+			}
+			&, &:hover, &:active, &:focus {
+				background-color: transparent;
+				border-color: transparent;
+				outline: none;
+				box-shadow: none;
+			}
+		}
+	}
+}
+
+.content-post {
+	padding: 0 0 50px 0;
+	video {
+		width: 80%;
+		height: auto;
+		margin: 0 0 2rem 0;
+	}
+}
+
+img {
+	max-height: 70vh;
+}
+
+.search-wrapper {
+	padding-top: 4rem;
+	justify-content: flex-end;
+	input, button {
+		border-radius: 0;
+	}
+}

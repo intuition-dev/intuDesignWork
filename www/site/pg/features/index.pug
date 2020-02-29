@@ -1,0 +1,54 @@
+extends /layouts/layout
+
+block main
+
+    .container.py-3
+        .row
+            .col-md-12.text-center
+                h3.mb-3.pb-3 Features
+    
+            .col-md-12.pt-3
+                .row
+                    .col-md-5
+                        .feat-list
+                            include:metaMD /text/features1.md
+
+                    .col-md-5.offset-md-1
+                        .feat-list
+                            include:metaMD /text/features2.md
+
+
+
+    style.
+        body {
+            counter-reset: lic;
+        }
+        ol {
+            list-style-type: none;
+        }
+        ol > li {
+            position:relative; /* Create a positioning context */
+            margin:0 0 6px 2em; /* Give each list item a left margin to make room for the numbers */
+            padding:4px 8px; /* Add some spacing around the content */
+            padding-left: 4px;
+            border-top:2px solid #666;
+            background: #f6f6f6;
+            min-height: 50px;
+        }
+        ol > li:before {
+            /* Position and style the number */
+            position:absolute;
+
+            counter-increment:lic; /* Increment the counter by 1 */
+            content:counter(lic); /* Use the counter as content */
+
+            top:-6px;
+            left:-68px;
+            width:2em;
+          
+            text-align:center;
+            color:#999;
+            
+            font: italic 38px/1.5 "Helvetica Neue", Arial, sans-serif;
+        }
+

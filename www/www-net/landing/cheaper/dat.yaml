@@ -1,0 +1,6 @@
+basedir: ../../
+
+ROOT: '../../'
+
+pretty: false
+title: 'MetaBake: cheaper web app and cheaper software development'

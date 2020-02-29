@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://1490415816.rsc.cdn77.org/lib/gmetrics.js"></script>
+    <script>
+      var _start = Date.now()
+      window.ENV = '0' // for comps, but it is also in scape for Pug for ENV logic
+    </script>
+    <title>about</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="//cdn.jsdelivr.net/npm/riot@3.13.2/riot.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/johnnydepp@0.1.0/dist/depp.min.js"></script>
+    <style>
+      .delayShowing { opacity: 0; }
+      .blur { -webkit-filter:blur(2px);filter:blur(2px); }
+    </style>
+    <script src="//cdn.jsdelivr.net/gh/metabake/metaCake@v2.0.6/toolBelt/toolBelt.min.js"></script>
+    <script>ROOT = '/' //- sets global pug and .js from dat.yaml
+      console.info('root','/')
+      window.onerror = function (msg, url, lineNo, columnNo, error) {
+         console.info(msg, url, lineNo)
+         return false
+      }
+      
+    </script>
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
+    <link href="/assets/css/styleTop.css" rel="stylesheet">
+    <script src="//unpkg.com/axios@0.19.0-beta.1/dist/axios.min.js"></script>
+    <script src="/assets/js/loader.js"></script>
+  </head>
+  <body class="delayShowing">
+    <div class="router" id="router">
+            <header class="navbar">
+              <div class="container grid-xl header-inner d-flex">
+                <button class="nav-collapse">
+                  <div id="nav-icon"><span></span><span></span><span></span><span></span></div>
+                </button>
+                <div class="navbar-section"><a class="navbar-brand" href="/landing/main/">MetaBake</a></div>
+                <div class="navbar-section" data-js="movile-nav"><a href="/screen/overview/">Overview</a><a href="/screen/services/">Our Services</a><a href="/screen/aboutUs/">About Us</a><a class="norouter" href="http://blog.intu.dev" target="_blank">Blog</a><a href="/screen/contact/">Contact Us</a></div>
+              </div>
+            </header>
+      <div class="l-wrapper">
+        <section class="aboutHero">
+          <h2 class="aboutHero__text">Quality software quicker and cheaper</h2>
+        </section>
+        <section class="howWeSeeIt">
+          <div class="container grid-xl">
+            <h2 class="text-center">Our Focus
+              <div class="sub-header">
+                 <h4>Helping you design quality web-apps more effectively and efficiently is what we do!</h4>
+<p>Speed to market is a competitive advantage and a must if you want to succeed in today’s rapidly changing environment.  Not all companies have the infrastructure or resources to react, innovate or develop quickly enough.  That’s where MetaBake comes in.  We get you where you need to be 10x faster at 1/10th the cost.</p>
+<p>Quick development is a pre-requisite for agile development: So that week to week you can accomplish your agile tasks. Quick development is the only way to complete a project: you must finish tasks at a quicker rate than requirements change - think of it as having escape velocity. If you don’t have enough velocity: gravity will pull you crashing down. and, quick development is a pre-requisite for reacting to your market and your customers. Think of if as tracer bullets way to react to a market.</p>
+<p>But to be quick: you must be cost effective, productive and efficient. You have to be quick and cost effective.</p>
+<p>I think you can eliminate the above.  Saying you are 10x faster at 1/10th the cost says more than what the above says…  If you have to say something, say:</p>
+<p>Fast.  Efficient. Agile.  That’ s MetaBake!</p>
+<p>I like using 1/10th the cost vs. cheaper because cheap equates to poor quality so you should use 1/10th the cost throughout your website or eliminate the word Cheap wherever you see it…</p>
+
+              </div>
+            </h2>
+            <div class="columns">
+<div class="column col-6 col-md-12 d-flex">
+<div class="howWeSeeIt--item"><h4>Our Approach</h4>
+<ul>
+<li>We work with you to understand the overall objectives of your project from concept to launch. Leveraging years of experience and state of the art tools, we will take you from initial development of a working prototype to final product in a <strong>10th</strong> of the time of other competitors. We do this <strong>without compromising the quality or integrity</strong> of the final product so you have peace of mind and confidence in the product when you go to market.</li>
+</ul>
+</div>
+</div>
+
+<div class="column col-6 col-md-12 d-flex">
+<div class="howWeSeeIt--item"><h4>Iterative Prototyping</h4>
+<ul>
+<li>We believe in iterative development and continuous delivery.</li>
+<li>In a true Agile flavour, our tools allows us to reuse and build the next step of development upon a previous one.</li>
+</ul>
+</div>
+</div>
+
+<div class="column col-6 col-md-12 d-flex">
+<div class="howWeSeeIt--item"><h4>Our Team</h4>
+<ul>
+<li>We leverage <strong>best in class developers</strong> from around the world so we can deliver a <strong>more cost effective product</strong> to you. Our average sprint times are hours instead of days enabling that we use our own tool and concept to build a product, which allows developers to create product faster, due to automatization of developing process and concentration on the main goal – <strong>the product itself</strong>.</li>
+</ul>
+</div>
+</div>
+
+<div class="column col-6 col-md-12 d-flex">
+<div class="howWeSeeIt--item"><h4>Intelligent Web Components</h4>
+<ul>
+<li>Our expansive library of intelligent components are fully compliant with Accelerated Mobile Page standards. This insures the final product delivered to you is <strong>customizable</strong>, <strong>adaptable</strong> and <strong>can be reused</strong> in different products.</li>
+</ul>
+</div>
+</div>
+
+            </div>
+          </div>
+        </section>
+        <section class="howWeSeeIt white-background">
+          <div class="container grid-xl">
+            <h2 class="text-center">Front-End First</h2>
+            <div class="columns">
+<div class="column col-6 col-md-12 d-flex">
+<div class="howWeSeeIt--item"><h4>Why</h4>
+<ul>
+<li>Front-End is currently undergoing an accelerated evolution: Front-End tech stacks become outdated easily with new tools and patterns appearing almost each week/month.</li>
+<li>Meanwhile, Back-end structures suffer less change than Front-End Stacks.</li>
+<li>Therefore, it’s imperative to build first a <strong>solid, scalable and performant Front-End.</strong></li>
+<li>We are able to hand working prototypes to costumers to interact with and gather better feedback for future development iterations.</li>
+</ul>
+</div>
+</div>
+
+<div class="column col-6 col-md-12 d-flex">
+<div class="howWeSeeIt--item"><h4>Advantages</h4>
+<ul>
+<li>We are able to hand working prototypes to costumers to interact with and gather better feedback for future development iterations</li>
+<li>We first make sure that we understand the client requirements and deliver an efficient UI and UX that suits the needs</li>
+<li>We develop the data structure and services needed as a <strong>Serverless Back-End</strong> fully optimized and made to fit the final data required by the app/web-app or website.</li>
+<li>We don’t build unnecesary payloads or overengineered and monolithic Back-End structures.</li>
+</ul>
+</div>
+</div>
+
+            </div>
+          </div>
+        </section>
+        <footer>
+          <div class="container l-footer grid-xl">
+            <div class="columns">
+              <div class="column col-3 col-xs-6 col-mx-auto">
+                <div class="l-copyrights">
+                  <div class="copyright"> <span>&copy; </span>2019 MetaBake</div>
+                </div>
+              </div>
+              <div class="column col-9 col-xs-6 col-mx-auto text-right"><a class="norouter mr-2" href="http://www.intu.dev" target="_blank">Free stuff</a></div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <div id="routerFx"></div>
+  <!-- mB v7.12.1 on 2019-12-16T22:32:14.679Z --></body>
+</html>

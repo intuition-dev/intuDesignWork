@@ -1,0 +1,55 @@
+i {
+    transition: all .2s;
+}
+
+[class*=icono-], [class*=icono-] * {
+    box-sizing: border-box;
+}
+
+[class*=icono-] {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    font-style: normal;
+    color: currentColor;
+    text-align: left;
+    text-indent: -9999px;
+    direction: ltr;
+}
+
+.icono-search {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin: 4px 4px 8px 8px;
+}
+
+.icono-areaChart, .icono-barChart, .icono-book, .icono-book:after, .icono-book:before, .icono-bookmarkEmpty, .icono-bookmarkEmpty:before, .icono-camera, .icono-chain:after, .icono-chain:before, .icono-clock, .icono-commentEmpty, .icono-creditCard, .icono-crop, .icono-crop:before, .icono-display, .icono-document, .icono-eye, .icono-file, .icono-flag:after, .icono-flag:before, .icono-folder, .icono-forbidden, .icono-frown, .icono-frown:after, .icono-headphone, .icono-heart, .icono-heart:after, .icono-heart:before, .icono-home, .icono-home:after, .icono-home:before, .icono-imac, .icono-imacBold, .icono-image, .icono-infinity:after, .icono-infinity:before, .icono-iphone, .icono-iphoneBold, .icono-keyboard, .icono-macbook:before, .icono-macbookBold:before, .icono-mail, .icono-mail:before, .icono-market, .icono-market:after, .icono-meh, .icono-meh:after, .icono-microphone, .icono-microphone:before, .icono-mouse, .icono-mouse:before, .icono-nexus, .icono-paperClip, .icono-paperClip:after, .icono-paperClip:before, .icono-piano, .icono-pin, .icono-pin:before, .icono-power, .icono-rename, .icono-ruler, .icono-search, .icono-signIn, .icono-signIn:before, .icono-signOut, .icono-signOut:before, .icono-smile, .icono-smile:after, .icono-stroke, .icono-sync, .icono-tag, .icono-tag:after, .icono-terminal, .icono-trash, .icono-user, .icono-user:before, .icono-video, .icono-volumeHigh:after, .icono-volumeHigh:before, .icono-volumeLow:before, .icono-volumeMedium:before, .icono-youtube, .icono-youtube:before, [class*=icono-check][class*=Circle], [class*=icono-][class*=Circle], [class*=icono-][class*=Square] {
+    border: 2px solid;
+}
+
+[class*=icono-]:after, [class*=icono-]:before {
+    content: '';
+    pointer-events: none;
+}
+
+.icono-search:before {
+    width: 4px;
+    height: 11px;
+    box-shadow: inset 0 0 0 32px;
+    top: 19px;
+    border-radius: 0 0 1px 1px;
+}
+
+.icono-cup:after, .icono-display:after, .icono-display:before, .icono-imac:after, .icono-imacBold:after, .icono-imacBold:before, .icono-iphone:after, .icono-iphone:before, .icono-macbook:before, .icono-macbookBold:before, .icono-market:after, .icono-microphone:after, .icono-microphone:before, .icono-mouse:after, .icono-mouse:before, .icono-search:before, .icono-sitemap:after, .icono-sitemap:before, .icono-tag:after, .icono-textAlignCenter[class*=icono-textAlign]:after, .icono-textAlignCenter[class*=icono-textAlign]:before, .icono-trash:before, .icono-user:before, .stickCenterH, [class*=icono-exclamation]:after {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+button [class*=icono-] {
+    margin: 0;
+}

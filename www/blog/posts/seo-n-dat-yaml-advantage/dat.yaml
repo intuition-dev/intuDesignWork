@@ -1,0 +1,19 @@
+basedir: ../../
+ROOT: /
+title: The advantage of dat.yaml when using seo
+date: 'March 26, 2019'
+image: who.jpg
+summary: >-
+  I will show how an example how I implemented this approach using using mbake
+  and its dat.yaml file functionality.
+content_text: >-
+  For SEO you need to add the SEO html meta tags for each page in html <head>
+  tag. So for each page you need to add different content to the SEO metatags.
+  And what if you are using one layout for all pages? Then you need to use
+  variables.
+tags: 'dat.yaml, seo, variables, layout'
+publishDate: 1555590505
+publishOrder: 1
+publish: true
+
+postImg: who.jpg

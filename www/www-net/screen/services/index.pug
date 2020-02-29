@@ -1,0 +1,30 @@
+extends /layout/layout
+//- App Shell
+
+block main
+   section.aboutHero
+      h2.aboutHero__text Write once, run anywhere
+
+   section.howWeSeeIt
+      .container.grid-xl
+         h2.text-center What we can build together
+            div.sub-header Software development is thriving on the verge of a major disruptive change and we want you to join us at the top of the tipping point
+         include:metaMD services.md
+         
+   section.howWeSeeIt.white-background
+      .container.grid-xl
+         h2.text-center Intelligent Web Components
+            div.sub-header Our Web Components adopt the best practices for Accelerated Mobile Pages, also known as AMP
+         .columns
+            include:metaMD web-components.md
+   
+   section.howWeSeeIt
+      .container.grid-xl
+         h2.text-center Hosting Support
+         .columns
+            .column.col-8.col-md-12.d-flex.col-mx-auto
+               .columns
+                  include:metaMD hosting.md
+
+               div.wordlwide-share
+                     include /assets/img/svg/worldwide-share.svg
