@@ -1,2 +1,2 @@
 css:
-- sass/global.scss
+- ../sass/min/global.scss

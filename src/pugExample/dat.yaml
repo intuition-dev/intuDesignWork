@@ -1,2 +1,4 @@
 key1: Oh hi
-pretty: false
+pretty: true
+
+title: Example Pug
