@@ -1,6 +1,6 @@
 
 
-// font goal is ~15px * line height
+// IMPORTANT from MVR font goal is ~15px * line height
 $baseVR: calc((14px + .2vmin ) * 1.4);
 
 
@@ -58,7 +58,6 @@ $import-messages:           true !default;
 
 @import '../med';
 @import '../split';
-@import '../pagination';
 
 
 //  ////////////////

@@ -1,9 +1,7 @@
 
-
-
 - nav
 - gridforms
-
+- media a single break point 560
 
 
 #1. make example like docuSar in pugIntro folder
