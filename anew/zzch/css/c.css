@@ -1,2 +1,5 @@
-.bar{display:flex;}
-.nav-item{margin-left:1rem;} /* mB v8.2.9 on 2020-03-01T18:06:57.161Z */
+.bar{display:flex;background-color:gray;}
+input[type=checkbox]:checked + .bar{flex-direction:column;color:blue;}
+.nav-item{margin-left:1rem;}
+.nav-sub-item{display:none;}
+.nav-item:hover .nav-sub-item{display:block;} /* mB v8.2.9 on 2020-03-01T18:32:49.809Z */

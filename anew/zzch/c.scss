@@ -1,10 +1,25 @@
 
+// nav bar
 
-.bar{
+.bar {
   display: flex;
+  background-color: gray;
 }
 
+input[type=checkbox]:checked + .bar {
+  flex-direction: column;
+  color: blue;
+}
 
 .nav-item {
   margin-left: 1rem;
 }
+
+.nav-sub-item {
+  display:none;
+}
+
+.nav-item:hover .nav-sub-item { 
+  display: block;
+}
+
