@@ -1,14 +1,16 @@
 
 // nav bar
-
-.bar {
+.navBar {
   display: flex;
-  background-color: gray;
+  background-color: lightgray;
 }
 
-input[type=checkbox]:checked + .bar {
+.nav {
+  display: flex;
+}
+
+input[type=checkbox]:checked + .nav {
   flex-direction: column;
-  color: blue;
 }
 
 .nav-item {
@@ -23,3 +25,7 @@ input[type=checkbox]:checked + .bar {
   display: block;
 }
 
+// mobi
+input[type=checkbox] {
+  content: "\2630";
+}
