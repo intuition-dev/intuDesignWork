@@ -1,0 +1,18 @@
+
+.nav-item {
+  text-decoration: none; 
+  margin-left: 1rem;
+
+  
+}
+
+
+.nav-sub-item {
+  display: none;
+  text-decoration: none; 
+}
+
+// on hover show child
+.nav-item:hover ~ .nav-sub-item { 
+  display:block; 
+}
