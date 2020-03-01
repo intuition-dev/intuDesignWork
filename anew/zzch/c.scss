@@ -1,19 +1,10 @@
 
 
-.bar * {
-  text-decoration: none;
-  list-style-type: none;
-  display: inline;
-  margin-left: .5rem;
-
+.bar{
+  display: flex;
 }
 
-.sub {
-  display: none;
-}
 
-// on hover show child
-
-.bar > ul > li > a:hover ~ .sub {
-  display: block;
+.nav-item {
+  margin-left: 1rem;
 }

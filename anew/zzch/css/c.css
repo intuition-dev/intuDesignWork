@@ -1,3 +1,2 @@
-.bar *{text-decoration:none;list-style-type:none;display:inline;margin-left:.5rem;}
-.sub{display:none;}
-.bar > ul > li > a:hover ~ .sub{display:block;} /* mB v8.2.9 on 2020-03-01T17:51:20.446Z */
+.bar{display:flex;}
+.nav-item{margin-left:1rem;} /* mB v8.2.9 on 2020-03-01T18:06:57.161Z */
