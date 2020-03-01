@@ -1,7 +1,9 @@
 .navBar{display:flex;background-color:lightgray;}
 .nav{display:flex;}
-input[type=checkbox]:checked + .nav{flex-direction:column;}
+.hamBurger:checked + .nav{flex-direction:column;}
 .nav-item{margin-left:1rem;}
 .nav-sub-item{display:none;}
 .nav-item:hover .nav-sub-item{display:block;}
-input[type=checkbox]{content:"\2630";} /* mB v8.2.9 on 2020-03-01T18:45:59.027Z */
+.hamBurger{visibility:hidden;}
+.hamBurger::before{content:"\2630";visibility:visible;}
+.hamBurger:checked::before{content:"\2715";visibility:visible;} /* mB v8.2.9 on 2020-03-01T22:24:30.181Z */

@@ -1,5 +1,5 @@
 
-// nav bar
+// navBar checkbox hamBurger unicode for AMP, no .js
 .navBar {
   display: flex;
   background-color: lightgray;
@@ -9,7 +9,7 @@
   display: flex;
 }
 
-input[type=checkbox]:checked + .nav {
+.hamBurger:checked + .nav {
   flex-direction: column;
 }
 
@@ -25,7 +25,17 @@ input[type=checkbox]:checked + .nav {
   display: block;
 }
 
-// mobi
-input[type=checkbox] {
-  content: "\2630";
+// mobi UI
+.hamBurger {
+  visibility: hidden;
+}
+
+.hamBurger::before {
+  content: "\2630"; 
+  visibility: visible;
+}
+
+.hamBurger:checked::before {
+  content: "\2715";
+  visibility: visible;
 }
