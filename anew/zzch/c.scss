@@ -1,18 +1,19 @@
 
-.nav-item {
-  text-decoration: none; 
-  margin-left: 1rem;
 
-  
+.bar * {
+  text-decoration: none;
+  list-style-type: none;
+  display: inline;
+  margin-left: .5rem;
+
 }
 
-
-.nav-sub-item {
+.sub {
   display: none;
-  text-decoration: none; 
 }
 
 // on hover show child
-.nav-item:hover ~ .nav-sub-item { 
-  display:block; 
+
+.bar > ul > li > a:hover ~ .sub {
+  display: block;
 }
