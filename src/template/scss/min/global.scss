@@ -5,6 +5,7 @@
 
 $baseVR: calc((14px + .2vmin ) * 1.4);
 
+$navBar: calc(#{$baseVR} * 1.5);
 
 @import '../normalize';
 

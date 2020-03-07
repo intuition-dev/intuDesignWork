@@ -1,14 +1,17 @@
 
-#1. make example like docuSar in pugIntro folder
-( from/for http://staticgen.com )
-docuSarus is used by http://riot.js.org - sad.
+#1. make example like docuSar in template folder, but include some of the 'style' that is there
 
-1.A: may need to fix json -i in mbCLI  htts://jsonfeed.org/version/1
+ from/for http://staticgen.com , that is the docuSarus sample
+docuSarus is used by http://riot.js.org - sad!
 
-1.B: May need to touch up global css made from min
+1.A: may need to fix json -i in mbCLI  htts://jsonfeed.org/version/1, use that spec
+to make items
+
+1.B: May need to touch up of our global css. I spent a bit to much time to line height/vertical rytam
 
 pug example should be teachable to 'dummies' 
+
 include landing page, blog and doc|api
 
-instead of front matter markdown we use yaml 
-
+dat.yaml is used to setup a the page. For eample left menu.
+Maybe the left should be a custom element we host

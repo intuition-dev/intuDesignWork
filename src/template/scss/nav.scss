@@ -1,11 +1,13 @@
 
-// navBar checkbox hamBurger unicode for AMP, no .js
-.navBar {
+// navBar checkbox hamBurger unicode for AMP, no .js!
 
+.navBar {
   display: flex;
   background-color: black;
   user-select: none; 
   width: 100%;
+
+  position: absolute;  // so it floats over
 
 }
 
@@ -15,11 +17,11 @@
 
 }
 .navBrand {
-  line-height: calc(#{$baseVR} * 1.5);
+  line-height: $navBar;
   margin-left: 1rem;
 }
 .hamBurger {
-  line-height: calc(#{$baseVR} * 1.5);
+  line-height:$navBar;
   margin-left: .5rem;
 }
 // the key
@@ -29,7 +31,7 @@
 
 .nav-item {
   margin-left: 1rem;
-  line-height: calc(#{$baseVR} * 1.5);
+  line-height: $navBar;
 }
 
 .nav-sub-item {
