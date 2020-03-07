@@ -22,13 +22,9 @@ textarea, input {
   margin: 0 20px;
   width: auto;
 
-  @media(min-width:1310px) {
-    margin: auto;
-    width: 1270px;
-  }
 }
 
-// this extends into both nav a and .btn
+// this extends into both .btn
 %no-underline {
   text-decoration: none;
 }

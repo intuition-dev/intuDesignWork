@@ -1,10 +1,15 @@
 
+// Source: http://mincss.com
 
 // IMPORTANT from MVR font goal is ~15px * line height
+
 $baseVR: calc((14px + .2vmin ) * 1.4);
 
 
 @import '../normalize';
+
+// media a single break point 561
+
 
 * { margin: 0; padding: 0; }
 
@@ -23,8 +28,6 @@ html, body {
     user-select:none;
 }
 
-// font-size: calc(#{$baseVR} * .78 );
-// font-size: calc(#{$baseVR} * .65);
 
 // ------------------------------------------------------------------
 //  Core Styles of Min
@@ -32,23 +35,9 @@ html, body {
 @import '__var-lib.scss',
         'general.scss';
 
-// ------------------------------------------------------------------
-//  Customize Optional Components
-
-$import-buttons:            true !default;
-$import-forms:              true !default;
-$import-navbar:             true !default;
-$import-messages:           true !default;
-$import-icons:              true !default;
-$import-grid:               true !default;
-$import-messages:           true !default;
-
-
 @import 'button',
         'grid',
         'icons',
-        'forms',
-        'navbar',
         'messages';
 
 // /////////////////////////////////////
@@ -58,6 +47,8 @@ $import-messages:           true !default;
 
 @import '../med';
 @import '../split';
+@import '../gridforms';
+@import '../nav';
 
 
 //  ////////////////

@@ -1,4 +1,4 @@
-@if $import-grid == true {
+
 //-------------------------------------------------------------------
 //  Grid system responsive code is in _general.scss
 //
@@ -44,12 +44,8 @@ $grid-list: (
   }
 }
 
-@media (max-width:870px) {
+@media (max-width:561px) {
   .row .col {
     width: 100%;
   }
-}
-
-//-------------------------------------------------------------------
-// End @if
 }
