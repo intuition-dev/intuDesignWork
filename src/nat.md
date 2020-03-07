@@ -22,7 +22,7 @@ to make items
 
 1.B: May need to touch up of our home madeglobal css, used instead of spectre. I spent a bit to much time to line height/vertical rytam and such. nav requires no .js.
 
-1.C: Maybe the left side of page that shows jsonfeed.json should be a custom element we host. It would make it simpler to use
+1.C: Maybe the left side of page that shows jsonfeed.json should be a custom element we host. It would make it simpler to use. (youd' have to import & extend the base class https://github.com/intuition-dev/mbToolBelt/blob/master/custel/custel1/custel/CompElement.js )
 
 
 Also, delete that folder docuSar when done and this file: nat.md.
