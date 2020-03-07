@@ -152,9 +152,9 @@ a web app, but same code can run Electron. JAMStack is just HTML, css and .js.
 
 #### Cross platform development continued:
 
- You can also use Cordova or PhoneGap: to make Android or IOS app.  I use http://build.PhoneGap.com so there is no Android, IOS, or Cordova to install. It is all done in the cloud.
+ You can also use Cordova or Cordova: to make Android or IOS app.  I use https://cordova.apache.org/docs/en/latest/ so there is no Android, IOS, or Cordova to install. It is all done in the cloud.
 
-Here is an example cross platform app: (http://github.com/INTUITION-dev/mbMobile), for 3 platforms. Notice that the web app, electron app and phonegap app all use a symbolic link to the same directory: **same code base**. We won't spend more time on this, you can look at the code but just a point is: you can make a cross platform app in Pug.
+Here is an example cross platform app: (http://github.com/INTUITION-dev/mbMobile), for 3 platforms. Notice that the web app, electron app and Cordova app all use a symbolic link to the same directory: **same code base**. We won't spend more time on this, you can look at the code but just a point is: you can make a cross platform app in Pug.
 
 
 # Future and Low-code

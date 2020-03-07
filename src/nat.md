@@ -15,3 +15,8 @@ include landing page, blog and doc|api
 
 dat.yaml is used to setup a the page. For eample left menu.
 Maybe the left should be a custom element we host
+
+Also, delete that folder zdocuSar when done and this file: nat.md.
+
+Maybe use lorem ipsum text
+and something like this for images http://holderjs.com
