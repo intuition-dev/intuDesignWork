@@ -1,20 +1,27 @@
 
 // navBar checkbox hamBurger unicode for AMP, no .js
 .navBar {
+
   display: flex;
   background-color: black;
-  position: absolute;
   user-select: none; 
   width: 100%;
-  margin-top: -.5rem; 
-  margin-left: -.5rem; 
+
 }
 
 .nav {
   display: flex;
   color: white;
-}
 
+}
+.navBrand {
+  line-height: calc(#{$baseVR} * 1.5);
+  margin-left: 1rem;
+}
+.hamBurger {
+  line-height: calc(#{$baseVR} * 1.5);
+  margin-left: .5rem;
+}
 // the key
 .hamBurger:checked + .nav {
   flex-direction: column;
@@ -22,10 +29,12 @@
 
 .nav-item {
   margin-left: 1rem;
+  line-height: calc(#{$baseVR} * 1.5);
 }
 
 .nav-sub-item {
   display:none;
+  z-index: 100;
 }
 
 .nav-item:hover .nav-sub-item { 
