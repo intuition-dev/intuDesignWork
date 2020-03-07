@@ -206,4 +206,4 @@ h6{font-size:calc(calc((14px + .2vmin ) * 1.4) * .52);-webkit-font-kerning:none;
 .hamBurger:checked ~ .nav:hover .nav-sub-item{margin-left:30px;margin-right:1rem;}
 pre,code{font-family:monospace,monospace;background:#d1dffa;padding-left:5px;}
 .CodeMirror,.CodeMirror *{font-family:monospace,monospace;}
-hr{color:black;border:1px solid;} /* mB v8.2.11 on 2020-03-07T04:09:36.807Z */
+hr{color:black;border:1px solid;} /* mB v8.2.11 on 2020-03-07T17:39:17.138Z */
