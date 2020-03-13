@@ -1,68 +1,74 @@
-
 // navBar checkbox hamBurger unicode for AMP, no .js!
 
 .navBar {
-  display: flex;
-  background-color: black;
-  user-select: none; 
-  width: 100%;
-
-  position: absolute;  // so it floats over
-
+   display: flex;
+   background-color: black;
+   user-select: none;
+   width: 100%;
+   position: absolute; // so it floats over
 }
 
 .nav {
-  display: flex;
-  color: white;
+   display: flex;
+   color: white;
 
 }
+
 .navBrand {
-  line-height: $navBar;
-  margin-left: 1rem;
+   line-height: $navBar;
+   margin-left: 1rem;
 }
+
 .hamBurger {
-  line-height:$navBar;
-  margin-left: .5rem;
+   line-height: $navBar;
+   margin-left: .5rem;
 }
+
 // the key
-.hamBurger:checked + .nav {
-  flex-direction: column;
+.hamBurger:checked+.nav {
+   flex-direction: column;
 }
 
 .nav-item {
-  margin-left: 1rem;
-  line-height: $navBar;
+   margin-left: 1rem;
+   line-height: $navBar;
+
+   & a {
+      text-decoration: none;
+      line-height: $navBar;
+      color: white;
+
+   }
 }
 
 .nav-sub-item {
-  display:none;
-  z-index: 100;
+   display: none;
+   z-index: 100;
 }
 
-.nav-item:hover .nav-sub-item { 
-  display: block;
+.nav-item:hover .nav-sub-item {
+   display: block;
 }
 
 // mobi UI
 .hamBurger {
-  visibility: hidden;
+   visibility: hidden;
 }
 
 .hamBurger::before {
-  content: "\2630"; 
-  visibility: visible;
-  color: white;
+   content: "\2630";
+   visibility: visible;
+   color: white;
 }
 
 .hamBurger:checked::before {
-  content: "\2715";
-  visibility: visible;
-  color: white;
+   content: "\2715";
+   visibility: visible;
+   color: white;
 }
 
 // checked and item hover 
-.hamBurger:checked ~ .nav:hover .nav-sub-item {
-  margin-left: 30px;
-  margin-right: 1rem;
+.hamBurger:checked~.nav:hover .nav-sub-item {
+   margin-left: 30px;
+   margin-right: 1rem;
 }
-

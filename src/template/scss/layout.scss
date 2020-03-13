@@ -1,0 +1,95 @@
+* {
+   box-sizing: border-box;
+}
+
+/* Docs Page */
+.container__docs {
+   padding: 50px 15px 15px;
+   display: grid;
+   grid-template-columns: 180px 1fr 120px;
+   grid-column-gap: 40px;
+   font-family: 'Open Sans';
+
+
+   h3,
+   h4 {
+      margin-bottom: 15px;
+      position: relative;
+   }
+
+   & .anchor {
+      opacity: 0;
+      position: absolute;
+      left: -25px;
+      top: 0;
+      display: block;
+      transition: opacity 1s;
+
+      &:hover {
+         opacity: 1;
+      }
+   }
+}
+
+
+$catColor: #393939;
+$catLink: #717171;
+
+.content {
+   width: 100%;
+   display: grid;
+}
+
+/* Right sidebar for the docs page */
+.sidebar {
+   & ul {
+      list-style: none;
+      margin: 15px 0;
+      padding: 0 0 0 15px;
+      font-family: inherit;
+   }
+
+   &__categories {
+      h3 {
+         color: $catColor;
+         font-family: inherit;
+      }
+   }
+}
+
+.pageNav {
+   border-left: 1px solid #e0e0e0;
+   padding-left: 10px;
+   align-self: start;
+   display: flex;
+   flex-flow: column;
+
+   align-self: flex-start;
+   flex: 0 0 240px;
+   max-height: calc(100vh - 20px);
+   overflow-y: auto;
+   position: sticky;
+   top: 20px;
+
+   & a {
+      text-decoration: none;
+      color: $catLink;
+
+      &.active {
+         color: #550d90;
+      }
+   }
+}
+
+
+pre {
+   padding: 0;
+   overflow-x: auto;
+
+   code {
+      padding: 15px;
+      display: block;
+      overflow: normal;
+      white-space: pre;
+   }
+}

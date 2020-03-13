@@ -1,9 +1,8 @@
-
 // Source: http://mincss.com
 
 // IMPORTANT from MVR font goal is ~15px * line height
 
-$baseVR: calc((14px + .2vmin ) * 1.4);
+$baseVR: calc((14px + .2vmin) * 1.4);
 
 $navBar: calc(#{$baseVR} * 1.5);
 
@@ -12,21 +11,27 @@ $navBar: calc(#{$baseVR} * 1.5);
 // media a single break point 561
 
 
-* { margin: 0; padding: 0; }
-
-html, body { 
-    width: 100%; 
-    height: 100%; 
+* {
+   margin: 0;
+   padding: 0;
 }
 
-*, html, body {
-    line-height: $baseVR;
-    vertical-align: top;
-    margin-top: 0;
-    margin-bottom: 0;
-    font-smooth: antialiased;
-    font-kerning: normal; // enables kerning
-    user-select:none;
+html,
+body {
+   width: 100%;
+   height: 100%;
+}
+
+*,
+html,
+body {
+   line-height: $baseVR;
+   vertical-align: top;
+   margin-top: 0;
+   margin-bottom: 0;
+   font-smooth: antialiased;
+   font-kerning: normal; // enables kerning
+   user-select: none;
 }
 
 
@@ -34,12 +39,12 @@ html, body {
 //  Core Styles of Min
 // ------------------------------------------------------------------
 @import '__var-lib.scss',
-        'general.scss';
+'general.scss';
 
 @import 'button',
-        'grid',
-        'icons',
-        'messages';
+'grid',
+'icons',
+'messages';
 
 // /////////////////////////////////////
 
@@ -50,23 +55,26 @@ html, body {
 @import '../split';
 @import '../gridforms';
 @import '../nav';
+@import '../layout';
 
 
 //  ////////////////
 
-pre, code {
-    font-family: monospace, monospace; 
-    background: hsl(220, 80%, 90%); 
-    padding-left: 5px;
+pre,
+code {
+   font-family: monospace, monospace;
+   background: hsl(220, 80%, 90%);
+   padding-left: 5px;
 }
 
-.CodeMirror, .CodeMirror * {
-    font-family: monospace, monospace; 
+.CodeMirror,
+.CodeMirror * {
+   font-family: monospace, monospace;
 }
 
 //  ////////////////
 
 hr {
-    color: black;
-    border: 1px solid;
+   color: black;
+   border: 1px solid;
 }
