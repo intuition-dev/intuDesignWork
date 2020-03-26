@@ -4,3 +4,11 @@ node_modules/
 
 package-lock.*
 yarn.lock
+.idea/$CACHE_FILE$
+.idea/.gitignore
+.idea/encodings.xml
+.idea/intuDesignWork.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/inspectionProfiles/Project_Default.xml

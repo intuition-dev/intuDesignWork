@@ -1,74 +1,143 @@
 // navBar checkbox hamBurger unicode for AMP, no .js!
 
+$fontColor   : #dfe4e9;
+$navBarColor : #0d0f43;
 .navBar {
-   display: flex;
-   background-color: black;
-   user-select: none;
-   width: 100%;
-   position: absolute; // so it floats over
-}
+   display          : flex;
+   background-color : $navBarColor;
+   user-select      : none;
+   width            : 100%;
+   position         : absolute; // so it floats over
 
-.nav {
-   display: flex;
-   color: white;
+   .nav__wrapper {
+      display         : flex;
+      color           : $fontColor;
+      width           : 100%;
+      justify-content : space-between;
+      list-style: none;
+      margin: 0 1rem;
+   }
 
-}
+   .nav {
+      display : flex;
+      list-style: none;
+   }
 
-.navBrand {
-   line-height: $navBar;
-   margin-left: 1rem;
-}
+   .navBrand {
+      line-height : $navBar;
 
-.hamBurger {
-   line-height: $navBar;
-   margin-left: .5rem;
-}
+      & a {
+         color           : $fontColor;
+         text-decoration : none;
+         line-height     : $navBar;
+         font-size       : inherit;
+      }
+   }
 
-// the key
-.hamBurger:checked+.nav {
-   flex-direction: column;
-}
+   .hamBurger {
+      line-height : $navBar;
+      margin-left : 1rem;
+      cursor: pointer;
+      display: none;
+   }
 
-.nav-item {
-   margin-left: 1rem;
-   line-height: $navBar;
+   // the key
+   .hamBurger:checked + .nav__wrapper {
+      flex-direction : column;
+   }
 
-   & a {
-      text-decoration: none;
-      line-height: $navBar;
-      color: white;
+   .nav-item {
+      line-height : $navBar;
+      position: relative;
 
+      & a {
+         text-decoration : none;
+         line-height     : $navBar;
+         color           : $fontColor;
+         padding-left: 1.3rem;
+
+      }
+      
+      &:hover {
+         & a {
+            color: white;
+         }
+         .nav__submenu {
+            display : flex;
+            position: absolute;
+            flex-flow: column;
+            min-width: 150px;
+            background: $navBarColor;
+            top: $navBar;
+            right: -10px;
+         }
+      }
+   }
+
+   .nav__submenu {
+      display : none;
+      z-index : 100;
+      
+      &-item {
+         & a {
+            padding: 12px 15px;
+            display: block;
+            line-height: 1;
+            &:hover {
+               background: lighten($navBarColor, 5);
+            }
+         }
+      }
+   }
+   
+   // mobi UI
+   .hamBurger {
+      visibility : hidden;
+   }
+
+   .hamBurger::before {
+      content    : '\2630';
+      visibility : visible;
+      color      : $fontColor;
+   }
+
+   .hamBurger:checked::before {
+      content    : '\2715';
+      visibility : visible;
+      color      : $fontColor;
+   }
+
+   // checked and item hover 
+   .hamBurger:checked ~ .nav__wrapper .nav .nav-item:hover .nav__submenu {
+      margin-left  : 30px;
+      margin-right : 1rem;
+   }
+   
+   @media (max-width: 700px){
+      .hamBurger {
+         display: block;
+      }
+      
+      & .nav,
+      & .nav__submenu{
+         display: none;
+      }
+      
+      & .nav:not(.nav__submenu) {
+         & .nav-item {
+            & a {
+               padding: 0 15px 0 0;
+            }
+         }
+      }
+      .hamBurger:checked + .nav__wrapper .nav:not(.nav__submenu) {
+         display: flex;
+      }
    }
 }
 
-.nav-sub-item {
-   display: none;
-   z-index: 100;
-}
 
-.nav-item:hover .nav-sub-item {
-   display: block;
-}
 
-// mobi UI
-.hamBurger {
-   visibility: hidden;
-}
 
-.hamBurger::before {
-   content: "\2630";
-   visibility: visible;
-   color: white;
-}
 
-.hamBurger:checked::before {
-   content: "\2715";
-   visibility: visible;
-   color: white;
-}
 
-// checked and item hover 
-.hamBurger:checked~.nav:hover .nav-sub-item {
-   margin-left: 30px;
-   margin-right: 1rem;
-}

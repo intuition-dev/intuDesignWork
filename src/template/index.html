@@ -14,26 +14,28 @@
     .blur { -webkit-filter:blur(2px);filter:blur(2px); }
   </style>
 </head>
-<body>
-  <div class="wrapper">
-    <header>
-      <div class="navBar">
-        <input class="hamBurger" type="checkbox"/>
-        <div class="nav">
-          <h3 class="navBrand">Brand</h3>
-          <h4 class="nav-item"> <a href="/pages/docs/">Docs</a></h4>
-          <h4 class="nav-item"> <a href="/pages/api/">API</a></h4>
-          <h4 class="nav-item"> <a href="/pages/help/">Help</a></h4>
-          <h4 class="nav-item"> <a href="/pages/blog/">Blog</a>
-            <div class="nav-sub-item">Sub 1</div>
-            <div class="nav-sub-item">Sub 2</div>
-            <div class="nav-sub-item">Sub 3</div>
-          </h4>
-        </div>
+<body>   
+  <header>
+    <div class="navBar">
+      <input class="hamBurger" type="checkbox"/>
+      <div class="nav__wrapper">
+        <h3 class="navBrand"> <a href="/">Brand</a></h3>
+        <ul class="nav">
+          <li class="nav-item"> <a href="/pages/docs/">Docs</a></li>
+          <li class="nav-item"> <a href="/pages/api/">API</a></li>
+          <li class="nav-item"> <a href="/pages/help/">Help</a></li>
+          <li class="nav-item"> <a href="/pages/blog/">Blog</a>
+            <ul class="nav nav__submenu">
+              <li class="nav__submenu-item"> <a href="#">Sub 1</a></li>
+              <li class="nav__submenu-item"><a href="#">Sub 2</a></li>
+              <li class="nav__submenu-item"><a href="#">Sub 3</a></li>
+            </ul>
+          </li>
+        </ul>
       </div>
-    </header>
-  </div>
+    </div>
+  </header>
   <div class="container">
-    <section>landing page here</section>
+    <section>landing page heres</section>
   </div>
-<!-- mB v8.3.0 on 2020-03-13T13:49:06.506Z --></body>
+<!-- mB v8.3.0 on 2020-03-26T08:58:46.124Z --></body>
