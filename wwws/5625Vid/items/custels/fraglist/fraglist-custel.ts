@@ -228,7 +228,7 @@ customElements.define('fraglist-custel', class extends HTMLElement {
         super()
         console.log('cons')
 
-        this.sr = this.attachShadow({ mode: 'closed' })
+        this.sr = this.attachShadow({ mode: 'open' })
         this.sr.appendChild(cTemp.content.cloneNode(true))
         new UIBinding(this.sr)
 

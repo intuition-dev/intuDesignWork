@@ -122,7 +122,7 @@ Here is an example of defining a custom element 'c-custel':
       sr 
       constructor() {
          super()
-         this.sr = this.attachShadow({mode: 'closed'})
+         this.sr = this.attachShadow({ mode: 'open' })
          this.sr.appendChild(cTemp.content.cloneNode(true))
       }//cons
    })

@@ -128,7 +128,7 @@ depp.require(['jquery', 'pagination', 'mustache', 'js-yaml', 'DOMDelayed'], func
         function class_1() {
             var _this = _super.call(this) || this;
             console.log('cons');
-            _this.sr = _this.attachShadow({ mode: 'closed' });
+            _this.sr = _this.attachShadow({ mode: 'open' });
             _this.sr.appendChild(cTemp.content.cloneNode(true));
             new UIBinding(_this.sr);
             return _this;
