@@ -3,7 +3,8 @@
 //-------------------------------------------------------------------
 
 body,
-textarea, input {
+textarea,
+input {
   background: 0;
   border-radius: 0;
   margin: 0;
@@ -19,10 +20,17 @@ textarea, input {
 }
 
 .container {
-  margin: 0 1rem;
+  margin: 0 auto;
   padding-top: $navBar;
-  width: auto;
+  width: 100%;
+  max-width: 1400px;
+}
 
+header {
+  & .navBar .nav__wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
 }
 
 // this extends into both .btn
@@ -30,3 +38,11 @@ textarea, input {
   text-decoration: none;
 }
 
+@media (max-width: 1400px) {
+
+  .container,
+  header .navBar .nav__wrapper {
+    margin: 0 1rem;
+    max-width: 100%;
+  }
+}

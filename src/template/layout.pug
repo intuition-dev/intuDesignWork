@@ -1,0 +1,13 @@
+html
+  head
+    include headFrag
+
+  body    
+    include ./includes/top_nav
+    .container
+      block container
+
+    footer
+    script(src="/js/holder.min.js")
+    script. 
+      Holder.addTheme("placeholder", { bg: "#fff", fg: "#cecece", text: "Placeholder" });

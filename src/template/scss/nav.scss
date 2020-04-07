@@ -1,73 +1,72 @@
 // navBar checkbox hamBurger unicode for AMP, no .js!
 
-$fontColor   : #dfe4e9;
-$navBarColor : #0d0f43;
 .navBar {
-   display          : flex;
-   background-color : $navBarColor;
-   user-select      : none;
-   width            : 100%;
-   position         : absolute; // so it floats over
+   display: flex;
+   background-color: $themeColor;
+   user-select: none;
+   width: 100%;
+   position: absolute; // so it floats over
 
    .nav__wrapper {
-      display         : flex;
-      color           : $fontColor;
-      width           : 100%;
-      justify-content : space-between;
+      display: flex;
+      color: $fontnavBarColor;
+      width: 100%;
+      justify-content: space-between;
       list-style: none;
       margin: 0 1rem;
    }
 
    .nav {
-      display : flex;
+      display: flex;
       list-style: none;
    }
 
    .navBrand {
-      line-height : $navBar;
+      line-height: $navBar;
 
       & a {
-         color           : $fontColor;
-         text-decoration : none;
-         line-height     : $navBar;
-         font-size       : inherit;
+         color: $fontnavBarColor;
+         text-decoration: none;
+         line-height: $navBar;
+         font-size: inherit;
       }
    }
 
    .hamBurger {
-      line-height : $navBar;
-      margin-left : 1rem;
+      line-height: $navBar;
+      margin-left: 1rem;
       cursor: pointer;
       display: none;
    }
 
    // the key
-   .hamBurger:checked + .nav__wrapper {
-      flex-direction : column;
+   .hamBurger:checked+.nav__wrapper {
+      flex-direction: column;
    }
 
    .nav-item {
-      line-height : $navBar;
+      line-height: $navBar;
       position: relative;
 
       & a {
-         text-decoration : none;
-         line-height     : $navBar;
-         color           : $fontColor;
+         text-decoration: none;
+         line-height: $navBar;
+         color: $fontnavBarColor;
          padding-left: 1.3rem;
 
       }
-      
+
       &:hover {
          & a {
             color: white;
          }
+
          .nav__submenu {
-            display : flex;
+            display: flex;
             position: absolute;
             flex-flow: column;
             min-width: 150px;
-            background: $navBarColor;
+            background: $themeColor;
             top: $navBar;
             right: -10px;
          }
@@ -75,54 +74,55 @@ $navBarColor : #0d0f43;
    }
 
    .nav__submenu {
-      display : none;
-      z-index : 100;
-      
+      display: none;
+      z-index: 100;
+
       &-item {
          & a {
             padding: 12px 15px;
             display: block;
             line-height: 1;
+
             &:hover {
-               background: lighten($navBarColor, 5);
+               background: lighten($themeColor, 5);
             }
          }
       }
    }
-   
+
    // mobi UI
    .hamBurger {
-      visibility : hidden;
+      visibility: hidden;
    }
 
    .hamBurger::before {
-      content    : '\2630';
-      visibility : visible;
-      color      : $fontColor;
+      content: '\2630';
+      visibility: visible;
+      color: $fontnavBarColor;
    }
 
    .hamBurger:checked::before {
-      content    : '\2715';
-      visibility : visible;
-      color      : $fontColor;
+      content: '\2715';
+      visibility: visible;
+      color: $fontnavBarColor;
    }
 
    // checked and item hover 
-   .hamBurger:checked ~ .nav__wrapper .nav .nav-item:hover .nav__submenu {
-      margin-left  : 30px;
-      margin-right : 1rem;
+   .hamBurger:checked~.nav__wrapper .nav .nav-item:hover .nav__submenu {
+      margin-left: 30px;
+      margin-right: 1rem;
    }
-   
-   @media (max-width: 700px){
+
+   @media (max-width: 700px) {
       .hamBurger {
          display: block;
       }
-      
+
       & .nav,
-      & .nav__submenu{
+      & .nav__submenu {
          display: none;
       }
-      
+
       & .nav:not(.nav__submenu) {
          & .nav-item {
             & a {
@@ -130,14 +130,9 @@ $navBarColor : #0d0f43;
             }
          }
       }
-      .hamBurger:checked + .nav__wrapper .nav:not(.nav__submenu) {
+
+      .hamBurger:checked+.nav__wrapper .nav:not(.nav__submenu) {
          display: flex;
       }
    }
 }
-
-
-
-
-
-

@@ -229,7 +229,7 @@ video.video-responsive::before{content:none;}
 .figure{margin:0 0 0.4rem 0;}
 .figure .figure-caption{color:#66758c;margin-top:0.4rem;}
 .container{margin-left:auto;margin-right:auto;padding-left:0.4rem;padding-right:0.4rem;width:100%;}
-.container.grid-xl{max-width:1296px;}
+.grid-xl{max-width:1296px;}
 .container.grid-lg{max-width:976px;}
 .container.grid-md{max-width:856px;}
 .container.grid-sm{max-width:616px;}

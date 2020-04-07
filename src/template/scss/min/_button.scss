@@ -1,25 +1,24 @@
-
-
 //-------------------------------------------------------------------
 // Button Colors
 //-------------------------------------------------------------------
-$a--bg:           #0ae;
-$a--hover:        #09d;
-$a--active:       #08b;
+$a--bg: #0ae;
+$a--hover: #09d;
+$a--active: #08b;
 
-$b--bg:           #3c5;
-$b--hover:        #2b4;
-$b--active:       #2a4;
+$b--bg: #3c5;
+$b--hover: #2b4;
+$b--active: #2a4;
 
-$c--bg:           #d33;
-$c--hover:        #c22;
-$c--active:       #b22;
+$c--bg: #d33;
+$c--hover: #c22;
+$c--active: #b22;
 
 
 .butOn {
   font-weight: normal;
   pointer-events: auto;
 }
+
 .butOff {
   font-weight: lighter;
   pointer-events: none;
@@ -34,16 +33,17 @@ $c--active:       #b22;
 //-------------------------------------------------------------------
 
 // set default variables to be base button colors.
-@mixin btn-style ($bg:        $c-off-black,
-                  $bg-hover:  $c-darker,
-                  $bg-active: $c-dark) {
+@mixin btn-style ($bg: $c-off-black,
+  $bg-hover: $c-darker,
+  $bg-active: $c-dark) {
   background: $bg;
 
   &:hover {
     background: $bg-hover;
   }
 
-  &:active, &:focus {
+  &:active,
+  &:focus {
     background: $bg-active;
   }
 }
@@ -67,11 +67,11 @@ $c--active:       #b22;
   display: inline-block; // Enables non-inline-block elements like <a>s to be buttons
 
   border-radius: .3em; // rounded corners
-  height:  calc(#{$baseVR} * 2 );
-  line-height: calc(#{$baseVR} * 2 );
+  height: calc(#{$baseVR} * 2);
+  line-height: calc(#{$baseVR} * 2);
   padding: 0 1.5em;
-  text-align: center; 
-  margin:  0 .2em;
+  text-align: center;
+  margin: 0 .2em;
 }
 
 // Add this class to a <button> or element with a .btn class
@@ -81,7 +81,7 @@ $c--active:       #b22;
   height: $baseVR;
   line-height: $baseVR;
   padding: 0 .7em;
-  margin:  0 .1em;
+  margin: 0 .1em;
 }
 
 // Set colors for your buttons, see the button mixin at the top of this
@@ -96,4 +96,17 @@ $c--active:       #b22;
 
 .btn-c {
   @include btn-style($c--bg, $c--hover, $c--active);
+}
+
+.btn-d {
+  @include btn-style($themeColor, #3e3961, #3e3961);
+  color: $btnFontColor;
+  width: auto;
+}
+
+/* block of buttons */
+.btn-group {
+  display: flex;
+  align-items: center;
+
 }
