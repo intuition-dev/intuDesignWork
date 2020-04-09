@@ -3,7 +3,7 @@
 }
 
 body {
-   background-color: #f9f3f3;
+   background-color: #ffffff;
 }
 
 /* Docs Page */
@@ -13,7 +13,7 @@ body {
    grid-template-columns: 180px 1fr 120px;
    grid-column-gap: 40px;
    font-family: 'Open Sans';
-
+   @include maxWidth();
 
    h3,
    h4 {
@@ -97,15 +97,25 @@ pre {
    }
 }
 
+%section__content {
+   @include maxWidth();
+
+   display: grid;
+   grid-template-columns: 1fr 500px;
+   grid-column-gap: 50px;
+   justify-items: center;
+   align-items: center;
+   text-align: center;
+
+   &>div>* {
+      margin: 2rem auto;
+   }
+}
 
 /* Landing Page */
 .container__landing {
    section {
       padding: 100px 0;
-
-      &.center {
-         text-align: center;
-      }
 
       & .btn-group {
          justify-content: center;
@@ -115,26 +125,127 @@ pre {
 
    & .homeSection {
       display: grid;
-      grid-template-columns: 1fr 500px 1fr;
+      grid-template-columns: auto 400px;
+      grid-column-gap: 20px;
+      align-items: center;
 
       &> :nth-child(1) {
-         grid-column: 2;
+         grid-column: 1;
          align-self: center;
          justify-self: center;
          text-align: center;
       }
 
       &> :nth-child(2) {
-         grid-column: 3;
+         grid-column: 2;
       }
    }
 
    & .features {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(3, auto);
+      grid-column-gap: 100px;
+      justify-content: space-around;
+      @include maxWidth();
+   }
+
+   & .feature {
+      text-align: center;
+
+      &>* {
+         margin: 1rem 0;
+      }
+   }
+
+   & .callOut {
+      text-align: center;
+      margin-top: 100px;
+
+      &>* {
+         margin: 1rem 0;
+      }
+   }
+
+   & .imgToRight {
+      background: rgba(245, 230, 204, 0.4);
+
+      &__content {
+         @include maxWidth();
+
+         grid-template-columns: 1fr 500px;
+         @extend %section__content;
+
+      }
+   }
+
+   & .imgToLeft {
+      &__content {
+         @include maxWidth();
+         grid-template-columns: 500px 1fr;
+         @extend %section__content;
+      }
+   }
+
+   & .imgToRight_2 {
+      background: #ffb48f;
+      // color: #12b3ad;
+
+      &__content {
+         @include maxWidth();
+         @extend %section__content;
+      }
+   }
+
+   & .bottomSection {
+      &__content {
+         @include maxWidth();
+         text-align: center;
+
+         & img {
+            display: block;
+         }
+      }
+
+      &>div>* {
+         margin: 1rem auto;
+      }
    }
 
    h1 {
       margin-bottom: 1rem;
+   }
+}
+
+.footer {
+   background: $footerBgColog;
+   padding: 2rem 0;
+   color: white;
+
+   &__content {
+      @include maxWidth();
+      display: grid;
+      grid-template-columns: 150px repeat(3, 1fr);
+   }
+
+   &__links {
+      & a {
+         display: block;
+         color: rgba(255, 255, 255, .5);
+         text-decoration: none;
+         padding: 3px 0;
+
+         &:nth-child(1) {
+            color: white;
+            margin-bottom: 10px;
+
+         }
+      }
+   }
+
+   & .copyright {
+      grid-column: 1/span 4;
+      padding: 1.3rem 0;
+      text-align: center;
+      color: rgba(255, 255, 255, .5);
    }
 }

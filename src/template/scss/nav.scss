@@ -25,10 +25,12 @@
       line-height: $navBar;
 
       & a {
-         color: $fontnavBarColor;
+         // color: $fontnavBarColor;
+         color: #441855;
          text-decoration: none;
          line-height: $navBar;
          font-size: inherit;
+         font-weight: 600;
       }
    }
 
@@ -53,7 +55,7 @@
          line-height: $navBar;
          color: $fontnavBarColor;
          padding-left: 1.3rem;
-
+         font-weight: 400;
       }
 
       &:hover {

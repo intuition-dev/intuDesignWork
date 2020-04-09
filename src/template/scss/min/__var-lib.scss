@@ -8,28 +8,28 @@
 
 
 // Dark Colors
-$c-black:         #000 !default;
-$c-off-black:     #999 !default;
-$c-darker:        #888 !default;
-$c-dark:          #777 !default;
+$c-black: #000 !default;
+$c-off-black: #999 !default;
+$c-darker: #888 !default;
+$c-dark: #777 !default;
 
 
 // Medium Colors
-$c-grey-dark:     #aaa !default;
-$c-grey:          #ccc !default;
-$c-grey-light:    #eee !default;
+$c-grey-dark: #aaa !default;
+$c-grey: #ccc !default;
+$c-grey-light: #eee !default;
 
 // Light Colors
-$c-white:         #fff !default;
+$c-white: #fff !default;
 
 
 // Inputs
-$c-focus:         #5ab !default;
+$c-focus: #5ab !default;
 
 // shared large text size
 %txt-large {
     line-height: $baseVR;
-    font-size:   calc(#{$baseVR} * .78 );
+    font-size: calc(#{$baseVR} * .78);
     font-weight: 400;
 }
 
@@ -41,7 +41,14 @@ $c-focus:         #5ab !default;
 }
 
 //theme colors
-$themeColor : #2E294E;
-$fontnavBarColor : #dfe4e9;
+//dark blue: #24305e
+//middle blue: #374785
+//light blue: #a8d0e6
+//orange: #f76c6c
+$themeColor : #a64ac9;
+$fontnavBarColor : #fff;
+$footerBgColog: #4b1d5d;
 
-$btnFontColor: #dfe4e9;
+$btnFontColor: #b79403;
+$btnBgColor: #fccd04;
+$btnBgHoverColor: #ffb48f;

@@ -99,8 +99,8 @@ $c--active: #b22;
 }
 
 .btn-d {
-  @include btn-style($themeColor, #3e3961, #3e3961);
-  color: $btnFontColor;
+  @include btn-style($btnBgColor, $btnBgHoverColor, $btnBgHoverColor);
+  color: #bb846a;
   width: auto;
 }
 
