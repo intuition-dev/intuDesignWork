@@ -1,0 +1,68 @@
+extends ../../layout.pug
+block container
+   script(type='module'). 
+      console.log('fetch data and comp')// who gets back first?
+      var pro = fetchItems('/items/jsonfeed.json')
+      import { EventFlux } from 'https://cdn.jsdelivr.net/gh/intuition-dev/mbToolBelt@v8.4.25/eventFlux/EventFlux.min.js'
+      EventFlux.init()
+
+      defEventFlux.register('c-custel-x', function(evt) {
+         console.log('**pg received message**', evt)
+
+         let c = document.getElementById('c1')// as needed
+      })
+
+   script(src='./c-custel.js' type='module')
+   .container__docs
+      aside.sidebar
+         c-custel(items=3)#c1
+         .sidebar__categories 
+            ul.sidebar__menu
+               li 
+                  a page 1
+         .sidebar__categories 
+            h3 elementum
+            ul.sidebar__menu
+               li 
+                  a page 2
+         .sidebar__categories 
+            h3 eleifend
+            ul.sidebar__menu
+               li 
+                  a page 2
+
+      section.content
+         h3 Quis viverra nibh cras pulvinar
+         p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor at risus viverra adipiscing at in. Id volutpat lacus laoreet non curabitur gravida arcu ac tortor. Sit amet consectetur adipiscing elit. Morbi quis commodo odio aenean sed adipiscing diam donec.
+         h4 
+            a(href="#lorem", aria-hidden id="lorem").anchor
+               include ../../img/anchor.svg
+            | Lorem
+         p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum massa eget nulla aliquet sagittis. Proin odio tortor, vulputate ut odio in, ultrices ultricies augue. Cras ornare ultrices lorem malesuada iaculis. Etiam sit amet libero tempor, pulvinar mauris sed, sollicitudin sapien.
+         h4 
+            a(href="#code", aria-hidden id="lorem").anchor
+               include ../../img/anchor.svg
+            | Some nice code
+         p
+            pre
+               code Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt sed do eiusmod tempor incididunt
+         h4 
+            a(href="#ipsum", aria-hidden id="ipsum").anchor
+               include ../../img/anchor.svg
+            | Ipsum
+         p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris a diam maecenas sed enim ut sem viverra aliquet. Cras semper auctor neque vitae tempus quam. Semper feugiat nibh sed pulvinar proin. Diam ut venenatis tellus in. Amet luctus venenatis lectus magna fringilla. Auctor urna nunc id cursus metus aliquam. Eget est lorem ipsum dolor sit amet consectetur. Sit amet porttitor eget dolor morbi non arcu. Ut consequat semper viverra nam libero justo laoreet sit. Sit amet tellus cras adipiscing enim eu turpis egestas pretium. Consectetur lorem donec massa sapien faucibus et molestie ac feugiat. Mi proin sed libero enim sed faucibus. Metus dictum at tempor commodo ullamcorper. Et netus et malesuada fames ac turpis egestas. Eu consequat ac felis donec et. Ridiculus mus mauris vitae ultricies leo integer. Quam viverra orci sagittis eu volutpat odio. Nisl vel pretium lectus quam id.
+         p Erat pellentesque adipiscing commodo elit at. Amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien. Quis vel eros donec ac odio tempor orci. In metus vulputate eu scelerisque felis imperdiet proin. Aliquet sagittis id consectetur purus ut faucibus pulvinar. Gravida neque convallis a cras semper auctor neque. In hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit. In aliquam sem fringilla ut morbi tincidunt augue interdum velit. Sapien et ligula ullamcorper malesuada proin libero nunc consequat. Massa id neque aliquam vestibulum. Nisl nisi scelerisque eu ultrices vitae auctor. Arcu cursus vitae congue mauris rhoncus aenean. Malesuada fames ac turpis egestas maecenas pharetra convallis posuere morbi. Quam lacus suspendisse faucibus interdum posuere lorem. Interdum velit euismod in pellentesque massa placerat duis ultricies. Elementum nibh tellus molestie nunc non blandit massa enim.
+         h4 
+            a(href="#ipsum2", aria-hidden id="ipsum2").anchor
+               include ../../img/anchor.svg
+            | Ipsum2
+         p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris a diam maecenas sed enim ut sem viverra aliquet. Cras semper auctor neque vitae tempus quam. Semper feugiat nibh sed pulvinar proin. Diam ut venenatis tellus in. Amet luctus venenatis lectus magna fringilla. Auctor urna nunc id cursus metus aliquam. Eget est lorem ipsum dolor sit amet consectetur. Sit amet porttitor eget dolor morbi non arcu. Ut consequat semper viverra nam libero justo laoreet sit. Sit amet tellus cras adipiscing enim eu turpis egestas pretium. Consectetur lorem donec massa sapien faucibus et molestie ac feugiat. Mi proin sed libero enim sed faucibus. Metus dictum at tempor commodo ullamcorper. Et netus et malesuada fames ac turpis egestas. Eu consequat ac felis donec et. Ridiculus mus mauris vitae ultricies leo integer. Quam viverra orci sagittis eu volutpat odio. Nisl vel pretium lectus quam id.
+         p Erat pellentesque adipiscing commodo elit at. Amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien. Quis vel eros donec ac odio tempor orci. In metus vulputate eu scelerisque felis imperdiet proin. Aliquet sagittis id consectetur purus ut faucibus pulvinar. Gravida neque convallis a cras semper auctor neque. In hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit. In aliquam sem fringilla ut morbi tincidunt augue interdum velit. Sapien et ligula ullamcorper malesuada proin libero nunc consequat. Massa id neque aliquam vestibulum. Nisl nisi scelerisque eu ultrices vitae auctor. Arcu cursus vitae congue mauris rhoncus aenean. Malesuada fames ac turpis egestas maecenas pharetra convallis posuere morbi. Quam lacus suspendisse faucibus interdum posuere lorem. Interdum velit euismod in pellentesque massa placerat duis ultricies. Elementum nibh tellus molestie nunc non blandit massa enim.
+
+
+      nav.pageNav
+         a(href="#lorem") Lorem
+         a(href="#ipsum") Ipsum
+         a(href="#ipsum2") Ipsum2
+
+

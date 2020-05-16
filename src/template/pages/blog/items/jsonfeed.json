@@ -1,0 +1,26 @@
+{
+  "prefix": "/blog/items/",
+  "mbVer": "v8.3.0",
+  "items": [
+    {
+      "image": "image.png",
+      "title": "Item 1",
+      "item": {
+        "name": "Long Sleeve T-Shirt YOU",
+        "price": 33.39,
+        "weight": 77,
+        "url": "https://23475cf0.ngrok.io/items/it_will_lead_you/",
+        "description": "Long light t-shirt, with dark text",
+        "color": "black",
+        "sizeS": 1342900180,
+        "sizeM": 1342900181,
+        "sizeL": 1342900182,
+        "sizeXL": 1342900183
+      },
+      "url": "item1",
+      "id": "item1",
+      "index": 0
+    }
+  ],
+  "count": 1
+}
